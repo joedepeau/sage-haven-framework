@@ -66,7 +66,7 @@
   /* Integration Coaching Palette */
   --navy: #0A192F;
   --cream: #FDFBF7;
-  --sage: #E2E8E4;
+  --sage: #8FA1B3;
   --slate: #52677A;
   --ochre: #D4AF37;
 
@@ -79,9 +79,9 @@
   --popover-foreground: #0A192F;
   --primary: #0A192F;
   --primary-foreground: #FDFBF7;
-  --secondary: #E2E8E4;
+  --secondary: #8FA1B3;
   --secondary-foreground: #0A192F;
-  --muted: #E2E8E4;
+  --muted: #8FA1B3;
   --muted-foreground: #52677A;
   --accent: #D4AF37;
   --accent-foreground: #0A192F;
@@ -93,13 +93,13 @@
   --chart-1: #D4AF37;
   --chart-2: #52677A;
   --chart-3: #0A192F;
-  --chart-4: #E2E8E4;
+  --chart-4: #8FA1B3;
   --chart-5: #FDFBF7;
   --sidebar: #FDFBF7;
   --sidebar-foreground: #0A192F;
   --sidebar-primary: #0A192F;
   --sidebar-primary-foreground: #FDFBF7;
-  --sidebar-accent: #E2E8E4;
+  --sidebar-accent: #8FA1B3;
   --sidebar-accent-foreground: #0A192F;
   --sidebar-border: rgba(10, 25, 47, 0.1);
   --sidebar-ring: #D4AF37;
