@@ -23,27 +23,30 @@ function Index() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-cream px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="mb-4 font-body text-xs font-semibold uppercase tracking-widest text-slate sm:text-sm">
-              Integration Coaching Practice
-            </p>
-            <h1 className="font-display text-4xl font-medium leading-tight text-navy sm:text-5xl lg:text-6xl">
-              Align your life with intention
+      <section
+        className="relative bg-cover bg-center bg-no-repeat px-6 py-28 sm:px-8 sm:py-36 lg:px-12 lg:py-48"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
+        <div className="absolute inset-0 bg-cream/65" />
+        <div className="relative mx-auto max-w-5xl">
+          <div className="text-center">
+            <h1 className="font-display text-4xl font-medium leading-[1.15] tracking-tight text-navy sm:text-5xl lg:text-6xl xl:text-7xl">
+              <span className="block sm:inline">Be anchored.</span>{" "}
+              <span className="block sm:inline">Navigate mindfully.</span>{" "}
+              <span className="block sm:inline">Live intentionally.</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-xl font-body text-base leading-relaxed text-slate sm:text-lg">
-              Discover clarity, purpose, and sustainable growth through personalized coaching that honors every part of who you are.
+            <p className="mx-auto mt-8 max-w-2xl font-body text-base leading-relaxed text-slate sm:text-lg md:mt-10 md:text-xl">
+              Professional integration coaching for professionals, creatives, and intentional seekers looking to bridge profound insights with grounded daily routines.
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button className="h-12 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
-                Book a Discovery Call
+            <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
+              <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
+                Book an Alignment Call
               </Button>
               <Button
                 variant="outline"
-                className="h-12 w-full border-navy/20 bg-transparent px-8 font-body text-sm font-medium text-navy hover:bg-navy/5 sm:w-auto sm:text-base"
+                className="h-14 w-full border-navy/25 bg-cream/60 px-6 font-body text-sm font-medium text-navy backdrop-blur-sm hover:bg-cream/80 hover:text-navy sm:w-auto sm:text-base"
               >
-                Learn More
+                Read the Safety & Harm-Reduction Guide
               </Button>
             </div>
           </div>
