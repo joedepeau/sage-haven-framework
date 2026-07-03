@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
+import { Anchor, Compass, Lamp } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 export const Route = createFileRoute("/")({
@@ -49,6 +50,76 @@ function Index() {
                 Read the Safety & Harm-Reduction Guide
               </Button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Section */}
+      <section className="bg-cream px-6 py-20 sm:px-8 sm:py-28 lg:px-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 md:gap-16 lg:gap-24">
+            <div className="flex flex-col justify-center">
+              <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
+                Exploring Consciousness Shouldn&apos;t Mean Feeling Adrift.
+              </h2>
+            </div>
+            <div className="flex flex-col justify-center">
+              <div className="border-t border-navy/10 py-6">
+                <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
+                  Feeling overwhelmed by raw emotions or shifting perspectives.
+                </p>
+              </div>
+              <div className="border-t border-navy/10 py-6">
+                <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
+                  Lacking a clear, structured framework to measure your personal growth.
+                </p>
+              </div>
+              <div className="border-t border-b border-navy/10 py-6">
+                <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
+                  Navigating complex changes without a safe, non-judgmental professional to talk to.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Three Pillars Section */}
+      <section className="bg-cream px-6 py-20 sm:px-8 sm:py-28 lg:px-12">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3">
+            {[
+              {
+                icon: Anchor,
+                title: "01 / Be Anchored",
+                desc: "We establish your baseline safety, set clear boundaries, and build a solid foundation of daily grounding practices.",
+              },
+              {
+                icon: Compass,
+                title: "02 / Navigate Mindfully",
+                desc: "We look at your experiences with a sharp, analytical lens, teaching you how to read your internal compass and adjust your course.",
+              },
+              {
+                icon: Lamp,
+                title: "03 / Live Intentionally",
+                desc: "We design concrete, actionable habits that turn fleeting breakthrough moments into a permanent, purposeful lifestyle.",
+              },
+            ].map((card, i) => (
+              <div
+                key={i}
+                className="flex flex-col items-center rounded-xl border border-navy/5 bg-white p-8 text-center shadow-sm transition-shadow hover:shadow-md"
+              >
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full border border-navy/10 bg-cream">
+                  <card.icon className="h-6 w-6 text-navy" strokeWidth={1.5} />
+                </div>
+                <h3 className="mb-4 font-display text-xl font-medium text-navy">
+                  {card.title}
+                </h3>
+                <p className="font-body text-sm leading-relaxed text-slate">
+                  {card.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
