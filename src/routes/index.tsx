@@ -66,17 +66,17 @@ function Index() {
             <div className="flex flex-col justify-center">
               <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Feeling overwhelmed by raw emotions or shifting perspectives.
+                  Feeling overwhelmed by raw emotions or shifting perspectives?
                 </p>
               </div>
               <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Lacking a clear, structured framework to measure your personal growth.
+                  Lacking a clear, structured framework to measure your personal growth?
                 </p>
               </div>
               <div className="border-t border-b border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Navigating complex changes without a safe, non-judgmental professional to talk to.
+                  Navigating complex changes without a safe, non-judgmental professional to talk to?
                 </p>
               </div>
             </div>
