@@ -37,7 +37,7 @@ function Index() {
               <span className="block sm:inline">Live intentionally.</span>
             </h1>
             <p className="mx-auto mt-8 max-w-2xl font-body text-base leading-relaxed text-slate sm:text-lg md:mt-10 md:text-xl">
-              Professional integration coaching for professionals, creatives, and intentional seekers looking to bridge profound insights with grounded daily routines.
+              Expert integration coaching for professionals, creatives, and intentional seekers looking to bridge profound insights with grounded daily routines.
             </p>
             <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
               <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
