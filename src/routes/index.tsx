@@ -101,7 +101,7 @@ function Index() {
                 desc: "We look at your experiences with a sharp, analytical lens, teaching you how to read your internal compass and adjust your course.",
               },
               {
-                icon: Lamp,
+                icon: LighthouseIcon,
                 title: "03 / Live Intentionally",
                 desc: "We design concrete, actionable habits that turn fleeting breakthrough moments into a permanent, purposeful lifestyle.",
               },
