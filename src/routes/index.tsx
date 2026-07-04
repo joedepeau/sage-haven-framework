@@ -151,13 +151,13 @@ function Index() {
               </h2>
               <div className="mt-6 space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
                 <p>
-                  I&apos;m a certified integration coach with training in trauma-informed care, harm reduction, and somatic practice. My work sits at the intersection of professional rigor and deep human presence.
+                  I&apos;m a certified microdosing coach with training in trauma-informed care, harm reduction, and somatic practice. My work sits at the intersection of professional rigor and deep human presence.
                 </p>
                 <p>
-                  Client safety is the foundation of everything we do. Before any exploration, we build clear agreements, grounding practices, and a shared map of the terrain ahead, so you always know where you are and what comes next.
+                  Client safety is the foundation of everything we do. Before any exploration, we build clear agreements, grounding practices, and a shared map of the journey ahead, so you always know where you are and what comes next.
                 </p>
                 <p>
-                  Sessions draw on established integration frameworks, including preparation and intention setting, embodied reflection, meaning-making dialogue, and habit design, so profound moments become durable change in daily life.
+                  Sessions draw on established microdosing frameworks, including preparation and intention setting, embodied reflection, meaning-making dialogue, and habit design, so profound moments become durable change in daily life.
                 </p>
               </div>
             </div>
