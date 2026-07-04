@@ -303,24 +303,50 @@ function Index() {
         </div>
       </section>
 
+      {/* Safety & Harm-Reduction Section */}
+      <section className="bg-sage/60 px-6 py-20 sm:px-8 sm:py-24 lg:px-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
+            Our Commitment
+          </p>
+          <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl">
+            A Safe, Non-Judgmental, and Harm-Reduction Focused Space
+          </h2>
+          <div className="mx-auto mt-8 max-w-2xl space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
+            <p>
+              This work is coaching. It is not psychotherapy, medical care, or clinical treatment, and it does not diagnose, prescribe, or replace advice from a licensed physician or mental health professional.
+            </p>
+            <p>
+              We hold your experience with confidentiality, without judgment, and through a harm-reduction lens, focused on your safety, agency, and long-term wellbeing. If clinical support is what you need, we will say so, honestly, and help you find appropriate care.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="border-t border-navy/5 bg-cream px-6 py-12 sm:px-8 lg:px-12">
+      <footer className="border-t border-navy/10 bg-cream px-6 py-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex items-center gap-2">
               <div className="grid h-8 w-8 place-items-center rounded-full bg-navy">
-                <span className="font-display text-xs font-semibold text-cream">IC</span>
+                <span className="font-display text-xs font-semibold text-cream">SH</span>
               </div>
               <span className="font-display text-base font-medium text-navy">
-                Integration Coaching
+                Still Harbour
               </span>
             </div>
             <p className="font-body text-sm text-slate">
-              &copy; {new Date().getFullYear()} Integration Coaching. All rights reserved.
+              &copy; {new Date().getFullYear()} Still Harbour. All rights reserved.
+            </p>
+          </div>
+          <div className="mt-8 border-t border-navy/10 pt-6">
+            <p className="font-body text-xs leading-relaxed text-slate/80">
+              <span className="font-semibold text-slate">Disclaimer:</span> Still Harbour provides educational and peer-support integration coaching services only. The information on this website is for educational and harm-reduction purposes and is not a substitute for professional medical advice, diagnosis, or treatment. We do not provide, sell, or encourage the use of illegal substances.
             </p>
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
