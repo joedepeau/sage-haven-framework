@@ -38,7 +38,7 @@ function Index() {
               <span className="block sm:inline">Live intentionally.</span>
             </h1>
             <p className="mx-auto mt-8 max-w-2xl font-body text-base leading-relaxed text-slate sm:text-lg md:mt-10 md:text-xl">
-              Expert integration coaching for professionals, creatives, and intentional seekers looking to bridge profound insights with grounded daily routines.
+              Expert microdose coaching for seekers, explorers, and sailors of the vast inner seas looking to bridge profound insights with grounded daily routines.
             </p>
             <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
               <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
@@ -98,12 +98,12 @@ function Index() {
               {
                 icon: Compass,
                 title: "02 / Navigate Mindfully",
-                desc: "We look at your experiences with a sharp, analytical lens, teaching you how to read your internal compass and adjust your course.",
+                desc: "We embrace your experiences with deep curiosity, trusting your inner compass and gracefully adjusting course.",
               },
               {
                 icon: LighthouseIcon,
                 title: "03 / Live Intentionally",
-                desc: "We design concrete, actionable habits that turn fleeting breakthrough moments into a permanent, purposeful lifestyle.",
+                desc: "We co-create actionable habits to turn fleeting breakthrough moments into lasting, purposeful transformation.",
               },
             ].map((card, i) => (
               <div
@@ -188,16 +188,21 @@ function Index() {
             </h2>
           </div>
           <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            {[1, 2, 3, 4].map((i) => (
+            {[
+              { title: "This is your process", desc: "You will always be our North Star" },
+              { title: "You have full agency", desc: "We go at your pace and respect your boundaries" },
+              { title: "Coaching with presence", desc: "We are entirely focused on you and your process" },
+              { title: "Complete confidentiality", desc: "We create a safe and private space, just for you" }
+            ].map((principle, i) => (
               <div key={i} className="text-center">
                 <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full border border-ochre/30">
-                  <span className="font-display text-lg font-semibold text-ochre">0{i}</span>
+                  <span className="font-display text-lg font-semibold text-ochre">0{i + 1}</span>
                 </div>
                 <h3 className="mb-2 font-display text-lg font-medium text-cream">
-                  Principle {i}
+                  {principle.title}
                 </h3>
                 <p className="font-body text-sm leading-relaxed text-slate">
-                  [Short description of this guiding principle.]
+                  {principle.desc}
                 </p>
               </div>
             ))}
@@ -213,7 +218,7 @@ function Index() {
               Client Stories
             </p>
             <h2 className="font-display text-3xl font-medium text-cream sm:text-4xl">
-              Words from those who walked the path
+              Words from those who have sailed these waters
             </h2>
           </div>
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -245,7 +250,7 @@ function Index() {
             Begin Your Journey
           </p>
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl lg:text-5xl">
-            Ready to integrate?
+            Ready to dive in?
           </h2>
           <p className="mx-auto mt-6 max-w-xl font-body text-base leading-relaxed text-slate sm:text-lg">
             Take the first step toward a more aligned and purposeful life. Schedule a complimentary discovery call to explore how we can work together.
