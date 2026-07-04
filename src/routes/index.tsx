@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Anchor, Compass, Lamp } from "lucide-react";
 import { LighthouseIcon } from "@/components/icons/LighthouseIcon";
 import heroBg from "@/assets/hero-bg.jpg";
+import coachPortrait from "@/assets/coach-portrait.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -128,53 +129,92 @@ function Index() {
       {/* Intro / About Section */}
       <section className="bg-sage px-6 py-20 sm:px-8 sm:py-28 lg:px-12">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 md:gap-16 lg:gap-24">
-            <div className="flex flex-col justify-center">
+          <div className="grid gap-12 md:grid-cols-5 md:gap-16 lg:gap-20">
+            <div className="md:col-span-2">
+              <div className="relative overflow-hidden rounded-2xl bg-navy/10 shadow-sm">
+                <img
+                  src={coachPortrait}
+                  alt="Portrait of the integration coach"
+                  width={768}
+                  height={1024}
+                  loading="lazy"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="flex flex-col justify-center md:col-span-3">
               <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
                 About the Practice
               </p>
               <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl">
-                A space for meaningful transformation
+                A grounded companion for your inner voyage
               </h2>
-            </div>
-            <div className="flex flex-col justify-center">
-              <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                [Your practice description goes here. Share your philosophy, approach, and what clients can expect when working with you.]
-              </p>
+              <div className="mt-6 space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
+                <p>
+                  I&apos;m a certified integration coach with training in trauma-informed care, harm reduction, and somatic practice. My work sits at the intersection of professional rigor and deep human presence.
+                </p>
+                <p>
+                  Client safety is the foundation of everything we do. Before any exploration, we build clear agreements, grounding practices, and a shared map of the terrain ahead, so you always know where you are and what comes next.
+                </p>
+                <p>
+                  Sessions draw on established integration frameworks, including preparation and intention setting, embodied reflection, meaning-making dialogue, and habit design, so profound moments become durable change in daily life.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="bg-cream px-6 py-20 sm:px-8 sm:py-28 lg:px-12">
-        <div className="mx-auto max-w-7xl">
+      <section className="bg-navy/[0.04] px-6 py-20 sm:px-8 sm:py-28 lg:px-12">
+        <div className="mx-auto max-w-6xl">
           <div className="mb-14 text-center">
             <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
-              How I Can Help
+              How We Work Together
             </p>
             <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
               Coaching Services
             </h2>
           </div>
-          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-3">
-            {[1, 2, 3].map((i) => (
-              <div
-                key={i}
-                className="flex flex-col rounded-xl border border-navy/5 bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
-              >
-                <div className="mb-6 h-12 w-12 rounded-lg bg-sage" />
-                <h3 className="mb-3 font-display text-xl font-medium text-navy">
-                  Service Title {i}
-                </h3>
-                <p className="flex-1 font-body text-sm leading-relaxed text-slate">
-                  [Brief description of this service offering. What clients receive, duration, and key outcomes.]
-                </p>
-              </div>
-            ))}
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+            <div className="flex flex-col rounded-2xl border border-navy/10 bg-white p-8 shadow-sm sm:p-10">
+              <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
+                Start Here
+              </p>
+              <h3 className="mb-4 font-display text-2xl font-medium text-navy sm:text-3xl">
+                The Discovery Session
+              </h3>
+              <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
+                A single 75-minute session to explore where you are, what you&apos;re hoping to integrate, and whether working together is the right fit. You&apos;ll leave with clarity on next steps, grounded practices you can use immediately, and honest guidance, whether or not we continue.
+              </p>
+              <Button className="h-14 w-full bg-navy px-8 font-body text-sm font-semibold text-cream shadow-none hover:bg-navy/90 sm:text-base">
+                Apply Now
+              </Button>
+            </div>
+            <div className="relative flex flex-col rounded-2xl border-2 border-ochre bg-white p-8 shadow-md sm:p-10">
+              <span className="absolute -top-3 left-8 rounded-full bg-ochre px-4 py-1 font-body text-xs font-semibold uppercase tracking-widest text-navy">
+                Signature Container
+              </span>
+              <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
+                Deep Work
+              </p>
+              <h3 className="mb-4 font-display text-2xl font-medium text-navy sm:text-3xl">
+                1-on-1 Integration Container
+                <span className="mt-1 block font-body text-base font-normal text-slate">
+                  8 or 12 Weeks
+                </span>
+              </h3>
+              <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
+                A held container of weekly sessions, between-session practices, and unlimited voice-note support. We move through preparation, embodied integration, and habit design, so insights become the way you actually live, work, and relate.
+              </p>
+              <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
+                Apply Now
+              </Button>
+            </div>
           </div>
         </div>
       </section>
+
 
       {/* Approach / Values Section */}
       <section className="bg-navy px-6 py-20 sm:px-8 sm:py-28 lg:px-12">
@@ -263,24 +303,50 @@ function Index() {
         </div>
       </section>
 
+      {/* Safety & Harm-Reduction Section */}
+      <section className="bg-sage/60 px-6 py-20 sm:px-8 sm:py-24 lg:px-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
+            Our Commitment
+          </p>
+          <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl">
+            A Safe, Non-Judgmental, and Harm-Reduction Focused Space
+          </h2>
+          <div className="mx-auto mt-8 max-w-2xl space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
+            <p>
+              This work is coaching. It is not psychotherapy, medical care, or clinical treatment, and it does not diagnose, prescribe, or replace advice from a licensed physician or mental health professional.
+            </p>
+            <p>
+              We hold your experience with confidentiality, without judgment, and through a harm-reduction lens, focused on your safety, agency, and long-term wellbeing. If clinical support is what you need, we will say so, honestly, and help you find appropriate care.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="border-t border-navy/5 bg-cream px-6 py-12 sm:px-8 lg:px-12">
+      <footer className="border-t border-navy/10 bg-cream px-6 py-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex items-center gap-2">
               <div className="grid h-8 w-8 place-items-center rounded-full bg-navy">
-                <span className="font-display text-xs font-semibold text-cream">IC</span>
+                <span className="font-display text-xs font-semibold text-cream">SH</span>
               </div>
               <span className="font-display text-base font-medium text-navy">
-                Integration Coaching
+                Still Harbour
               </span>
             </div>
             <p className="font-body text-sm text-slate">
-              &copy; {new Date().getFullYear()} Integration Coaching. All rights reserved.
+              &copy; {new Date().getFullYear()} Still Harbour. All rights reserved.
+            </p>
+          </div>
+          <div className="mt-8 border-t border-navy/10 pt-6">
+            <p className="font-body text-xs leading-relaxed text-slate/80">
+              <span className="font-semibold text-slate">Disclaimer:</span> Still Harbour provides educational and peer-support integration coaching services only. The information on this website is for educational and harm-reduction purposes and is not a substitute for professional medical advice, diagnosis, or treatment. We do not provide, sell, or encourage the use of illegal substances.
             </p>
           </div>
         </div>
       </footer>
+
     </div>
   );
 }
