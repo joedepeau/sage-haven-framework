@@ -45,12 +45,14 @@ function Index() {
               <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
                 Book an Alignment Call
               </Button>
-              <Button
-                variant="outline"
-                className="h-14 w-full border-navy/25 bg-cream/60 px-6 font-body text-sm font-medium text-navy backdrop-blur-sm hover:bg-cream/80 hover:text-navy sm:w-auto sm:text-base"
-              >
-                Learn More
-              </Button>
+              <Link to="/about">
+                <Button
+                  variant="outline"
+                  className="h-14 w-full border-navy/25 bg-cream/60 px-6 font-body text-sm font-medium text-navy backdrop-blur-sm hover:bg-cream/80 hover:text-navy sm:w-auto sm:text-base"
+                >
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
