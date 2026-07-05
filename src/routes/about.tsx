@@ -113,25 +113,50 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Approach Section */}
+      <section className="px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
+            What to Expect in Our Container
+          </h2>
+          <p className="mt-8 font-body text-base leading-relaxed text-slate sm:text-lg">
+            Our work together is built on a single principle: Coaching with Presence. This means you will be met with active, attuned listening—not problem-solving from a distance, but a genuine, co-created space where your experience is heard and honored.
+          </p>
+          <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
+            Everything shared within our sessions is held in strict confidentiality. My role is to serve as a stable psychological anchor, offering grounded perspective and practical tools without judgment or agenda. The container we build is one of safety, steadiness, and mutual respect—so you can show up fully, explore honestly, and move forward with clarity.
+          </p>
+        </div>
+      </section>
+
+      {/* Compliance Callout Box */}
+      <section className="px-6 pb-12 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-4xl rounded-xl border border-navy/20 bg-cream p-6 shadow-sm sm:p-8 lg:p-10">
+          <p className="font-body text-sm leading-relaxed text-slate sm:text-base">
+            <span className="font-semibold text-navy">Professional Boundaries & Harm Reduction:</span>{" "}
+            Please note that my practice operates strictly within a coaching framework. I am an integration coach, not a psychotherapist, medical doctor, or mental health clinician. I do not provide medical advice, diagnosis, treatment, or therapy. Furthermore, I operate strictly under harm-reduction principles; I do not distribute, sell, recommend, or facilitate the sourcing of illegal or controlled substances.
+          </p>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-navy/10 bg-cream px-6 py-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex items-center gap-2">
               <div className="grid h-8 w-8 place-items-center rounded-full bg-navy">
-                <span className="font-display text-xs font-semibold text-cream">IC</span>
+                <span className="font-display text-xs font-semibold text-cream">SH</span>
               </div>
               <span className="font-display text-base font-medium text-navy">
-                Integration Coaching
+                Still Harbour
               </span>
             </div>
             <p className="font-body text-sm text-slate">
-              &copy; {new Date().getFullYear()} Integration Coaching. All rights reserved.
+              &copy; {new Date().getFullYear()} Still Harbour. All rights reserved.
             </p>
           </div>
           <div className="mt-8 border-t border-navy/10 pt-6">
             <p className="font-body text-xs leading-relaxed text-slate/80">
-              <span className="font-semibold text-slate">Disclaimer:</span> Integration Coaching provides educational and peer-support coaching services only. The information on this website is for educational purposes and is not a substitute for professional medical advice, diagnosis, or treatment.
+              <span className="font-semibold text-slate">Disclaimer:</span> Still Harbour provides educational and peer-support integration coaching services only. The information on this website is for educational and harm-reduction purposes and is not a substitute for professional medical advice, diagnosis, or treatment. We do not provide, sell, or encourage the use of illegal substances.
             </p>
           </div>
         </div>
