@@ -215,9 +215,17 @@ function AboutPage() {
                 Still Harbour
               </span>
             </div>
-            <p className="font-body text-sm text-slate">
-              &copy; {new Date().getFullYear()} Still Harbour. All rights reserved.
-            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+              <Link
+                to="/privacy"
+                className="font-body text-sm text-slate underline underline-offset-2 transition-colors hover:text-navy"
+              >
+                Privacy Policy
+              </Link>
+              <p className="font-body text-sm text-slate">
+                &copy; {new Date().getFullYear()} Still Harbour. All rights reserved.
+              </p>
+            </div>
           </div>
           <div className="mt-8 border-t border-navy/10 pt-6">
             <p className="font-body text-xs leading-relaxed text-slate/80">
