@@ -143,12 +143,14 @@ function AboutPage() {
                 Investment: £50
               </p>
               <div className="mt-8">
-                <Button
-                  variant="outline"
-                  className="h-14 w-full border-navy/30 font-body text-base font-semibold text-navy hover:bg-navy/5"
-                >
-                  Book Discovery Session
-                </Button>
+                <Link to="/apply">
+                  <Button
+                    variant="outline"
+                    className="h-14 w-full border-navy/30 font-body text-base font-semibold text-navy hover:bg-navy/5"
+                  >
+                    Book Discovery Session
+                  </Button>
+                </Link>
               </div>
             </div>
 
