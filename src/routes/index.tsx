@@ -42,9 +42,11 @@ function Index() {
               Expert microdose coaching for seekers, explorers, and sailors of the inner seas looking to bridge profound insights with lasting transformation.
             </p>
             <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
-              <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
-                Book an Alignment Call
-              </Button>
+              <Link to="/apply" className="w-full sm:w-auto">
+                <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
+                  Book an Alignment Call
+                </Button>
+              </Link>
               <Link to="/about">
                 <Button
                   variant="outline"
@@ -189,9 +191,11 @@ function Index() {
               <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
                 A single 45-minute session to explore where you are, what you&apos;re hoping to achieve, and whether working together is the right fit. You&apos;ll leave with clarity on next steps and honest guidance, whether or not we continue.
               </p>
-              <Button className="h-14 w-full bg-navy px-8 font-body text-sm font-semibold text-cream shadow-none hover:bg-navy/90 sm:text-base">
-                Apply Now
-              </Button>
+              <Link to="/apply">
+                <Button className="h-14 w-full bg-navy px-8 font-body text-sm font-semibold text-cream shadow-none hover:bg-navy/90 sm:text-base">
+                  Apply Now
+                </Button>
+              </Link>
             </div>
             <div className="relative flex flex-col rounded-2xl border-2 border-ochre bg-white p-8 shadow-md sm:p-10">
               <span className="absolute -top-3 left-8 rounded-full bg-ochre px-4 py-1 font-body text-xs font-semibold uppercase tracking-widest text-navy">
@@ -209,9 +213,11 @@ function Index() {
               <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
                 A held container of four 50-minute sessions, between-session practices, and text or voice-note support throughout. We move through preparation, exploration and deepening, embodied integration, and habit design, so insights become the way you actually live, work, and relate.
               </p>
-              <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
-                Apply Now
-              </Button>
+              <Link to="/apply">
+                <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
+                  Apply Now
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
