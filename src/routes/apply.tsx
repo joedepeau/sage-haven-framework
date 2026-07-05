@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
@@ -75,10 +75,28 @@ const STEP_LABELS = [
   "Agreements",
 ];
 
+type Errors = Partial<Record<keyof FormData, string>>;
+
+function validateStep(step: number, data: FormData): Errors {
+  const e: Errors = {};
+  if (step === 1) {
+    if (!data.gender) e.gender = "Please select an option.";
+    if (!data.pronouns.trim()) e.pronouns = "Pronouns are required.";
+    if (!data.dob) e.dob = "Date of birth is required.";
+    if (!data.generalHealth.trim()) e.generalHealth = "Please share a brief note on your general health.";
+    if (!data.supportNetwork.trim()) e.supportNetwork = "Please describe your support network.";
+  }
+  if (step === 2) {
+    if (!data.priorExperience) e.priorExperience = "Please select an option.";
+    if (data.currentMicrodosing.length === 0) e.currentMicrodosing = "Please select at least one option.";
+  }
+  return e;
+}
+
 function ApplyPage() {
-  const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [data, setData] = useState<FormData>(initialData);
+  const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
 
   // Load persisted draft
@@ -107,27 +125,51 @@ function ApplyPage() {
     }
   }, [step, data]);
 
-  const update = <K extends keyof FormData>(key: K, value: FormData[K]) =>
+  const update = <K extends keyof FormData>(key: K, value: FormData[K]) => {
     setData((d) => ({ ...d, [key]: value }));
+    setErrors((prev) => {
+      if (!prev[key]) return prev;
+      const { [key]: _removed, ...rest } = prev;
+      return rest;
+    });
+  };
 
-  const togglePractice = (value: string) => {
+  const toggleArray = (key: "practices" | "currentMicrodosing", value: string) => {
     setData((d) => {
-      const has = d.practices.includes(value);
-      return { ...d, practices: has ? d.practices.filter((p) => p !== value) : [...d.practices, value] };
+      const arr = d[key];
+      const has = arr.includes(value);
+      return { ...d, [key]: has ? arr.filter((v) => v !== value) : [...arr, value] };
+    });
+    setErrors((prev) => {
+      if (!prev[key]) return prev;
+      const { [key]: _removed, ...rest } = prev;
+      return rest;
     });
   };
 
   const next = () => {
+    const stepErrors = validateStep(step, data);
+    if (Object.keys(stepErrors).length > 0) {
+      setErrors(stepErrors);
+      return;
+    }
+    setErrors({});
     setStep((s) => Math.min(s + 1, TOTAL_STEPS));
     if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
   };
   const back = () => {
+    setErrors({});
     setStep((s) => Math.max(s - 1, 1));
     if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
+    const stepErrors = validateStep(step, data);
+    if (Object.keys(stepErrors).length > 0) {
+      setErrors(stepErrors);
+      return;
+    }
     setSubmitted(true);
     try {
       window.localStorage.removeItem(STORAGE_KEY);
@@ -222,21 +264,24 @@ function ApplyPage() {
               </ol>
             </div>
 
-            <form onSubmit={submit} className="space-y-6">
-              {step === 1 && (
-                <Step1 data={data} update={update} />
-              )}
+            <form onSubmit={submit} noValidate className="space-y-6">
+              {step === 1 && <Step1 data={data} update={update} errors={errors} />}
               {step === 2 && (
-                <Step2 data={data} update={update} />
+                <Step2
+                  data={data}
+                  update={update}
+                  errors={errors}
+                  toggleMicrodosing={(v) => toggleArray("currentMicrodosing", v)}
+                />
               )}
               {step === 3 && (
-                <Step3 data={data} update={update} togglePractice={togglePractice} />
+                <StepPlaceholder title="Intention & Fit" note="Coming next." />
               )}
               {step === 4 && (
-                <Step4 data={data} update={update} />
+                <StepPlaceholder title="Wellbeing" note="Coming next." />
               )}
               {step === 5 && (
-                <Step5 data={data} update={update} />
+                <StepPlaceholder title="Agreements" note="Coming next." />
               )}
 
               {/* Navigation */}
@@ -273,8 +318,7 @@ function ApplyPage() {
                 ) : (
                   <Button
                     type="submit"
-                    disabled={!data.agreeHarmReduction || !data.agreePrivacy}
-                    className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90 disabled:opacity-50 sm:w-auto sm:px-10"
+                    className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:px-10"
                   >
                     Submit Application
                   </Button>
@@ -294,217 +338,226 @@ function ApplyPage() {
 
 /* ---------- Reusable field styles ---------- */
 
-const inputCls =
-  "mt-2 block w-full rounded-lg border border-navy/20 bg-cream/40 px-4 py-3 font-body text-base text-navy placeholder:text-slate/60 focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20";
 const labelCls = "font-body text-sm font-semibold text-navy";
-const helpCls = "mt-1 font-body text-xs text-slate";
+const inputBase =
+  "mt-2 block w-full rounded-lg border bg-cream/40 px-4 py-3 font-body text-base text-navy placeholder:text-slate/60 focus:outline-none focus:ring-2 focus:ring-navy/20";
+const inputOk = "border-navy/20 focus:border-navy";
+const inputErr = "border-red-500/70 focus:border-red-500";
+const errorTextCls = "mt-1 font-body text-xs text-red-600";
+
+function fieldCls(hasError?: boolean) {
+  return `${inputBase} ${hasError ? inputErr : inputOk}`;
+}
 
 type StepProps = {
   data: FormData;
   update: <K extends keyof FormData>(key: K, value: FormData[K]) => void;
+  errors: Errors;
 };
 
-function Step1({ data, update }: StepProps) {
+function Step1({ data, update, errors }: StepProps) {
+  const genderOpts = ["Female", "Male", "Non-binary", "Prefer to self-describe", "Prefer not to say"];
   return (
-    <div className="space-y-5">
-      <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">About You</h2>
+    <div className="space-y-6">
       <div>
-        <label className={labelCls} htmlFor="fullName">Full Name</label>
-        <input id="fullName" required value={data.fullName} onChange={(e) => update("fullName", e.target.value)} className={inputCls} placeholder="Your full name" />
+        <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">General Info</h2>
+        <p className="mt-1 font-body text-sm text-slate">A few grounding details about you.</p>
       </div>
-      <div>
-        <label className={labelCls} htmlFor="email">Email</label>
-        <input id="email" type="email" required value={data.email} onChange={(e) => update("email", e.target.value)} className={inputCls} placeholder="you@example.com" />
-      </div>
-      <div>
-        <label className={labelCls} htmlFor="phone">Phone (optional)</label>
-        <input id="phone" type="tel" value={data.phone} onChange={(e) => update("phone", e.target.value)} className={inputCls} placeholder="+44 ..." />
-      </div>
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div>
-          <label className={labelCls} htmlFor="pronouns">Pronouns (optional)</label>
-          <input id="pronouns" value={data.pronouns} onChange={(e) => update("pronouns", e.target.value)} className={inputCls} placeholder="e.g. she/her" />
-        </div>
-        <div>
-          <label className={labelCls}>Age Range</label>
-          <div className="mt-2 space-y-2">
-            {["18–29", "30–39", "40–49", "50+"].map((opt) => (
-              <label key={opt} className="flex cursor-pointer items-center gap-3 rounded-lg border border-navy/15 bg-cream/40 px-4 py-3 font-body text-base text-navy hover:bg-cream/70">
-                <input
-                  type="radio"
-                  name="ageRange"
-                  value={opt}
-                  checked={data.ageRange === opt}
-                  onChange={(e) => update("ageRange", e.target.value)}
-                  className="h-5 w-5 accent-navy"
-                />
-                {opt}
-              </label>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
-function Step2({ data, update }: StepProps) {
-  const containers = [
-    { value: "discovery", title: "Discovery Session", desc: "A single 45-minute session (£50)." },
-    { value: "full-journey", title: "Full Journey Container", desc: "4–8 week 1-on-1 container (£320)." },
-    { value: "unsure", title: "Not sure yet", desc: "Help me decide what fits best." },
-  ];
-  return (
-    <div className="space-y-5">
-      <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Your Intention</h2>
-      <div>
-        <p className={labelCls}>Which container are you applying for?</p>
-        <div className="mt-3 space-y-3">
-          {containers.map((c) => (
-            <label key={c.value} className={`flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-4 hover:bg-cream/70 ${data.container === c.value ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"}`}>
-              <input
-                type="radio"
-                name="container"
-                value={c.value}
-                checked={data.container === c.value}
-                onChange={(e) => update("container", e.target.value)}
-                className="mt-1 h-5 w-5 accent-navy"
-              />
-              <span>
-                <span className="block font-body text-base font-semibold text-navy">{c.title}</span>
-                <span className="mt-1 block font-body text-sm text-slate">{c.desc}</span>
-              </span>
-            </label>
-          ))}
-        </div>
-      </div>
-      <div>
-        <label className={labelCls} htmlFor="intention">What&apos;s drawing you to this work right now?</label>
-        <textarea id="intention" rows={5} value={data.intention} onChange={(e) => update("intention", e.target.value)} className={inputCls} placeholder="Share what you're hoping to explore or integrate." />
-        <p className={helpCls}>A few sentences is plenty.</p>
-      </div>
-    </div>
-  );
-}
-
-function Step3({ data, update, togglePractice }: StepProps & { togglePractice: (v: string) => void }) {
-  const practices = ["Meditation", "Breathwork", "Somatic movement", "Journaling", "Therapy", "Yoga", "None yet"];
-  return (
-    <div className="space-y-5">
-      <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Experience & Practice</h2>
-      <div>
-        <label className={labelCls} htmlFor="experience">Previous experience with integration or coaching work</label>
-        <textarea id="experience" rows={4} value={data.experience} onChange={(e) => update("experience", e.target.value)} className={inputCls} placeholder="Briefly describe any prior coaching, therapy, or personal practice." />
-      </div>
-      <div>
-        <p className={labelCls}>Current grounding practices (select any that apply)</p>
-        <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
-          {practices.map((p) => {
-            const checked = data.practices.includes(p);
-            return (
-              <label key={p} className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${checked ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"}`}>
-                <input
-                  type="checkbox"
-                  checked={checked}
-                  onChange={() => togglePractice(p)}
-                  className="h-5 w-5 accent-navy"
-                />
-                {p}
-              </label>
-            );
-          })}
-        </div>
-      </div>
-      <div>
-        <label className={labelCls} htmlFor="currentSupport">Are you currently working with a therapist or other practitioner?</label>
-        <textarea id="currentSupport" rows={3} value={data.currentSupport} onChange={(e) => update("currentSupport", e.target.value)} className={inputCls} placeholder="Optional — helpful for context." />
-      </div>
-    </div>
-  );
-}
-
-function Step4({ data, update }: StepProps) {
-  return (
-    <div className="space-y-5">
-      <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Wellbeing & Fit</h2>
-      <div>
-        <label className={labelCls} htmlFor="medicalDisclosure">Any relevant physical or mental health considerations?</label>
-        <textarea id="medicalDisclosure" rows={4} value={data.medicalDisclosure} onChange={(e) => update("medicalDisclosure", e.target.value)} className={inputCls} placeholder="Kept strictly confidential. Share only what feels right." />
-      </div>
-      <div>
-        <label className={labelCls} htmlFor="medications">Current medications (optional)</label>
-        <input id="medications" value={data.medications} onChange={(e) => update("medications", e.target.value)} className={inputCls} placeholder="e.g. SSRIs, others" />
-      </div>
-      <div>
-        <p className={labelCls}>How much weekly time can you commit to practice between sessions?</p>
+      {/* Gender — radio */}
+      <fieldset>
+        <legend className={labelCls}>
+          Gender <span className="text-red-600">*</span>
+        </legend>
         <div className="mt-3 space-y-2">
-          {["Less than 1 hr", "1–3 hrs", "3–5 hrs", "5+ hrs"].map((opt) => (
-            <label key={opt} className="flex cursor-pointer items-center gap-3 rounded-lg border border-navy/15 bg-cream/40 px-4 py-3 font-body text-base text-navy hover:bg-cream/70">
+          {genderOpts.map((opt) => (
+            <label
+              key={opt}
+              className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+                data.gender === opt ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+              }`}
+            >
               <input
                 type="radio"
-                name="timeCommitment"
+                name="gender"
                 value={opt}
-                checked={data.timeCommitment === opt}
-                onChange={(e) => update("timeCommitment", e.target.value)}
+                checked={data.gender === opt}
+                onChange={(e) => update("gender", e.target.value)}
                 className="h-5 w-5 accent-navy"
               />
               {opt}
             </label>
           ))}
         </div>
-      </div>
+        {errors.gender && <p className={errorTextCls}>{errors.gender}</p>}
+      </fieldset>
+
+      {/* Pronouns */}
       <div>
-        <label className={labelCls} htmlFor="startTiming">When are you hoping to begin?</label>
-        <input id="startTiming" value={data.startTiming} onChange={(e) => update("startTiming", e.target.value)} className={inputCls} placeholder="e.g. Within 2 weeks, next month" />
+        <label className={labelCls} htmlFor="pronouns">
+          Pronouns <span className="text-red-600">*</span>
+        </label>
+        <input
+          id="pronouns"
+          value={data.pronouns}
+          onChange={(e) => update("pronouns", e.target.value)}
+          className={fieldCls(!!errors.pronouns)}
+          placeholder="e.g. she/her, they/them"
+          aria-invalid={!!errors.pronouns}
+        />
+        {errors.pronouns && <p className={errorTextCls}>{errors.pronouns}</p>}
+      </div>
+
+      {/* DOB */}
+      <div>
+        <label className={labelCls} htmlFor="dob">
+          Date of Birth <span className="text-red-600">*</span>
+        </label>
+        <input
+          id="dob"
+          type="date"
+          value={data.dob}
+          onChange={(e) => update("dob", e.target.value)}
+          className={fieldCls(!!errors.dob)}
+          aria-invalid={!!errors.dob}
+        />
+        {errors.dob && <p className={errorTextCls}>{errors.dob}</p>}
+      </div>
+
+      {/* General Health */}
+      <div>
+        <label className={labelCls} htmlFor="generalHealth">
+          General Health <span className="text-red-600">*</span>
+        </label>
+        <textarea
+          id="generalHealth"
+          rows={4}
+          value={data.generalHealth}
+          onChange={(e) => update("generalHealth", e.target.value)}
+          className={fieldCls(!!errors.generalHealth)}
+          placeholder="A brief overview of your physical and mental wellbeing."
+          aria-invalid={!!errors.generalHealth}
+        />
+        {errors.generalHealth && <p className={errorTextCls}>{errors.generalHealth}</p>}
+      </div>
+
+      {/* Support Network */}
+      <div>
+        <label className={labelCls} htmlFor="supportNetwork">
+          Support Network <span className="text-red-600">*</span>
+        </label>
+        <textarea
+          id="supportNetwork"
+          rows={4}
+          value={data.supportNetwork}
+          onChange={(e) => update("supportNetwork", e.target.value)}
+          className={fieldCls(!!errors.supportNetwork)}
+          placeholder="Who is around you day-to-day — partner, friends, therapist, community?"
+          aria-invalid={!!errors.supportNetwork}
+        />
+        {errors.supportNetwork && <p className={errorTextCls}>{errors.supportNetwork}</p>}
       </div>
     </div>
   );
 }
 
-function Step5({ data, update }: StepProps) {
+function Step2({
+  data,
+  update,
+  errors,
+  toggleMicrodosing,
+}: StepProps & { toggleMicrodosing: (v: string) => void }) {
+  const priorOpts = [
+    { value: "none", label: "None", desc: "I have no prior experience." },
+    { value: "some", label: "Some", desc: "A handful of intentional experiences." },
+    { value: "moderate", label: "Moderate", desc: "A regular, considered practice over time." },
+    { value: "extensive", label: "Extensive", desc: "Long-standing, deep familiarity." },
+  ];
+  const microOpts = [
+    "Not currently microdosing",
+    "Exploring / researching",
+    "Occasional (a few times a month)",
+    "Structured protocol (e.g. Fadiman, Stamets)",
+    "Daily or near-daily",
+    "Prefer not to say",
+  ];
+
   return (
-    <div className="space-y-5">
-      <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Agreements</h2>
+    <div className="space-y-6">
       <div>
-        <label className={labelCls} htmlFor="hearAbout">How did you hear about Still Harbour? (optional)</label>
-        <input id="hearAbout" value={data.hearAbout} onChange={(e) => update("hearAbout", e.target.value)} className={inputCls} placeholder="A friend, podcast, search…" />
-      </div>
-      <div>
-        <label className={labelCls} htmlFor="additionalNotes">Anything else you&apos;d like us to know?</label>
-        <textarea id="additionalNotes" rows={4} value={data.additionalNotes} onChange={(e) => update("additionalNotes", e.target.value)} className={inputCls} placeholder="Optional — questions, context, anything at all." />
+        <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Experience Baseline</h2>
+        <p className="mt-1 font-body text-sm text-slate">Helps us meet you where you are.</p>
       </div>
 
-      <div className="rounded-xl border border-navy/20 bg-cream/60 p-5">
-        <label className="flex cursor-pointer items-start gap-3">
-          <input
-            type="checkbox"
-            checked={data.agreeHarmReduction}
-            onChange={(e) => update("agreeHarmReduction", e.target.checked)}
-            className="mt-1 h-5 w-5 accent-navy"
-          />
-          <span className="font-body text-sm leading-relaxed text-navy">
-            I understand that Still Harbour Coaching operates under strict harm-reduction principles and does not provide medical advice, therapy, diagnosis, or facilitate the sourcing of any controlled substances.
-          </span>
-        </label>
-      </div>
+      {/* Prior experience — radio */}
+      <fieldset>
+        <legend className={labelCls}>
+          Prior Experience <span className="text-red-600">*</span>
+        </legend>
+        <div className="mt-3 space-y-3">
+          {priorOpts.map((opt) => (
+            <label
+              key={opt.value}
+              className={`flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-4 hover:bg-cream/70 ${
+                data.priorExperience === opt.value ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+              }`}
+            >
+              <input
+                type="radio"
+                name="priorExperience"
+                value={opt.value}
+                checked={data.priorExperience === opt.value}
+                onChange={(e) => update("priorExperience", e.target.value)}
+                className="mt-1 h-5 w-5 accent-navy"
+              />
+              <span>
+                <span className="block font-body text-base font-semibold text-navy">{opt.label}</span>
+                <span className="mt-1 block font-body text-sm text-slate">{opt.desc}</span>
+              </span>
+            </label>
+          ))}
+        </div>
+        {errors.priorExperience && <p className={errorTextCls}>{errors.priorExperience}</p>}
+      </fieldset>
 
-      <div className="rounded-xl border border-navy/20 bg-cream/60 p-5">
-        <label className="flex cursor-pointer items-start gap-3">
-          <input
-            type="checkbox"
-            checked={data.agreePrivacy}
-            onChange={(e) => update("agreePrivacy", e.target.checked)}
-            className="mt-1 h-5 w-5 accent-navy"
-          />
-          <span className="font-body text-sm leading-relaxed text-navy">
-            I have read and agree to the{" "}
-            <Link to="/privacy" className="underline underline-offset-2 hover:text-slate">
-              Privacy Policy
-            </Link>
-            , and consent to the confidential handling of the information provided above.
-          </span>
-        </label>
-      </div>
+      {/* Current microdosing — checkboxes */}
+      <fieldset>
+        <legend className={labelCls}>
+          Current Microdosing <span className="text-red-600">*</span>
+        </legend>
+        <p className="mt-1 font-body text-xs text-slate">Select all that apply.</p>
+        <div className="mt-3 space-y-2">
+          {microOpts.map((opt) => {
+            const checked = data.currentMicrodosing.includes(opt);
+            return (
+              <label
+                key={opt}
+                className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+                  checked ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={() => toggleMicrodosing(opt)}
+                  className="h-5 w-5 accent-navy"
+                />
+                {opt}
+              </label>
+            );
+          })}
+        </div>
+        {errors.currentMicrodosing && <p className={errorTextCls}>{errors.currentMicrodosing}</p>}
+      </fieldset>
+    </div>
+  );
+}
+
+function StepPlaceholder({ title, note }: { title: string; note: string }) {
+  return (
+    <div className="space-y-3">
+      <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">{title}</h2>
+      <p className="font-body text-base text-slate">{note}</p>
     </div>
   );
 }
