@@ -30,6 +30,12 @@ type FormData = {
   // Step 2 — Experience Baseline
   priorExperience: string;
   currentMicrodosing: string[];
+  // Step 3 — Intention & Fit
+  motivations: string[];
+  goals: string;
+  mentalHealthDescription: string;
+  conditions: string[];
+  additionalConditions: string;
   // Later steps (placeholders retained for persistence)
   container: string;
   intention: string;
@@ -53,6 +59,11 @@ const initialData: FormData = {
   supportNetwork: "",
   priorExperience: "",
   currentMicrodosing: [],
+  motivations: [],
+  goals: "",
+  mentalHealthDescription: "",
+  conditions: [],
+  additionalConditions: "",
   container: "",
   intention: "",
   practices: [],
@@ -90,8 +101,16 @@ function validateStep(step: number, data: FormData): Errors {
     if (!data.priorExperience) e.priorExperience = "Please select an option.";
     if (data.currentMicrodosing.length === 0) e.currentMicrodosing = "Please select at least one option.";
   }
+  if (step === 3) {
+    if (data.motivations.length === 0) e.motivations = "Please select at least one option.";
+    if (!data.goals.trim()) e.goals = "Please share your goals in your own words.";
+    if (!data.mentalHealthDescription.trim()) e.mentalHealthDescription = "Please describe your mental health.";
+    if (data.conditions.length === 0) e.conditions = "Please select at least one option.";
+  }
   return e;
 }
+
+
 
 function ApplyPage() {
   const [step, setStep] = useState(1);
