@@ -49,7 +49,7 @@ function Index() {
                 variant="outline"
                 className="h-14 w-full border-navy/25 bg-cream/60 px-6 font-body text-sm font-medium text-navy backdrop-blur-sm hover:bg-cream/80 hover:text-navy sm:w-auto sm:text-base"
               >
-                Read the Safety & Harm-Reduction Guide
+                Learn More
               </Button>
             </div>
           </div>
@@ -185,7 +185,7 @@ function Index() {
                 The Discovery Session
               </h3>
               <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
-                A single 75-minute session to explore where you are, what you&apos;re hoping to integrate, and whether working together is the right fit. You&apos;ll leave with clarity on next steps, grounded practices you can use immediately, and honest guidance, whether or not we continue.
+                A single 45-minute session to explore where you are, what you&apos;re hoping to achieve, and whether working together is the right fit. You&apos;ll leave with clarity on next steps and honest guidance, whether or not we continue.
               </p>
               <Button className="h-14 w-full bg-navy px-8 font-body text-sm font-semibold text-cream shadow-none hover:bg-navy/90 sm:text-base">
                 Apply Now
@@ -199,13 +199,13 @@ function Index() {
                 Deep Work
               </p>
               <h3 className="mb-4 font-display text-2xl font-medium text-navy sm:text-3xl">
-                1-on-1 Integration Container
+                1-on-1 Coaching Container
                 <span className="mt-1 block font-body text-base font-normal text-slate">
-                  8 or 12 Weeks
+                  4-8 Weeks
                 </span>
               </h3>
               <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
-                A held container of weekly sessions, between-session practices, and unlimited voice-note support. We move through preparation, embodied integration, and habit design, so insights become the way you actually live, work, and relate.
+                A held container of four 50-minute sessions, between-session practices, and text or voice-note support throughout. We move through preparation, exploration and deepening, embodied integration, and habit design, so insights become the way you actually live, work, and relate.
               </p>
               <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
                 Apply Now
@@ -232,7 +232,7 @@ function Index() {
               { title: "This is your process", desc: "You are, and will always be, our North Star" },
               { title: "You have full agency", desc: "We go at your pace and respect your boundaries" },
               { title: "Coaching with presence", desc: "An intentional space for slowing down and gaining clarity" },
-              { title: "Complete confidentiality", desc: "We create a safe and private space, just for you" }
+              { title: "Complete confidentiality", desc: "We create a safe and private space together, just for you" }
             ].map((principle, i) => (
               <div key={i} className="text-center">
                 <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full border border-ochre/30">
@@ -310,7 +310,7 @@ function Index() {
             Our Commitment
           </p>
           <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl">
-            A Safe, Non-Judgmental, and Harm-Reduction Focused Space
+            A Safe and Non-Judgmental Space for Personal Growth
           </h2>
           <div className="mx-auto mt-8 max-w-2xl space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
             <p>
