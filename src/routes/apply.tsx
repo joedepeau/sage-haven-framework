@@ -294,7 +294,13 @@ function ApplyPage() {
                 />
               )}
               {step === 3 && (
-                <StepPlaceholder title="Intention & Fit" note="Coming next." />
+                <Step3
+                  data={data}
+                  update={update}
+                  errors={errors}
+                  toggleMotivation={(v) => toggleArray("motivations", v)}
+                  toggleCondition={(v) => toggleArray("conditions", v)}
+                />
               )}
               {step === 4 && (
                 <StepPlaceholder title="Wellbeing" note="Coming next." />
