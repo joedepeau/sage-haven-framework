@@ -135,12 +135,12 @@ function AboutPage() {
                 Baseline assessment, grounding framework creation, and initial course setting.
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
-                <li>1 x 75-minute deep-dive session</li>
-                <li>Custom integration roadmap PDF</li>
+                <li>1 x 45-minute deep-dive session</li>
+                <li>Custom microdosing roadmap</li>
                 <li>Direct email support follow-up</li>
               </ul>
               <p className="mt-8 font-display text-2xl font-medium text-navy">
-                Investment: £150
+                Investment: £50
               </p>
               <div className="mt-8">
                 <Button
@@ -155,18 +155,18 @@ function AboutPage() {
             {/* Signature Container Card */}
             <div className="flex flex-col rounded-xl border-2 border-navy bg-white p-8 shadow-lg sm:p-10">
               <h3 className="font-display text-xl font-medium text-navy">
-                The Fully Anchored Container
+                The Full Journey Container
               </h3>
               <p className="mt-3 font-body text-base text-slate">
-                Comprehensive 1-on-1 partnership for deep mindset shifts and sustained accountability.
+                Comprehensive 1-on-1 partnership for deep mindset shifts and sustained transformation.
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
-                <li>8 bi-weekly 1-on-1 coaching sessions (4-month container)</li>
+                <li>Four 1-on-1 coaching sessions (4-8 week container)</li>
                 <li>Secure text support between sessions</li>
-                <li>Premium habit-tracking dashboard access</li>
+                <li>Sliding-scale and pro-bono options available for qualifying individuals</li>
               </ul>
               <p className="mt-8 font-display text-2xl font-medium text-navy">
-                Investment: £1,200
+                Investment: £320
               </p>
               <div className="mt-8">
                 <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
