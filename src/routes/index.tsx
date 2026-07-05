@@ -42,9 +42,11 @@ function Index() {
               Expert microdose coaching for seekers, explorers, and sailors of the inner seas looking to bridge profound insights with lasting transformation.
             </p>
             <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
-              <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
-                Book an Alignment Call
-              </Button>
+              <Link to="/apply" className="w-full sm:w-auto">
+                <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
+                  Book an Alignment Call
+                </Button>
+              </Link>
               <Link to="/about">
                 <Button
                   variant="outline"
