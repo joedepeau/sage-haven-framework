@@ -21,14 +21,18 @@ const STORAGE_KEY = "stillharbour_apply_draft_v1";
 const TOTAL_STEPS = 5;
 
 type FormData = {
-  fullName: string;
-  email: string;
-  phone: string;
+  // Step 1 — General Info
+  gender: string;
   pronouns: string;
-  ageRange: string;
+  dob: string;
+  generalHealth: string;
+  supportNetwork: string;
+  // Step 2 — Experience Baseline
+  priorExperience: string;
+  currentMicrodosing: string[];
+  // Later steps (placeholders retained for persistence)
   container: string;
   intention: string;
-  experience: string;
   practices: string[];
   currentSupport: string;
   medicalDisclosure: string;
@@ -42,14 +46,15 @@ type FormData = {
 };
 
 const initialData: FormData = {
-  fullName: "",
-  email: "",
-  phone: "",
+  gender: "",
   pronouns: "",
-  ageRange: "",
+  dob: "",
+  generalHealth: "",
+  supportNetwork: "",
+  priorExperience: "",
+  currentMicrodosing: [],
   container: "",
   intention: "",
-  experience: "",
   practices: [],
   currentSupport: "",
   medicalDisclosure: "",
@@ -63,10 +68,10 @@ const initialData: FormData = {
 };
 
 const STEP_LABELS = [
-  "About You",
-  "Your Intention",
-  "Experience & Practice",
-  "Wellbeing & Fit",
+  "General Info",
+  "Experience Baseline",
+  "Intention & Fit",
+  "Wellbeing",
   "Agreements",
 ];
 
