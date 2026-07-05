@@ -39,7 +39,7 @@ function Index() {
               <span className="block sm:inline">Live intentionally.</span>
             </h1>
             <p className="mx-auto mt-8 max-w-2xl font-body text-base leading-relaxed text-slate sm:text-lg md:mt-10 md:text-xl">
-              Expert microdose coaching for seekers, explorers, and sailors of the vast inner seas looking to bridge profound insights with grounded daily routines.
+              Expert microdose coaching for seekers, explorers, and sailors of the inner seas looking to bridge profound insights with lasting transformation.
             </p>
             <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
               <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
@@ -68,7 +68,7 @@ function Index() {
             <div className="flex flex-col justify-center">
               <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Feeling overwhelmed by raw emotions or shifting perspectives?
+                  Feeling overwhelmed by raw emotions or shifting priorities?
                 </p>
               </div>
               <div className="border-t border-navy/10 py-6">
