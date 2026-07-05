@@ -171,9 +171,11 @@ function AboutPage() {
                 Investment: £320
               </p>
               <div className="mt-8">
-                <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
-                  Apply for the Container
-                </Button>
+                <Link to="/apply">
+                  <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
+                    Apply for the Container
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
