@@ -147,14 +147,14 @@ function Index() {
                 About the Practice
               </p>
               <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl">
-                A grounded companion for your inner voyage
+                A supportive companion for your inner voyage
               </h2>
               <div className="mt-6 space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
                 <p>
-                  I&apos;m a certified microdosing coach with training in trauma-informed care, harm reduction, and somatic practice. My work sits at the intersection of professional rigor and deep human presence.
+                  I&apos;m a certified microdosing coach with training in trauma-informed care, harm reduction, and integration. My work sits at the intersection of professional rigour and deep human presence.
                 </p>
                 <p>
-                  Client safety is the foundation of everything we do. Before any exploration, we build clear agreements, grounding practices, and a shared map of the journey ahead, so you always know where you are and what comes next.
+                  Client safety is the foundation of everything I do. Before any exploration, we build clear agreements, grounding practices, and a shared map of the journey ahead, so you always know where you are and what comes next.
                 </p>
                 <p>
                   Sessions draw on established microdosing frameworks, including preparation and intention setting, embodied reflection, meaning-making dialogue, and habit design, so profound moments become durable change in daily life.
@@ -229,9 +229,9 @@ function Index() {
           </div>
           <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
             {[
-              { title: "This is your process", desc: "You will always be our North Star" },
+              { title: "This is your process", desc: "You are, and will always be, our North Star" },
               { title: "You have full agency", desc: "We go at your pace and respect your boundaries" },
-              { title: "Coaching with presence", desc: "We are entirely focused on you and your process" },
+              { title: "Coaching with presence", desc: "An intentional space for slowing down and gaining clarity" },
               { title: "Complete confidentiality", desc: "We create a safe and private space, just for you" }
             ].map((principle, i) => (
               <div key={i} className="text-center">
