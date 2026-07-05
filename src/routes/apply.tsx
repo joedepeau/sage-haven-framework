@@ -30,6 +30,12 @@ type FormData = {
   // Step 2 — Experience Baseline
   priorExperience: string;
   currentMicrodosing: string[];
+  // Step 3 — Intention & Fit
+  motivations: string[];
+  goals: string;
+  mentalHealthDescription: string;
+  conditions: string[];
+  additionalConditions: string;
   // Later steps (placeholders retained for persistence)
   container: string;
   intention: string;
@@ -53,6 +59,11 @@ const initialData: FormData = {
   supportNetwork: "",
   priorExperience: "",
   currentMicrodosing: [],
+  motivations: [],
+  goals: "",
+  mentalHealthDescription: "",
+  conditions: [],
+  additionalConditions: "",
   container: "",
   intention: "",
   practices: [],
@@ -90,8 +101,16 @@ function validateStep(step: number, data: FormData): Errors {
     if (!data.priorExperience) e.priorExperience = "Please select an option.";
     if (data.currentMicrodosing.length === 0) e.currentMicrodosing = "Please select at least one option.";
   }
+  if (step === 3) {
+    if (data.motivations.length === 0) e.motivations = "Please select at least one option.";
+    if (!data.goals.trim()) e.goals = "Please share your goals in your own words.";
+    if (!data.mentalHealthDescription.trim()) e.mentalHealthDescription = "Please describe your mental health.";
+    if (data.conditions.length === 0) e.conditions = "Please select at least one option.";
+  }
   return e;
 }
+
+
 
 function ApplyPage() {
   const [step, setStep] = useState(1);
@@ -134,7 +153,7 @@ function ApplyPage() {
     });
   };
 
-  const toggleArray = (key: "practices" | "currentMicrodosing", value: string) => {
+  const toggleArray = (key: "practices" | "currentMicrodosing" | "motivations" | "conditions", value: string) => {
     setData((d) => {
       const arr = d[key];
       const has = arr.includes(value);
@@ -275,7 +294,13 @@ function ApplyPage() {
                 />
               )}
               {step === 3 && (
-                <StepPlaceholder title="Intention & Fit" note="Coming next." />
+                <Step3
+                  data={data}
+                  update={update}
+                  errors={errors}
+                  toggleMotivation={(v) => toggleArray("motivations", v)}
+                  toggleCondition={(v) => toggleArray("conditions", v)}
+                />
               )}
               {step === 4 && (
                 <StepPlaceholder title="Wellbeing" note="Coming next." />
@@ -552,6 +577,162 @@ function Step2({
     </div>
   );
 }
+
+function Step3({
+  data,
+  update,
+  errors,
+  toggleMotivation,
+  toggleCondition,
+}: StepProps & {
+  toggleMotivation: (v: string) => void;
+  toggleCondition: (v: string) => void;
+}) {
+  const motivationOpts = [
+    "Emotional regulation",
+    "Clarity & focus",
+    "Creativity",
+    "Spiritual exploration",
+    "Relationship & connection",
+    "Grief or life transition",
+    "Habit change",
+    "Curiosity",
+  ];
+  const conditionOpts = [
+    "None of the below",
+    "Anxiety",
+    "Depression",
+    "ADHD / attention differences",
+    "Trauma / PTSD",
+    "Chronic stress or burnout",
+    "Neurodivergence (autism, etc.)",
+    "Chronic physical illness",
+    "Prefer not to say",
+  ];
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Intention & Fit</h2>
+        <p className="mt-1 font-body text-sm text-slate">
+          Help us understand what&apos;s bringing you here and what to hold with care.
+        </p>
+      </div>
+
+      {/* Motivations — checkboxes */}
+      <fieldset>
+        <legend className={labelCls}>
+          Motivations <span className="text-red-600">*</span>
+        </legend>
+        <p className="mt-1 font-body text-xs text-slate">Select all that apply.</p>
+        <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+          {motivationOpts.map((opt) => {
+            const checked = data.motivations.includes(opt);
+            return (
+              <label
+                key={opt}
+                className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+                  checked ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={() => toggleMotivation(opt)}
+                  className="h-5 w-5 accent-navy"
+                />
+                {opt}
+              </label>
+            );
+          })}
+        </div>
+        {errors.motivations && <p className={errorTextCls}>{errors.motivations}</p>}
+      </fieldset>
+
+      {/* Goals */}
+      <div>
+        <label className={labelCls} htmlFor="goals">
+          Goals in your own words <span className="text-red-600">*</span>
+        </label>
+        <textarea
+          id="goals"
+          rows={5}
+          value={data.goals}
+          onChange={(e) => update("goals", e.target.value)}
+          className={fieldCls(!!errors.goals)}
+          placeholder="What would a meaningful outcome from this container look like for you?"
+          aria-invalid={!!errors.goals}
+        />
+        {errors.goals && <p className={errorTextCls}>{errors.goals}</p>}
+      </div>
+
+      {/* Mental Health Description */}
+      <div>
+        <label className={labelCls} htmlFor="mentalHealthDescription">
+          Mental Health Description <span className="text-red-600">*</span>
+        </label>
+        <textarea
+          id="mentalHealthDescription"
+          rows={5}
+          value={data.mentalHealthDescription}
+          onChange={(e) => update("mentalHealthDescription", e.target.value)}
+          className={fieldCls(!!errors.mentalHealthDescription)}
+          placeholder="How would you describe your current mental and emotional landscape?"
+          aria-invalid={!!errors.mentalHealthDescription}
+        />
+        {errors.mentalHealthDescription && (
+          <p className={errorTextCls}>{errors.mentalHealthDescription}</p>
+        )}
+      </div>
+
+      {/* Profiles / Conditions — checkboxes */}
+      <fieldset>
+        <legend className={labelCls}>
+          Profiles / Conditions <span className="text-red-600">*</span>
+        </legend>
+        <p className="mt-1 font-body text-xs text-slate">Select all that apply. Kept strictly confidential.</p>
+        <div className="mt-3 space-y-2">
+          {conditionOpts.map((opt) => {
+            const checked = data.conditions.includes(opt);
+            return (
+              <label
+                key={opt}
+                className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+                  checked ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+                }`}
+              >
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={() => toggleCondition(opt)}
+                  className="h-5 w-5 accent-navy"
+                />
+                {opt}
+              </label>
+            );
+          })}
+        </div>
+        {errors.conditions && <p className={errorTextCls}>{errors.conditions}</p>}
+      </fieldset>
+
+      {/* Additional Conditions */}
+      <div>
+        <label className={labelCls} htmlFor="additionalConditions">
+          Additional Conditions <span className="font-normal text-slate">(optional)</span>
+        </label>
+        <textarea
+          id="additionalConditions"
+          rows={3}
+          value={data.additionalConditions}
+          onChange={(e) => update("additionalConditions", e.target.value)}
+          className={fieldCls(false)}
+          placeholder="Anything else about your health or context we should be aware of?"
+        />
+      </div>
+    </div>
+  );
+}
+
 
 function StepPlaceholder({ title, note }: { title: string; note: string }) {
   return (
