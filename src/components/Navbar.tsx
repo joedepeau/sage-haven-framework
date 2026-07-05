@@ -15,14 +15,22 @@ export function Navbar() {
           </span>
         </Link>
 
-        {/* Book Call Button */}
-        <Button
-          variant="default"
-          size="default"
-          className="h-11 bg-ochre px-6 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:h-12 sm:px-8"
-        >
-          Book Call
-        </Button>
+        {/* Nav links */}
+        <nav className="flex items-center gap-6">
+          <Link
+            to="/about"
+            className="font-body text-sm font-medium text-navy transition-colors hover:text-ochre sm:text-base"
+          >
+            About
+          </Link>
+          <Button
+            variant="default"
+            size="default"
+            className="h-11 bg-ochre px-6 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:h-12 sm:px-8"
+          >
+            Book Call
+          </Button>
+        </nav>
       </div>
     </header>
   );
