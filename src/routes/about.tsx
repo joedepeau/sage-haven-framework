@@ -113,6 +113,71 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Pricing Section */}
+      <section className="bg-cream px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
+        <div className="mx-auto max-w-5xl">
+          <div className="text-center">
+            <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
+              Investing in Your Integration Journey
+            </h2>
+            <p className="mx-auto mt-6 max-w-3xl font-body text-base leading-relaxed text-slate sm:text-lg">
+              Clear, structured containers designed to provide continuous accountability, stability, and presence.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2">
+            {/* Discovery Session Card */}
+            <div className="flex flex-col rounded-xl border border-navy/20 bg-white p-8 sm:p-10">
+              <h3 className="font-display text-xl font-medium text-navy">
+                The Discovery & Alignment Session
+              </h3>
+              <p className="mt-3 font-body text-base text-slate">
+                Baseline assessment, grounding framework creation, and initial course setting.
+              </p>
+              <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
+                <li>1 x 75-minute deep-dive session</li>
+                <li>Custom integration roadmap PDF</li>
+                <li>Direct email support follow-up</li>
+              </ul>
+              <p className="mt-8 font-display text-2xl font-medium text-navy">
+                Investment: £150
+              </p>
+              <div className="mt-8">
+                <Button
+                  variant="outline"
+                  className="h-14 w-full border-navy/30 font-body text-base font-semibold text-navy hover:bg-navy/5"
+                >
+                  Book Discovery Session
+                </Button>
+              </div>
+            </div>
+
+            {/* Signature Container Card */}
+            <div className="flex flex-col rounded-xl border-2 border-navy bg-white p-8 shadow-lg sm:p-10">
+              <h3 className="font-display text-xl font-medium text-navy">
+                The Fully Anchored Container
+              </h3>
+              <p className="mt-3 font-body text-base text-slate">
+                Comprehensive 1-on-1 partnership for deep mindset shifts and sustained accountability.
+              </p>
+              <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
+                <li>8 bi-weekly 1-on-1 coaching sessions (4-month container)</li>
+                <li>Secure text support between sessions</li>
+                <li>Premium habit-tracking dashboard access</li>
+              </ul>
+              <p className="mt-8 font-display text-2xl font-medium text-navy">
+                Investment: £1,200
+              </p>
+              <div className="mt-8">
+                <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
+                  Apply for the Container
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Approach Section */}
       <section className="px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
         <div className="mx-auto max-w-4xl">
