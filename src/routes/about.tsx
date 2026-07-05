@@ -63,6 +63,56 @@ function AboutPage() {
         </div>
       </section>
 
+      {/* Philosophy Section */}
+      <section className="bg-sage/20 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
+            The Importance of a Steady Helm.
+          </h2>
+          <p className="mt-8 font-body text-base leading-relaxed text-slate sm:text-lg">
+            True transformation rarely arrives in a single, blinding insight. More often, it begins with a quiet decision to show up for yourself—again and again. The real work of integration happens not in the peak moment, but in the patient, structured habits that follow: the morning grounding practice, the honest conversation, the gentle return to center when life pulls you off course.
+          </p>
+          <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
+            Lasting change is built in the small, repeated choices we make when no one is watching. It is the steady helm that keeps the ship on course through both calm seas and sudden storms. My role is to help you design and hold those daily structures, so that insight becomes embodied wisdom and intention becomes lived reality.
+          </p>
+        </div>
+      </section>
+
+      {/* Credentials Section */}
+      <section className="border-t border-navy/10 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-10 md:grid-cols-3">
+            <div>
+              <h3 className="font-display text-xl font-medium text-navy">Certified Frameworks</h3>
+              <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-base text-slate">
+                <li>Integrative Coaching Certification (ICF-aligned)</li>
+                <li>Trauma-Informed Care Specialist</li>
+                <li>Harm-Reduction &amp; Safety Protocols</li>
+                <li>Somatic Grounding Practitioner</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-display text-xl font-medium text-navy">Mindfulness &amp; Grounding</h3>
+              <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-base text-slate">
+                <li>Mindfulness-Based Stress Reduction (MBSR)</li>
+                <li>Vipassana &amp; Somatic Meditation Training</li>
+                <li>Breathwork &amp; Nervous System Regulation</li>
+                <li>Embodied Presence Facilitation</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-display text-xl font-medium text-navy">Professional Background</h3>
+              <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-base text-slate">
+                <li>Graduate degree in Psychology / Counseling</li>
+                <li>Former Director of Wellness Programs</li>
+                <li>Published work in behavioral health integration</li>
+                <li>Guest faculty at integrative health institutes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-navy/10 bg-cream px-6 py-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
