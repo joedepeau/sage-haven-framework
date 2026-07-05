@@ -153,7 +153,7 @@ function ApplyPage() {
     });
   };
 
-  const toggleArray = (key: "practices" | "currentMicrodosing", value: string) => {
+  const toggleArray = (key: "practices" | "currentMicrodosing" | "motivations" | "conditions", value: string) => {
     setData((d) => {
       const arr = d[key];
       const has = arr.includes(value);
