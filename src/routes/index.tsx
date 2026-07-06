@@ -39,7 +39,7 @@ function Index() {
               <span className="block sm:inline">Live intentionally.</span>
             </h1>
             <p className="mx-auto mt-8 max-w-2xl font-body text-base leading-relaxed text-slate sm:text-lg md:mt-10 md:text-xl">
-              Expert microdose coaching for seekers, explorers, and sailors of the inner seas looking to bridge profound insights with lasting transformation.
+              Professional microdose coaching for seekers, explorers, and sailors of the inner seas looking to bridge profound insights with lasting transformation.
             </p>
             <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
               <Link to="/apply" className="w-full sm:w-auto">
@@ -240,7 +240,7 @@ function Index() {
               { title: "This is your process", desc: "You are, and will always be, our North Star" },
               { title: "You have full agency", desc: "We go at your pace and respect your boundaries" },
               { title: "Coaching with presence", desc: "An intentional space for slowing down and gaining clarity" },
-              { title: "Complete confidentiality", desc: "We create a safe and private space together, just for you" }
+              { title: "Complete confidentiality", desc: "We create a safe and private container together, just for you" }
             ].map((principle, i) => (
               <div key={i} className="text-center">
                 <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full border border-ochre/30">
