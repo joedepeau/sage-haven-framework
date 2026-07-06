@@ -233,7 +233,7 @@ function Index() {
                 </span>
               </h3>
               <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
-                A bespoke integration container designed to match your goals and needs. We will explore the insights from your journey, work together to deepen and embody them, and design an action plan to turn them into lasting transformation in your life and relationship.
+                A customised integration container designed to match your goals and needs. We will explore the insights from your journey, work together to deepen and embody them, and design an action plan to turn them into lasting transformation in your life and relationship.
               </p>
               <Link to="/apply">
                 <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
