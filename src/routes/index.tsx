@@ -39,7 +39,7 @@ function Index() {
               <span className="block sm:inline">Live intentionally.</span>
             </h1>
             <p className="mx-auto mt-8 max-w-2xl font-body text-base leading-relaxed text-slate sm:text-lg md:mt-10 md:text-xl">
-              Professional microdose coaching for seekers, explorers, and sailors of the inner seas looking to bridge profound insights with lasting transformation.
+              Professional integration and microdose coaching for seekers, explorers, and sailors of the inner seas looking to bridge profound insights with lasting transformation.
             </p>
             <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
               <Link to="/apply" className="w-full sm:w-auto">
@@ -199,7 +199,7 @@ function Index() {
             </div>
             <div className="relative flex flex-col rounded-2xl border-2 border-ochre bg-white p-8 shadow-md sm:p-10">
               <span className="absolute -top-3 left-8 rounded-full bg-ochre px-4 py-1 font-body text-xs font-semibold uppercase tracking-widest text-navy">
-                Signature Container
+                MICRODOSING CONTAINER
               </span>
               <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
                 Deep Work
