@@ -98,7 +98,7 @@ function Index() {
               {
                 icon: Anchor,
                 title: "01 / Be Anchored",
-                desc: "We establish your baseline safety, set clear boundaries, and build a solid foundation of supportive daily practices.",
+                desc: "We establish your baseline safety, set clear boundaries, and build a solid foundation of supportive practices.",
               },
               {
                 icon: Compass,
