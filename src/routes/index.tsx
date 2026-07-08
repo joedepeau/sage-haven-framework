@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Anchor, Compass, Lamp } from "lucide-react";
 import { LighthouseIcon } from "@/components/icons/LighthouseIcon";
 import heroBg from "@/assets/hero-bg.jpg";
-import coachPortrait from "@/assets/coach-portrait.jpg";
+import coachPortrait from "@/assets/coach-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -137,7 +137,7 @@ function Index() {
             <div className="md:col-span-2">
               <div className="relative overflow-hidden rounded-2xl bg-navy/10 shadow-sm">
                 <img
-                  src={coachPortrait}
+                  src={coachPortrait.url}
                   alt="Portrait of the integration coach"
                   width={768}
                   height={1024}
