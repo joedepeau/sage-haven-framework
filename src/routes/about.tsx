@@ -70,7 +70,7 @@ function AboutPage() {
             The Importance of a Steady Helm.
           </h2>
           <p className="mt-8 font-body text-base leading-relaxed text-slate sm:text-lg">
-            True transformation rarely arrives in a single, blinding insight. More often, it begins with a quiet decision to show up for yourself - again and again. The real work happens not in the peak moment, but in the patient, structured habits that follow: the morning grounding practice, the honest conversation, the gentle return to centre when life pulls you off course.
+            True transformation rarely arrives in a single, blinding insight. More often, it begins with a quiet decision to show up for yourself - again and again. The real work happens not in the peak moment, but in the patient, structured habits that follow: the morning movement or meditation practice, the honest conversation, the kind action, the gentle return to centre when life pulls you off course.
           </p>
           <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
             Lasting change is built in the small, repeated choices we make when no one is watching. It is the steady helm that keeps the ship on course through both calm seas and sudden storms. My role is to help you design and hold those daily structures, so that insight becomes embodied wisdom and intention becomes lived reality.
