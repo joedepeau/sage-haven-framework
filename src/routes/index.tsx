@@ -323,7 +323,7 @@ function Index() {
             Ready to dive in?
           </h2>
           <p className="mx-auto mt-6 max-w-xl font-body text-base leading-relaxed text-slate sm:text-lg">
-            Take the first step toward a more aligned and purposeful life. Schedule a complimentary discovery call to explore how we can work together.
+            Take the first step toward a more aligned and purposeful life. Schedule a discovery call to explore how we can work together.
           </p>
           <div className="mt-10">
             <Button className="h-12 bg-ochre px-10 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
