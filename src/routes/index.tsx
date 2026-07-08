@@ -323,7 +323,7 @@ function Index() {
             Ready to dive in?
           </h2>
           <p className="mx-auto mt-6 max-w-xl font-body text-base leading-relaxed text-slate sm:text-lg">
-            Take the first step toward a more aligned and purposeful life. Schedule a complimentary discovery call to explore how we can work together.
+            Take the first step toward a more aligned and purposeful life. Schedule a discovery call to explore how we can work together.
           </p>
           <div className="mt-10">
             <Button className="h-12 bg-ochre px-10 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
@@ -344,7 +344,7 @@ function Index() {
           </h2>
           <div className="mx-auto mt-8 max-w-2xl space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
             <p>
-              This work is coaching. It is not psychotherapy, medical care, or clinical treatment, and it does not diagnose, prescribe, or replace advice from a licensed physician or mental health professional.
+              This work is coaching and personal development. It is not psychotherapy, medical care, or clinical treatment, and it does not diagnose, prescribe, or replace advice from a licensed physician or mental health professional.
             </p>
             <p>
               We hold your experience with confidentiality, without judgment, and through a harm-reduction lens, focused on your safety, agency, and long-term wellbeing. If clinical support is what you need, we will say so, honestly, and help you find appropriate care.
