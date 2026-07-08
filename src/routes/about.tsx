@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import coachPortrait from "@/assets/coach-portrait.jpg";
+import coachPortrait from "@/assets/coach-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
