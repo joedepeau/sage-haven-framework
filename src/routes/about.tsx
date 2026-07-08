@@ -200,9 +200,9 @@ function AboutPage() {
       {/* Compliance Callout Box */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl rounded-xl border border-navy/20 bg-cream p-6 shadow-sm sm:p-8 lg:p-10">
-          <p className="font-body text-sm leading-relaxed text-slate sm:text-base">
+            <p className="font-body text-sm leading-relaxed text-slate sm:text-base">
             <span className="font-semibold text-navy">Professional Boundaries & Harm Reduction:</span>{" "}
-            Please note that my practice operates strictly within a coaching framework. I am an integration coach, not a psychotherapist, medical doctor, or mental health clinician. I do not provide medical advice, diagnosis, treatment, or therapy. Furthermore, I operate strictly under harm-reduction principles; I do not distribute, sell, recommend, or facilitate the sourcing of illegal or controlled substances.
+            Please note that my practice operates strictly within a coaching framework. I am a coach - not a psychotherapist, medical doctor, or mental health clinician. I do not provide medical advice, diagnosis, treatment, or therapy. Furthermore, I operate strictly under harm-reduction principles; I do not distribute, sell, recommend, or facilitate the sourcing of illegal or controlled substances.
           </p>
         </div>
       </section>
