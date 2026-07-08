@@ -125,7 +125,7 @@ function AboutPage() {
             </p>
           </div>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-2">
+          <div className="mt-16 grid gap-8 md:grid-cols-3">
             {/* Discovery Session Card */}
             <div className="flex flex-col rounded-xl border border-navy/20 bg-white p-8 sm:p-10">
               <h3 className="font-display text-xl font-medium text-navy">
@@ -149,6 +149,31 @@ function AboutPage() {
                     className="h-14 w-full border-navy/30 font-body text-base font-semibold text-navy hover:bg-navy/5"
                   >
                     Book Discovery Session
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* New Container Card */}
+            <div className="flex flex-col rounded-xl border-2 border-navy bg-white p-8 shadow-lg sm:p-10">
+              <h3 className="font-display text-xl font-medium text-navy">
+                [New Container Title]
+              </h3>
+              <p className="mt-3 font-body text-base text-slate">
+                [Description of the new coaching container and what it offers.]
+              </p>
+              <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
+                <li>[Feature or session detail]</li>
+                <li>[Feature or support detail]</li>
+                <li>[Feature or accessibility detail]</li>
+              </ul>
+              <p className="mt-8 font-display text-2xl font-medium text-navy">
+                Investment: £[Price]
+              </p>
+              <div className="mt-8">
+                <Link to="/apply">
+                  <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
+                    [Apply / Book Button]
                   </Button>
                 </Link>
               </div>
