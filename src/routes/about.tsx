@@ -157,7 +157,7 @@ function AboutPage() {
             {/* Signature Container Card */}
             <div className="flex flex-col rounded-xl border-2 border-navy bg-white p-8 shadow-lg sm:p-10">
               <h3 className="font-display text-xl font-medium text-navy">
-                The Full Journey Container
+                The Microdosing Journey Container
               </h3>
               <p className="mt-3 font-body text-base text-slate">
                 Comprehensive 1-on-1 partnership for deep mindset shifts and sustained transformation.
