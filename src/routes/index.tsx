@@ -108,7 +108,7 @@ function Index() {
               {
                 icon: LighthouseIcon,
                 title: "03 / Live Intentionally",
-                desc: "We co-create actionable habits to turn fleeting breakthrough moments into lasting, purposeful transformation.",
+                desc: "We identify actionable habits to turn fleeting breakthrough moments into lasting, purposeful transformation.",
               },
             ].map((card, i) => (
               <div
