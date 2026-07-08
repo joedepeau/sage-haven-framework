@@ -8,9 +8,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About | Integration Coaching" },
-      { name: "description", content: "Learn about the practice behind Integration Coaching — grounded guidance for intentional journeys." },
+      { name: "description", content: "Learn about the practice behind Integration Coaching — steady guidance for intentional journeys." },
       { property: "og:title", content: "About | Integration Coaching" },
-      { property: "og:description", content: "Learn about the practice behind Integration Coaching — grounded guidance for intentional journeys." },
+      { property: "og:description", content: "Learn about the practice behind Integration Coaching — steady guidance for intentional journeys." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
