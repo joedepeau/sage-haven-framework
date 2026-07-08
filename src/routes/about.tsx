@@ -43,7 +43,7 @@ function AboutPage() {
             {/* Right — Text */}
             <div className="flex flex-col justify-center md:col-span-3">
               <h1 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
-                Grounded Guidance for Intentional Journeys.
+                Steady Guidance for Intentional Journeys.
               </h1>
               <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
                 Meet [Your Name], your partner in psychological grounding, mindset alignment, and integration coaching.
