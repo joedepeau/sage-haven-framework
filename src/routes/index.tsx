@@ -77,12 +77,12 @@ function Index() {
               </div>
               <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Lacking a clear, structured framework to measure your personal growth?
+                  Navigating complex changes without a safe, non-judgmental professional to talk to?
                 </p>
               </div>
               <div className="border-t border-b border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Navigating complex changes without a safe, non-judgmental professional to talk to?
+                  Lacking a clear, structured framework to integrate insights from meaningful experiences?
                 </p>
               </div>
             </div>
