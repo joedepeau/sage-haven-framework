@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
-import coachPortrait from "@/assets/coach-portrait.jpg";
+import coachPortrait from "@/assets/coach-portrait.jpg.asset.json";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -30,7 +30,7 @@ function AboutPage() {
             <div className="md:col-span-2">
               <div className="relative overflow-hidden rounded-2xl bg-navy/10 shadow-sm">
                 <img
-                  src={coachPortrait}
+                  src={coachPortrait.url}
                   alt="Portrait of the coach"
                   width={768}
                   height={1024}
