@@ -8,9 +8,9 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About | Integration Coaching" },
-      { name: "description", content: "Learn about the practice behind Integration Coaching — grounded guidance for intentional journeys." },
+      { name: "description", content: "Learn about the practice behind Integration Coaching — steady guidance for intentional journeys." },
       { property: "og:title", content: "About | Integration Coaching" },
-      { property: "og:description", content: "Learn about the practice behind Integration Coaching — grounded guidance for intentional journeys." },
+      { property: "og:description", content: "Learn about the practice behind Integration Coaching — steady guidance for intentional journeys." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -43,7 +43,7 @@ function AboutPage() {
             {/* Right — Text */}
             <div className="flex flex-col justify-center md:col-span-3">
               <h1 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
-                Grounded Guidance for Intentional Journeys.
+                Steady Guidance for Intentional Journeys.
               </h1>
               <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
                 Meet [Your Name], your partner in psychological grounding, mindset alignment, and integration coaching.
@@ -70,7 +70,7 @@ function AboutPage() {
             The Importance of a Steady Helm.
           </h2>
           <p className="mt-8 font-body text-base leading-relaxed text-slate sm:text-lg">
-            True transformation rarely arrives in a single, blinding insight. More often, it begins with a quiet decision to show up for yourself - again and again. The real work happens not in the peak moment, but in the patient, structured habits that follow: the morning grounding practice, the honest conversation, the gentle return to centre when life pulls you off course.
+            True transformation rarely arrives in a single, blinding insight. More often, it begins with a quiet decision to show up for yourself - again and again. The real work happens not in the peak moment, but in the patient, structured habits that follow: the morning movement or meditation practice, the honest conversation, the kind action, the gentle return to centre when life pulls you off course.
           </p>
           <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
             Lasting change is built in the small, repeated choices we make when no one is watching. It is the steady helm that keeps the ship on course through both calm seas and sudden storms. My role is to help you design and hold those daily structures, so that insight becomes embodied wisdom and intention becomes lived reality.
@@ -157,7 +157,7 @@ function AboutPage() {
             {/* Signature Container Card */}
             <div className="flex flex-col rounded-xl border-2 border-navy bg-white p-8 shadow-lg sm:p-10">
               <h3 className="font-display text-xl font-medium text-navy">
-                The Full Journey Container
+                The Microdosing Journey Container
               </h3>
               <p className="mt-3 font-body text-base text-slate">
                 Comprehensive 1-on-1 partnership for deep mindset shifts and sustained transformation.
@@ -200,9 +200,9 @@ function AboutPage() {
       {/* Compliance Callout Box */}
       <section className="px-6 pb-12 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl rounded-xl border border-navy/20 bg-cream p-6 shadow-sm sm:p-8 lg:p-10">
-          <p className="font-body text-sm leading-relaxed text-slate sm:text-base">
+            <p className="font-body text-sm leading-relaxed text-slate sm:text-base">
             <span className="font-semibold text-navy">Professional Boundaries & Harm Reduction:</span>{" "}
-            Please note that my practice operates strictly within a coaching framework. I am an integration coach, not a psychotherapist, medical doctor, or mental health clinician. I do not provide medical advice, diagnosis, treatment, or therapy. Furthermore, I operate strictly under harm-reduction principles; I do not distribute, sell, recommend, or facilitate the sourcing of illegal or controlled substances.
+            Please note that my practice operates strictly within a coaching framework. I am a coach - not a psychotherapist, medical doctor, or mental health clinician. I do not provide medical advice, diagnosis, treatment, or therapy. Furthermore, I operate strictly under harm-reduction principles; I do not distribute, sell, recommend, or facilitate the sourcing of illegal or controlled substances.
           </p>
         </div>
       </section>
