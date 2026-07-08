@@ -30,7 +30,7 @@ function AboutPage() {
             <div className="md:col-span-2">
               <div className="relative overflow-hidden rounded-2xl bg-navy/10 shadow-sm">
                 <img
-                  src={coachPortrait}
+                  src={coachPortrait.url}
                   alt="Portrait of the coach"
                   width={768}
                   height={1024}
