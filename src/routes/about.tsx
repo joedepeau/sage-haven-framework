@@ -140,7 +140,7 @@ function AboutPage() {
                 <li>Direct email support follow-up</li>
               </ul>
               <p className="mt-8 font-display text-2xl font-medium text-navy">
-                Investment: £50
+                Investment: £30
               </p>
               <div className="mt-8">
                 <Link to="/apply">
@@ -193,7 +193,7 @@ function AboutPage() {
                 <li>Sliding-scale and pro-bono options available for qualifying individuals</li>
               </ul>
               <p className="mt-8 font-display text-2xl font-medium text-navy">
-                Investment: £320
+                Investment: £400
               </p>
               <div className="mt-8">
                 <Link to="/apply">
