@@ -650,10 +650,10 @@ function Step3({
     "None of the below",
     "Anxiety",
     "Depression",
-    "ADHD / attention differences",
+    "Neurodivergence",
     "Trauma / PTSD",
     "Chronic stress or burnout",
-    "Neurodivergence (autism, etc.)",
+    "Hormonal Imbalance",
     "Chronic physical illness",
     "Prefer not to say",
   ];
