@@ -922,7 +922,34 @@ function Step5({ data, update, errors }: StepProps) {
         </p>
       </div>
 
+      {/* Truth & Completeness Agreement */}
+      <fieldset>
+        <legend className={labelCls}>
+          Truth & Completeness <span className="text-red-600">*</span>
+        </legend>
+        <label
+          className={`mt-3 flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+            data.agreeTruthCompleteness ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={data.agreeTruthCompleteness}
+            onChange={(e) => update("agreeTruthCompleteness", e.target.checked)}
+            className="mt-1 h-5 w-5 accent-navy"
+            aria-invalid={!!errors.agreeTruthCompleteness}
+          />
+          <span className="font-body text-sm leading-relaxed text-navy">
+            I confirm that the information I have provided in this intake form is complete and truthful.
+          </span>
+        </label>
+        {errors.agreeTruthCompleteness && (
+          <p className={errorTextCls}>{errors.agreeTruthCompleteness}</p>
+        )}
+      </fieldset>
+
       {/* Harm Reduction Agreement */}
+
       <fieldset>
         <legend className={labelCls}>
           Harm Reduction <span className="text-red-600">*</span>
