@@ -22,6 +22,8 @@ const TOTAL_STEPS = 5;
 
 type FormData = {
   // Step 1 — General Info
+  fullName: string;
+  email: string;
   gender: string;
   pronouns: string;
   dob: string;
