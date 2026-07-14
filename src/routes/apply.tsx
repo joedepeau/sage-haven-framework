@@ -957,7 +957,7 @@ function Step4({ data, update, errors }: StepProps) {
           value={data.additionalNotes}
           onChange={(e) => update("additionalNotes", e.target.value)}
           className={fieldCls(false)}
-          placeholder="Anything else that feels important to share before we speak."
+          placeholder="Anything else that feels important to share before we speak?  If you're interested in sliding-scale or pro-bono options, please note that here with some context."
         />
       </div>
     </div>
