@@ -399,6 +399,42 @@ function Step1({ data, update, errors }: StepProps) {
         <p className="mt-1 font-body text-sm text-slate">A few details about you.</p>
       </div>
 
+      {/* Full Name */}
+      <div>
+        <label className={labelCls} htmlFor="fullName">
+          Full Name <span className="text-red-600">*</span>
+        </label>
+        <input
+          id="fullName"
+          type="text"
+          autoComplete="name"
+          value={data.fullName}
+          onChange={(e) => update("fullName", e.target.value)}
+          className={fieldCls(!!errors.fullName)}
+          placeholder="Your full name"
+          aria-invalid={!!errors.fullName}
+        />
+        {errors.fullName && <p className={errorTextCls}>{errors.fullName}</p>}
+      </div>
+
+      {/* Email Address */}
+      <div>
+        <label className={labelCls} htmlFor="email">
+          Email Address <span className="text-red-600">*</span>
+        </label>
+        <input
+          id="email"
+          type="email"
+          autoComplete="email"
+          value={data.email}
+          onChange={(e) => update("email", e.target.value)}
+          className={fieldCls(!!errors.email)}
+          placeholder="you@example.com"
+          aria-invalid={!!errors.email}
+        />
+        {errors.email && <p className={errorTextCls}>{errors.email}</p>}
+      </div>
+
       {/* Gender — radio */}
       <fieldset>
         <legend className={labelCls}>
