@@ -386,7 +386,7 @@ function Step1({ data, update, errors }: StepProps) {
     <div className="space-y-6">
       <div>
         <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">General Info</h2>
-        <p className="mt-1 font-body text-sm text-slate">A few grounding details about you.</p>
+        <p className="mt-1 font-body text-sm text-slate">A few details about you.</p>
       </div>
 
       {/* Gender — radio */}
