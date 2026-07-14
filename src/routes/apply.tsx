@@ -54,6 +54,8 @@ type FormData = {
 };
 
 const initialData: FormData = {
+  fullName: "",
+  email: "",
   gender: "",
   pronouns: "",
   dob: "",
