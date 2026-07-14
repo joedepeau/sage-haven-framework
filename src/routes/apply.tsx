@@ -116,6 +116,9 @@ function validateStep(step: number, data: FormData): Errors {
     if (!data.mentalHealthDescription.trim()) e.mentalHealthDescription = "Please describe your mental health.";
     if (data.conditions.length === 0) e.conditions = "Please select at least one option.";
   }
+  if (step === 4) {
+    if (!data.medications.trim()) e.medications = "Please list any prescribed medications.";
+  }
   return e;
 }
 
