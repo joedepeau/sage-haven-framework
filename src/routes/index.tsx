@@ -331,9 +331,11 @@ function Index() {
             Take the first step toward a more aligned and purposeful life. Schedule a discovery call to explore how we can work together.
           </p>
           <div className="mt-10">
-            <Button className="h-12 bg-ochre px-10 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
-              Schedule Your Call
-            </Button>
+            <Link to="/apply">
+              <Button className="h-12 bg-ochre px-10 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
+                Schedule Your Call
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
