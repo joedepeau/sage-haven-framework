@@ -218,7 +218,7 @@ function AboutPage() {
             Our work together is built on a single principle: You Are Our North Star. This means you will be met with active, attuned listening - not problem-solving from a distance, but a genuine, co-created space where your experience is heard and honoured.
           </p>
           <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
-            Everything shared within our sessions is held in strict confidentiality. My role is to serve as a steady co-navigator, offering an anchored perspective and practical tools without judgment or agenda. The container we build is one of safety, self-care, and mutual respect - so you can show up fully, explore honestly, and move forward with clarity.
+            Everything shared within our sessions is held in strict confidentiality. My role is to serve as a steady co-navigator, offering considered perspectives and practical tools without judgment or agenda. The container we build is one of safety, self-care, and mutual respect - so you can show up fully, explore honestly, and move forward with clarity.
           </p>
         </div>
       </section>
