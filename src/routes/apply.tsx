@@ -934,7 +934,7 @@ function Step5({ data, update, errors }: StepProps) {
             aria-invalid={!!errors.agreeHarmReduction}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
-            I understand that Still Harbour offers coaching and integration support, not medical or
+            I understand that Still Harbour offers coaching and peer support, not medical or
             psychiatric care. I take responsibility for my own choices and wellbeing, and agree to
             engage with honesty, care, and a harm-reduction approach throughout our work together.
           </span>
