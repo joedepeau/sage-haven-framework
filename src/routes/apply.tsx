@@ -41,7 +41,7 @@ type FormData = {
   goals: string;
   mentalHealthDescription: string;
   conditions: string[];
-  additionalConditions: string;
+  
   // Later steps (placeholders retained for persistence)
   container: string;
   intention: string;
