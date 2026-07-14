@@ -356,7 +356,7 @@ function Index() {
           </div>
           <div className="mt-8 border-t border-navy/10 pt-6">
             <p className="font-body text-xs leading-relaxed text-slate/80">
-              <span className="font-semibold text-slate">Disclaimer:</span> Still Harbour provides educational and peer-support integration coaching services only. The information on this website is for educational and harm-reduction purposes and is not a substitute for professional medical advice, diagnosis, or treatment. We do not provide, sell, or encourage the use of illegal substances.
+              <span className="font-semibold text-slate">Disclaimer:</span> Still Harbour provides educational and peer-support coaching services only. The information on this website is for informational and harm-reduction purposes and is not a substitute for professional medical advice, diagnosis, or treatment. We do not provide, sell, or encourage the use of illegal substances.
             </p>
           </div>
         </div>
