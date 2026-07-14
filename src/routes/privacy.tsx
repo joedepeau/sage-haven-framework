@@ -71,7 +71,7 @@ function PrivacyPage() {
               Confidentiality & Storage
             </h2>
             <p className="mt-4 font-body text-base leading-relaxed text-slate sm:text-lg">
-              All session notes and client communications are stored securely using encrypted platforms and access-controlled systems. We treat every client interaction with the highest level of professional discretion.
+              All session notes and client communications are stored securely using encrypted platforms and access-controlled systems. We treat every client interaction with the highest level of professional discretion.&nbsp; Sessions are not recorded by default, and your permission will be verbally confirmed before any recording is started.&nbsp; You may request that calls never be recorded, ask at any time that any prior recordings be deleted, or choose to have calls recorded and shared with you if you would like a personal copy.
             </p>
           </div>
 
