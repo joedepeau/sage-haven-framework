@@ -1027,7 +1027,7 @@ function Step5({ data, update, errors }: StepProps) {
             I understand that a Discovery Session is required before entering into a Coaching Container.
             The price of a Discovery Session is £30 and will be paid in advance of the date of the call.
             The price of my Discovery Session will be deducted from the cost of my first scheduled Coaching
-            Container. I understand that all calls will be conducted online via Google Meet, in English, and
+            Container. I understand that all sessions will be conducted online via Google Meet, in English, and
             that I will be emailed payment details and available call times upon submission of this form.
           </span>
         </label>
