@@ -862,11 +862,100 @@ function Step4({ data, update, errors }: StepProps) {
   );
 }
 
-function StepPlaceholder({ title, note }: { title: string; note: string }) {
+function Step5({ data, update, errors }: StepProps) {
   return (
-    <div className="space-y-3">
-      <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">{title}</h2>
-      <p className="font-body text-base text-slate">{note}</p>
+    <div className="space-y-6">
+      <div>
+        <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Agreements</h2>
+        <p className="mt-1 font-body text-sm text-slate">
+          A few final acknowledgements before you submit.
+        </p>
+      </div>
+
+      {/* How did you hear about us */}
+      <div>
+        <label className={labelCls} htmlFor="hearAbout">
+          How did you hear about us? <span className="font-normal text-slate">(optional)</span>
+        </label>
+        <input
+          id="hearAbout"
+          type="text"
+          value={data.hearAbout}
+          onChange={(e) => update("hearAbout", e.target.value)}
+          className={fieldCls(false)}
+          placeholder="e.g. a friend, podcast, referral"
+        />
+      </div>
+
+      {/* Additional Notes */}
+      <div>
+        <label className={labelCls} htmlFor="additionalNotes">
+          Anything else you&apos;d like us to know?{" "}
+          <span className="font-normal text-slate">(optional)</span>
+        </label>
+        <textarea
+          id="additionalNotes"
+          rows={4}
+          value={data.additionalNotes}
+          onChange={(e) => update("additionalNotes", e.target.value)}
+          className={fieldCls(false)}
+          placeholder="Anything else that feels important to share before we speak."
+        />
+      </div>
+
+      {/* Harm Reduction Agreement */}
+      <fieldset>
+        <legend className={labelCls}>
+          Harm Reduction <span className="text-red-600">*</span>
+        </legend>
+        <label
+          className={`mt-3 flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+            data.agreeHarmReduction ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={data.agreeHarmReduction}
+            onChange={(e) => update("agreeHarmReduction", e.target.checked)}
+            className="mt-1 h-5 w-5 accent-navy"
+            aria-invalid={!!errors.agreeHarmReduction}
+          />
+          <span className="font-body text-sm leading-relaxed text-navy">
+            I understand that Still Harbour offers coaching and integration support, not medical or
+            psychiatric care. I take responsibility for my own choices and wellbeing, and agree to
+            engage with honesty, care, and a harm-reduction approach throughout our work together.
+          </span>
+        </label>
+        {errors.agreeHarmReduction && (
+          <p className={errorTextCls}>{errors.agreeHarmReduction}</p>
+        )}
+      </fieldset>
+
+      {/* Privacy Agreement */}
+      <fieldset>
+        <legend className={labelCls}>
+          Privacy & Confidentiality <span className="text-red-600">*</span>
+        </legend>
+        <label
+          className={`mt-3 flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+            data.agreePrivacy ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={data.agreePrivacy}
+            onChange={(e) => update("agreePrivacy", e.target.checked)}
+            className="mt-1 h-5 w-5 accent-navy"
+            aria-invalid={!!errors.agreePrivacy}
+          />
+          <span className="font-body text-sm leading-relaxed text-navy">
+            I consent to Still Harbour securely storing the information shared in this application
+            for the purposes of reviewing my enquiry and shaping our work together. My details will
+            be kept strictly confidential and never shared without my permission.
+          </span>
+        </label>
+        {errors.agreePrivacy && <p className={errorTextCls}>{errors.agreePrivacy}</p>}
+      </fieldset>
     </div>
   );
 }
