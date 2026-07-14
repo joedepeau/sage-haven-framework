@@ -166,7 +166,7 @@ function AboutPage() {
                     variant="outline"
                     className="h-14 w-full border-navy/30 font-body text-base font-semibold text-navy hover:bg-navy/5"
                   >
-                    Book Discovery Session
+                    Apply Now
                   </Button>
                 </Link>
               </div>
@@ -192,7 +192,7 @@ function AboutPage() {
               <div className="mt-8">
                 <Link to="/apply">
                   <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
-                    Apply for the Container
+                    Apply Now
                   </Button>
                 </Link>
               </div>
