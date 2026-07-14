@@ -79,43 +79,27 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* Credentials Section */}
-      <section className="border-t border-navy/10 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-10 md:grid-cols-3">
-            <div>
-              <h3 className="font-display text-xl font-medium text-navy">Certified Frameworks</h3>
-              <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-base text-slate">
-                <li>Integrative Coaching Certification (ICF-aligned)</li>
-                <li>Trauma-Informed Care Specialist</li>
-                <li>Harm-Reduction &amp; Safety Protocols</li>
-                <li>Somatic Grounding Practitioner</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-display text-xl font-medium text-navy">Where we can work together</h3>
-              <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-base text-slate">
-                <li>Managing Daily Pressures</li>
-                <li>Breaking the Exhaustion Cycle</li>
-                <li>Calming the Nervous System</li>
-                <li>Rewriting Habitual Loops</li>
-                <li>Sharpening Mental Clarity</li>
-                <li>Unlocking Creative Flow</li>
-                <li>Sustaining Deep Focus</li>
-                <li>Anchoring in the Present</li>
-                <li>Reconnecting With Meaning</li>
-                <li>Reclaiming Personal Momentum</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-display text-xl font-medium text-navy">Professional Background</h3>
-              <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-base text-slate">
-                <li>Graduate degree in Psychology / Counseling</li>
-                <li>Former Director of Wellness Programs</li>
-                <li>Published work in behavioral health integration</li>
-                <li>Guest faculty at integrative health institutes</li>
-              </ul>
-            </div>
+      {/* Where Coaching Can Help Section */}
+      <section className="bg-sage/20 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
+            Where Coaching Can Help
+          </h2>
+          <div className="mt-8 grid gap-x-8 gap-y-3 text-left sm:grid-cols-2">
+            <ul className="list-disc space-y-3 pl-5 font-body text-base leading-relaxed text-slate sm:text-lg">
+              <li>Managing Daily Pressures</li>
+              <li>Breaking the Exhaustion Cycle</li>
+              <li>Calming the Nervous System</li>
+              <li>Rewriting Habitual Loops</li>
+              <li>Sharpening Mental Clarity</li>
+            </ul>
+            <ul className="list-disc space-y-3 pl-5 font-body text-base leading-relaxed text-slate sm:text-lg">
+              <li>Unlocking Creative Flow</li>
+              <li>Sustaining Deep Focus</li>
+              <li>Anchoring in the Present</li>
+              <li>Reconnecting With Meaning</li>
+              <li>Reclaiming Personal Momentum</li>
+            </ul>
           </div>
         </div>
       </section>
