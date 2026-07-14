@@ -949,8 +949,8 @@ function Step5({ data, update, errors }: StepProps) {
       </fieldset>
 
       {/* Harm Reduction Agreement */}
-
       <fieldset>
+
         <legend className={labelCls}>
           Harm Reduction <span className="text-red-600">*</span>
         </legend>
