@@ -877,7 +877,7 @@ function Step3({
       {/* Additional Conditions */}
       <div>
         <label className={labelCls} htmlFor="additionalConditions">
-          Additional Details&nbsp;<span className="font-normal text-slate">(optional)</span><br />If you are interested in sliding-scale or pro-bono pricing, please provide relevant details here.
+          Additional Details&nbsp;<span className="font-normal text-slate">(optional)</span>
         </label>
         <textarea
           id="additionalConditions"
