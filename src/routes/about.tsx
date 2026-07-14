@@ -151,7 +151,7 @@ function AboutPage() {
               <h3 className="mb-4 font-display text-2xl font-medium text-navy sm:text-3xl">
                 The Discovery & Alignment Session
               </h3>
-              <p className="mt-3 font-body text-base text-slate">
+              <p className="font-body text-base text-slate">
                 A safe, relaxed space for us to share a brief introduction, explore your current intentions, and determine if our coaching partnership is the right fit for your journey.
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
