@@ -123,7 +123,7 @@ function Index() {
                 className="flex flex-col items-center rounded-xl border border-navy/5 bg-white p-8 text-center shadow-sm transition-shadow hover:shadow-md"
               >
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full border border-navy/10 bg-cream">
-                  <card.icon className="h-6 w-6 text-navy" strokeWidth={1.5} />
+                  <card.icon className="h-7 w-7 text-navy" strokeWidth={1.5} />
                 </div>
                 <h3 className="mb-4 font-display text-xl font-medium text-navy">
                   {card.title}
