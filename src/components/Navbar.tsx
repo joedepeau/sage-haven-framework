@@ -28,7 +28,7 @@ export function Navbar() {
               size="default"
               className="h-11 bg-ochre px-6 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:h-12 sm:px-8"
             >
-              Book Call
+              Book a Call
             </Button>
           </Link>
         </nav>
