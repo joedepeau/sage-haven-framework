@@ -27,7 +27,7 @@ function AboutPage() {
       {/* About Hero */}
       <section className="bg-sage/30 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
         <div className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-12 md:grid-cols-5 md:gap-16 lg:gap-20">
+          <div className="grid items-start gap-12 md:grid-cols-5 md:gap-16 lg:gap-20">
             {/* Left — Headshot Placeholder */}
             <div className="md:col-span-2 space-y-6">
               <div className="relative overflow-hidden rounded-2xl bg-navy/10 shadow-sm">
