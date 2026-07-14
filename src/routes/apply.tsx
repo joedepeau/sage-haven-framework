@@ -106,7 +106,20 @@ function validateStep(step: number, data: FormData): Errors {
       e.email = "Please enter a valid email address.";
     }
     if (!data.gender) e.gender = "Please select an option.";
-    if (!data.dob) e.dob = "Date of birth is required.";
+    if (!data.dob) {
+      e.dob = "Date of birth is required.";
+    } else {
+      const birthDate = new Date(data.dob);
+      const today = new Date();
+      let age = today.getFullYear() - birthDate.getFullYear();
+      const m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      if (age < 18 || Number.isNaN(age)) {
+        e.dob = "You must be at least 18 years of age to use this coaching service";
+      }
+    }
     if (!data.generalHealth.trim()) e.generalHealth = "Please share a brief note on your general health.";
     if (!data.supportNetwork.trim()) e.supportNetwork = "Please describe your support network.";
   }
