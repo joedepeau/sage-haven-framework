@@ -119,7 +119,7 @@ function AboutPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
-              Investing in Your Integration Journey
+              Investing in Your Personal Journey
             </h2>
             <p className="mx-auto mt-6 max-w-3xl font-body text-base leading-relaxed text-slate sm:text-lg">
               Clear, structured containers designed to provide measurable progress, stability, and presence.
