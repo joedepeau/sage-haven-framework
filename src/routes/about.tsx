@@ -202,15 +202,17 @@ function AboutPage() {
                 <li>Text and voice note support between sessions</li>
                 <li>Sliding-scale and pro-bono options available for qualifying individuals</li>
               </ul>
-              <p className="mt-8 font-display text-2xl font-medium text-navy">
-                Investment: £400
-              </p>
-              <div className="mt-8">
-                <Link to="/apply">
-                  <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
-                    Apply Now
-                  </Button>
-                </Link>
+              <div className="mt-auto pt-8">
+                <p className="font-display text-2xl font-medium text-navy">
+                  Investment: £400
+                </p>
+                <div className="mt-8">
+                  <Link to="/apply">
+                    <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
+                      Apply Now
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
