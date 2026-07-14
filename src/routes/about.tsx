@@ -85,7 +85,7 @@ function AboutPage() {
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
             Where Coaching Can Help
           </h2>
-          <div className="mt-8 grid gap-x-8 gap-y-3 text-left sm:grid-cols-2">
+          <div className="mx-auto mt-8 grid max-w-2xl gap-x-12 gap-y-3 text-left sm:grid-cols-2">
             <ul className="list-disc space-y-3 pl-5 font-body text-base leading-relaxed text-slate sm:text-lg">
               <li>Managing Daily Pressures</li>
               <li>Breaking the Exhaustion Cycle</li>
