@@ -376,6 +376,26 @@ function ApplyPage() {
               {step === 4 && <Step4 data={data} update={update} errors={errors} />}
               {step === 5 && <Step5 data={data} update={update} errors={errors} />}
 
+              {/* Honeypot — hidden from real users */}
+              <div aria-hidden="true" className="hidden">
+                <label>
+                  Website
+                  <input
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={website}
+                    onChange={(e) => setWebsite(e.target.value)}
+                  />
+                </label>
+              </div>
+
+              {submitError && (
+                <p role="alert" className="rounded-md border border-red-300 bg-red-50 p-3 font-body text-sm text-red-800">
+                  {submitError}
+                </p>
+              )}
+
               {/* Navigation */}
               <div className="flex flex-col-reverse gap-3 pt-4 sm:flex-row sm:justify-between">
                 {step > 1 ? (
@@ -383,6 +403,7 @@ function ApplyPage() {
                     type="button"
                     onClick={back}
                     variant="outline"
+                    disabled={submitting}
                     className="h-14 w-full border-navy/30 font-body text-base font-semibold text-navy hover:bg-navy/5 sm:w-auto sm:px-8"
                   >
                     Back
@@ -410,9 +431,10 @@ function ApplyPage() {
                 ) : (
                   <Button
                     type="submit"
-                    className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:px-10"
+                    disabled={submitting}
+                    className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90 disabled:opacity-60 sm:w-auto sm:px-10"
                   >
-                    Submit Application
+                    {submitting ? "Submitting…" : "Submit Application"}
                   </Button>
                 )}
               </div>
