@@ -1055,7 +1055,7 @@ function Step5({ data, update, errors }: StepProps) {
             date or time of a scheduled appointment, and that refunds will not be issued for missed
             appointments. On the rare occasion my coach needs to reschedule an appointment without at
             least 48 hours notice I will have the choice of a priority replacement booking for a new date
-            and time, or £100 (or the pro-rated sliding scale equivalent) credit towards my next Coaching
+            and time, or £100 (or the pro-rated sliding-scale equivalent) credit towards my next Coaching
             Container purchase.
           </span>
         </label>
