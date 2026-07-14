@@ -124,6 +124,10 @@ function validateStep(step: number, data: FormData): Errors {
     if (!data.medications.trim()) e.medications = "Please list any prescribed medications.";
     if (!data.nonPrescribedMedications.trim()) e.nonPrescribedMedications = "Please list any non-prescribed medications or supplements.";
   }
+  if (step === 5) {
+    if (!data.agreeHarmReduction) e.agreeHarmReduction = "Please acknowledge to continue.";
+    if (!data.agreePrivacy) e.agreePrivacy = "Please acknowledge to continue.";
+  }
   return e;
 }
 
