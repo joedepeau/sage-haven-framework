@@ -114,6 +114,7 @@ function validateStep(step: number, data: FormData): Errors {
     if (data.motivations.length === 0) e.motivations = "Please select at least one option.";
     if (!data.goals.trim()) e.goals = "Please share your goals in your own words.";
     if (!data.mentalHealthDescription.trim()) e.mentalHealthDescription = "Please describe your mental health.";
+    if (!data.medications.trim()) e.medications = "Please list any prescribed medications.";
     if (data.conditions.length === 0) e.conditions = "Please select at least one option.";
   }
   return e;
@@ -729,6 +730,26 @@ function Step3({
         {errors.mentalHealthDescription && (
           <p className={errorTextCls}>{errors.mentalHealthDescription}</p>
         )}
+      </div>
+
+      {/* Prescribed Medications */}
+      <div>
+        <label className={labelCls} htmlFor="medications">
+          Prescribed Medications <span className="text-red-600">*</span>
+        </label>
+        <p className="mt-1 font-body text-xs text-slate">
+          List any prescribed medications you currently take, along with the condition they are used to treat
+        </p>
+        <textarea
+          id="medications"
+          rows={4}
+          value={data.medications}
+          onChange={(e) => update("medications", e.target.value)}
+          className={fieldCls(!!errors.medications)}
+          placeholder="e.g. Sertraline 50mg for anxiety"
+          aria-invalid={!!errors.medications}
+        />
+        {errors.medications && <p className={errorTextCls}>{errors.medications}</p>}
       </div>
 
       {/* Profiles / Conditions — checkboxes */}
