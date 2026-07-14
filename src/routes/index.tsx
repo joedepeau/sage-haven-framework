@@ -271,19 +271,25 @@ function Index() {
             </h2>
           </div>
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {[1, 2, 3].map((i) => (
+            {[
+              {
+                text: "“With his caring and attentive presence, Joe offered space for me to express emotions without needing to fix them. He reminded me to be curious about my experience and reconnect to my resilience and creativity, even in the face of unexpected challenges. His support made a huge difference in the way I was able to integrate lessons and changes into my life.”",
+                name: "Jyoti G.",
+                info: "She/Her / Portugal"
+              }
+            ].map((testimonial, i) => (
               <div
                 key={i}
                 className="rounded-xl bg-cream/10 p-8 backdrop-blur-sm"
               >
                 <p className="mb-6 font-body text-base leading-relaxed text-cream/90 italic">
-                  &ldquo;[Client testimonial placeholder. A meaningful quote about their experience and transformation.]&rdquo;
+                  {testimonial.text}
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 rounded-full bg-cream/20" />
                   <div>
-                    <p className="font-body text-sm font-semibold text-cream">Client Name</p>
-                    <p className="font-body text-xs text-cream/60">Title / Location</p>
+                    <p className="font-body text-sm font-semibold text-cream">{testimonial.name}</p>
+                    <p className="font-body text-xs text-cream/60">{testimonial.info}</p>
                   </div>
                 </div>
               </div>
