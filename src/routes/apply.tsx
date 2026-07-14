@@ -948,7 +948,7 @@ function Step5({ data, update, errors }: StepProps) {
             type="checkbox"
             checked={data.agreeTruthCompleteness}
             onChange={(e) => update("agreeTruthCompleteness", e.target.checked)}
-            className="mt-1 h-5 w-5 accent-navy"
+            className="mt-1 h-5 w-5 shrink-0 accent-navy"
             aria-invalid={!!errors.agreeTruthCompleteness}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
@@ -975,7 +975,7 @@ function Step5({ data, update, errors }: StepProps) {
             type="checkbox"
             checked={data.agreeContraindications}
             onChange={(e) => update("agreeContraindications", e.target.checked)}
-            className="mt-1 h-5 w-5 accent-navy"
+            className="mt-1 h-5 w-5 shrink-0 accent-navy"
             aria-invalid={!!errors.agreeContraindications}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
@@ -1007,7 +1007,7 @@ function Step5({ data, update, errors }: StepProps) {
             type="checkbox"
             checked={data.agreeLegalDisclaimer}
             onChange={(e) => update("agreeLegalDisclaimer", e.target.checked)}
-            className="mt-1 h-5 w-5 accent-navy"
+            className="mt-1 h-5 w-5 shrink-0 accent-navy"
             aria-invalid={!!errors.agreeLegalDisclaimer}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
