@@ -731,7 +731,7 @@ function Step3({
           value={data.mentalHealthDescription}
           onChange={(e) => update("mentalHealthDescription", e.target.value)}
           className={fieldCls(!!errors.mentalHealthDescription)}
-          placeholder="How would you describe your current mental and emotional landscape?"
+          placeholder="How would you describe your current and past mental and emotional landscape?"
           aria-invalid={!!errors.mentalHealthDescription}
         />
         {errors.mentalHealthDescription && (
