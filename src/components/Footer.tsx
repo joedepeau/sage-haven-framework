@@ -7,7 +7,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
           <div className="flex items-center gap-2">
-            <img src={logoAsset.url} alt="Still Harbour logo" className="h-9 w-9 object-contain" />
+            <img src={logoAsset} alt="Still Harbour logo" className="h-9 w-9 object-contain" />
             <span className="font-display text-base font-medium text-navy">
               Still Harbour Coaching
             </span>
