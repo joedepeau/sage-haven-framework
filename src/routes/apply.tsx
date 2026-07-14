@@ -669,7 +669,7 @@ function Step2({
       {/* Prior experience — radio */}
       <fieldset>
         <legend className={labelCls}>
-          Prior Psychedelic Experience (Microdose or High Dose)&nbsp;<span className="text-red-600">*</span>
+          Prior Experience With Psychoactive Substances (Microdose or High Dose)&nbsp;<span className="text-red-600">*</span>
         </legend>
         <div className="mt-3 space-y-3">
           {priorOpts.map((opt) => (
