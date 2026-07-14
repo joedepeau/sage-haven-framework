@@ -5,6 +5,7 @@ import { Anchor, Compass, Lamp } from "lucide-react";
 import { LighthouseIcon } from "@/components/icons/LighthouseIcon";
 import heroBg from "@/assets/hero-bg.jpg";
 import coachPortrait from "@/assets/coach-portrait.jpg.asset.json";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -336,9 +337,7 @@ function Index() {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex items-center gap-2">
-              <div className="grid h-8 w-8 place-items-center rounded-full bg-navy">
-                <span className="font-display text-xs font-semibold text-cream">SH</span>
-              </div>
+              <img src={logoAsset.url} alt="Still Harbour logo" className="h-9 w-9 object-contain" />
               <span className="font-display text-base font-medium text-navy">
                 Still Harbour
               </span>
