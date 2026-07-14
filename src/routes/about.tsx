@@ -126,7 +126,7 @@ function AboutPage() {
             </p>
           </div>
 
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
+          <div className="mt-16 grid gap-8 md:grid-cols-2">
             {/* Discovery Session Card */}
             <div className="flex flex-col rounded-xl border border-navy/20 bg-white p-8 sm:p-10">
               <h3 className="font-display text-xl font-medium text-navy">
