@@ -25,10 +25,10 @@ function PrivacyPage() {
       <section className="bg-navy px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="font-display text-3xl font-medium leading-snug text-cream sm:text-4xl lg:text-5xl">
-            Your Privacy is Our Anchor.
+            Your Privacy is Our Important.
           </h1>
           <p className="mx-auto mt-6 max-w-3xl font-body text-base leading-relaxed text-cream/80 sm:text-lg">
-            This policy details our uncompromising commitment to client confidentiality, data minimization, and secure digital communication.
+            This policy details our uncompromising commitment to client confidentiality, data minimisation, and secure digital communication.
           </p>
           <p className="mt-6 font-body text-sm text-cream/60 sm:text-base">
             Last Updated: July 2026
