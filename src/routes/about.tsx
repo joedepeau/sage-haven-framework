@@ -156,6 +156,7 @@ function AboutPage() {
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
                 <li>1 x 45-minute alignment session</li>
+                <li>Get to know your coach</li>
                 <li>Your questions answered and any concerns addressed</li>
                 <li>Direct email support follow-up</li>
                 <li>Cost deducted from your first Microdosing Journey Container booking</li>
