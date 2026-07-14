@@ -183,10 +183,7 @@ function Index() {
               </div>
               <div className="mt-8">
                 <Link to="/about">
-                  <Button
-                    variant="outline"
-                    className="h-12 border-navy/25 bg-cream/60 px-6 font-body text-sm font-medium text-navy backdrop-blur-sm hover:bg-cream/80 hover:text-navy sm:text-base"
-                  >
+                  <Button className="h-12 bg-ochre px-6 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
                     Learn More
                   </Button>
                 </Link>
