@@ -643,6 +643,8 @@ function Step3({
     "Grief or life transition",
     "Habit change",
     "Curiosity",
+    "Journey Preparation",
+    "Journey Integration",
   ];
   const conditionOpts = [
     "None of the below",
