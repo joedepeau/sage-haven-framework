@@ -333,7 +333,7 @@ function Index() {
           <div className="mt-10">
             <Link to="/apply">
               <Button className="h-12 bg-ochre px-10 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
-                Schedule Your Call
+                Schedule Your Discovery Session
               </Button>
             </Link>
           </div>
