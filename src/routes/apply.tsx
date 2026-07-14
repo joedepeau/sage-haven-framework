@@ -1021,8 +1021,8 @@ function Step5({ data, update, errors }: StepProps) {
           <span className="font-body text-sm leading-relaxed text-navy">
             I understand that a Discovery Session is required before entering into a Coaching Container. The
             price of a Discovery Session is £30 and will be paid in advance of the date of the call, and with
-            sliding-scale and pro-bono pricing options offered based on availability and the discretion of Still
-            Harbour Coaching. The price of my Discovery Session will be deducted from the cost of my first
+            sliding-scale and pro-bono pricing options offered based on availability and at the sole discretion of
+            Still Harbour Coaching. The price of my Discovery Session will be deducted from the cost of my first
             scheduled Coaching Container. I understand that all sessions will be conducted online via Google Meet,
             in English, and that I will be emailed payment details and available call times following submission of
             this form.
