@@ -22,6 +22,8 @@ const TOTAL_STEPS = 5;
 
 type FormData = {
   // Step 1 — General Info
+  fullName: string;
+  email: string;
   gender: string;
   pronouns: string;
   dob: string;
@@ -52,6 +54,8 @@ type FormData = {
 };
 
 const initialData: FormData = {
+  fullName: "",
+  email: "",
   gender: "",
   pronouns: "",
   dob: "",
@@ -91,6 +95,12 @@ type Errors = Partial<Record<keyof FormData, string>>;
 function validateStep(step: number, data: FormData): Errors {
   const e: Errors = {};
   if (step === 1) {
+    if (!data.fullName.trim()) e.fullName = "Full name is required.";
+    if (!data.email.trim()) {
+      e.email = "Email address is required.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) {
+      e.email = "Please enter a valid email address.";
+    }
     if (!data.gender) e.gender = "Please select an option.";
     if (!data.pronouns.trim()) e.pronouns = "Pronouns are required.";
     if (!data.dob) e.dob = "Date of birth is required.";
@@ -387,6 +397,42 @@ function Step1({ data, update, errors }: StepProps) {
       <div>
         <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">General Info</h2>
         <p className="mt-1 font-body text-sm text-slate">A few details about you.</p>
+      </div>
+
+      {/* Full Name */}
+      <div>
+        <label className={labelCls} htmlFor="fullName">
+          Full Name <span className="text-red-600">*</span>
+        </label>
+        <input
+          id="fullName"
+          type="text"
+          autoComplete="name"
+          value={data.fullName}
+          onChange={(e) => update("fullName", e.target.value)}
+          className={fieldCls(!!errors.fullName)}
+          placeholder="Your full name"
+          aria-invalid={!!errors.fullName}
+        />
+        {errors.fullName && <p className={errorTextCls}>{errors.fullName}</p>}
+      </div>
+
+      {/* Email Address */}
+      <div>
+        <label className={labelCls} htmlFor="email">
+          Email Address <span className="text-red-600">*</span>
+        </label>
+        <input
+          id="email"
+          type="email"
+          autoComplete="email"
+          value={data.email}
+          onChange={(e) => update("email", e.target.value)}
+          className={fieldCls(!!errors.email)}
+          placeholder="you@example.com"
+          aria-invalid={!!errors.email}
+        />
+        {errors.email && <p className={errorTextCls}>{errors.email}</p>}
       </div>
 
       {/* Gender — radio */}
