@@ -985,10 +985,10 @@ function Step5({ data, update, errors }: StepProps) {
         </p>
       </div>
 
-      {/* Truth & Completeness Agreement */}
+      {/* Truthfulness & Completeness Agreement */}
       <fieldset>
         <legend className={labelCls}>
-          Truth & Completeness <span className="text-red-600">*</span>
+          Truthfulness & Completeness <span className="text-red-600">*</span>
         </legend>
         <label
           className={`mt-3 flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
