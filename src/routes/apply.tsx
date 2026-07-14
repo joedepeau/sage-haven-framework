@@ -1182,7 +1182,15 @@ function Step5({ data, update, errors }: StepProps) {
             aria-invalid={!!errors.agreePrivacy}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
-            I have read the Still Harbour Coaching privacy policy.&nbsp; I consent to Still Harbour securely storing the information shared in this application
+            I have read the Still Harbour Coaching{" "}
+            <Link
+              to="/privacy"
+              className="underline hover:text-navy/80 focus:outline-none focus:ring-2 focus:ring-navy/40 rounded-sm"
+              onClick={(e) => e.stopPropagation()}
+            >
+              privacy policy
+            </Link>
+            .&nbsp; I consent to Still Harbour securely storing the information shared in this application
             for the purposes of reviewing my enquiry and shaping our work together. My details will
             be kept strictly confidential and never shared without my permission.
           </span>
