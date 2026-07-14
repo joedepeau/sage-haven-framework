@@ -465,17 +465,16 @@ function Step1({ data, update, errors }: StepProps) {
       {/* Pronouns */}
       <div>
         <label className={labelCls} htmlFor="pronouns">
-          Pronouns <span className="text-red-600">*</span>
+          Pronouns
         </label>
         <input
           id="pronouns"
           value={data.pronouns}
           onChange={(e) => update("pronouns", e.target.value)}
-          className={fieldCls(!!errors.pronouns)}
+          className={fieldCls(false)}
           placeholder="e.g. she/her, they/them"
-          aria-invalid={!!errors.pronouns}
+          aria-invalid={false}
         />
-        {errors.pronouns && <p className={errorTextCls}>{errors.pronouns}</p>}
       </div>
 
       {/* DOB */}
