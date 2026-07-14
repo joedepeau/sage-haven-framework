@@ -83,7 +83,7 @@ function AboutPage() {
       <section className="bg-sage/20 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
-            Where Coaching Can Help
+            Where Microdose Coaching Can Help
           </h2>
           <div className="mx-auto mt-8 grid max-w-2xl gap-x-12 gap-y-3 text-left sm:grid-cols-2">
             <ul className="list-disc space-y-3 pl-5 font-body text-base leading-relaxed text-slate sm:text-lg">
