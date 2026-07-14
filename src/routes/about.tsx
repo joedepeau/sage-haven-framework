@@ -177,8 +177,14 @@ function AboutPage() {
 
 
             {/* Signature Container Card */}
-            <div className="flex flex-col rounded-xl border-2 border-navy bg-white p-8 shadow-lg sm:p-10">
-              <h3 className="font-display text-xl font-medium text-navy">
+            <div className="relative flex flex-col rounded-2xl border-2 border-ochre bg-white p-8 shadow-md sm:p-10">
+              <span className="absolute -top-3 left-8 rounded-full bg-ochre px-4 py-1 font-body text-xs font-semibold uppercase tracking-widest text-navy">
+                MICRODOSING CONTAINER
+              </span>
+              <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
+                Deep Work
+              </p>
+              <h3 className="mb-4 font-display text-2xl font-medium text-navy sm:text-3xl">
                 The Microdosing Journey Container
               </h3>
               <p className="mt-3 font-body text-base text-slate">
