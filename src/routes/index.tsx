@@ -73,12 +73,12 @@ function Index() {
             <div className="flex flex-col justify-center">
               <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Feeling overwhelmed by raw emotions or shifting priorities?
+                  Feeling overwhelmed by raw emotion, shifting priorities, or complex changes and need a safe, non-judgemental professional to talk to?
                 </p>
               </div>
               <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Navigating complex changes without a safe, non-judgmental professional to talk to?
+                  Looking to bring more presence, space, clarity, joy, or creativity into your life - but don't feel like you have the right tools?
                 </p>
               </div>
               <div className="border-t border-b border-navy/10 py-6">
