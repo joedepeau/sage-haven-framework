@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useState } from "react";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { submitApplication } from "@/lib/submit-application.functions";
 
@@ -302,6 +303,7 @@ function ApplyPage() {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }
@@ -456,6 +458,7 @@ function ApplyPage() {
           </p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
