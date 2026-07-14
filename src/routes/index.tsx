@@ -178,7 +178,7 @@ function Index() {
                   Client safety is the foundation of everything I do. Before any exploration, we build a clear set of agreements and a shared map of the journey ahead, so you always know where you are and what comes next.
                 </p>
                 <p>
-                  Sessions draw on established microdosing frameworks, including preparation and intention setting, embodied reflection, curious exploration, meaning-making dialogue, and habit design - so profound moments can become durable change in daily life.
+                  Sessions draw on established microdosing frameworks including preparation and intention setting, embodied reflection, curious exploration, meaning-making dialogue, and habit design - so profound moments can become durable change in daily life.
                 </p>
               </div>
               <div className="mt-8">
