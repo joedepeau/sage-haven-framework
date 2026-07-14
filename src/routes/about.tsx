@@ -92,6 +92,7 @@ function AboutPage() {
               <li>Calming the Nervous System</li>
               <li>Rewriting Habitual Loops</li>
               <li>Sharpening Mental Clarity</li>
+              <li>Journey Preparation and Integration</li>
             </ul>
             <ul className="list-disc space-y-3 pl-5 font-body text-base leading-relaxed text-slate sm:text-lg">
               <li>Unlocking Creative Flow</li>
