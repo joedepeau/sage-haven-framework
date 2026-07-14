@@ -95,6 +95,12 @@ type Errors = Partial<Record<keyof FormData, string>>;
 function validateStep(step: number, data: FormData): Errors {
   const e: Errors = {};
   if (step === 1) {
+    if (!data.fullName.trim()) e.fullName = "Full name is required.";
+    if (!data.email.trim()) {
+      e.email = "Email address is required.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) {
+      e.email = "Please enter a valid email address.";
+    }
     if (!data.gender) e.gender = "Please select an option.";
     if (!data.pronouns.trim()) e.pronouns = "Pronouns are required.";
     if (!data.dob) e.dob = "Date of birth is required.";
