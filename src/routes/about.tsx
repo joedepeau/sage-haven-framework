@@ -149,7 +149,7 @@ function AboutPage() {
                 Start Here
               </p>
               <h3 className="mb-4 font-display text-2xl font-medium text-navy sm:text-3xl">
-                The Discovery & Alignment Session
+                The Discovery Session
               </h3>
               <p className="font-body text-base text-slate">
                 A safe, relaxed space for us to share a brief introduction, explore your current intentions, and determine if our coaching partnership is the right fit for your journey.
@@ -185,7 +185,7 @@ function AboutPage() {
                 Deep Work
               </p>
               <h3 className="mb-4 font-display text-2xl font-medium text-navy sm:text-3xl">
-                The Microdosing Journey Container
+                1-on-1 Coaching Container
               </h3>
               <p className="font-body text-base text-slate">
                 Comprehensive 1-on-1 partnership for deep mindset shifts and sustained transformation, working with microdosing as part of our toolkit.
