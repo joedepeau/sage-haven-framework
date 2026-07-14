@@ -68,7 +68,7 @@ function Index() {
           <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 md:gap-16 lg:gap-24">
             <div className="flex flex-col justify-center">
               <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
-                Exploring new horizons shouldn&apos;t mean feeling adrift.
+                Exploring new horizons shouldn&apos;t mean feeling adrift
               </h2>
             </div>
             <div className="flex flex-col justify-center">
@@ -347,7 +347,7 @@ function Index() {
             Our Commitment
           </p>
           <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl">
-            A Safe and Non-Judgmental Space for Personal Growth
+            A safe and non-judgmental space for personal growth
           </h2>
           <div className="mx-auto mt-8 max-w-2xl space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
             <p>
