@@ -649,7 +649,7 @@ function Step3({
     "Curiosity",
     "Journey preparation",
     "Journey integration",
-    "Mindfulness",
+    "Improved Wellbeing",
     "Other",
   ];
   const conditionOpts = [
