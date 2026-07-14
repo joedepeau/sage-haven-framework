@@ -95,10 +95,16 @@ function AboutPage() {
             <div>
               <h3 className="font-display text-xl font-medium text-navy">Where we can work together</h3>
               <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-base text-slate">
-                <li></li>
-                <li>Vipassana &amp; Somatic Meditation Training</li>
-                <li>Breathwork &amp; Nervous System Regulation</li>
-                <li>Embodied Presence Facilitation</li>
+                <li>Managing Daily Pressures</li>
+                <li>Breaking the Exhaustion Cycle</li>
+                <li>Calming the Nervous System</li>
+                <li>Rewriting Habitual Loops</li>
+                <li>Sharpening Mental Clarity</li>
+                <li>Unlocking Creative Flow</li>
+                <li>Sustaining Deep Focus</li>
+                <li>Anchoring in the Present</li>
+                <li>Reconnecting With Meaning</li>
+                <li>Reclaiming Personal Momentum</li>
               </ul>
             </div>
             <div>
