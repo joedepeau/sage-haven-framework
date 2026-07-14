@@ -220,7 +220,7 @@ function ApplyPage() {
             </h1>
             <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
               Your application has been received. We&apos;ll review it thoughtfully and reply within 3 business days from{" "}
-              <span className="text-navy">hello@stillharbour.uk</span> to arrange next steps.
+              <span className="text-navy">info@stillharbour.uk</span> to arrange next steps.
             </p>
             <div className="mt-10">
               <Link to="/">
