@@ -181,6 +181,16 @@ function Index() {
                   Sessions draw on established microdosing frameworks, including preparation and intention setting, embodied reflection, curious exploration, meaning-making dialogue, and habit design - so profound moments can become durable change in daily life.
                 </p>
               </div>
+              <div className="mt-8">
+                <Link to="/about">
+                  <Button
+                    variant="outline"
+                    className="h-12 border-navy/25 bg-cream/60 px-6 font-body text-sm font-medium text-navy backdrop-blur-sm hover:bg-cream/80 hover:text-navy sm:text-base"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
