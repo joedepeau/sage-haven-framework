@@ -5,6 +5,7 @@ import { Anchor, Compass, Lamp } from "lucide-react";
 import { LighthouseIcon } from "@/components/icons/LighthouseIcon";
 import heroBg from "@/assets/hero-bg.jpg";
 import coachPortrait from "@/assets/coach-portrait.jpg.asset.json";
+import badgeAsset from "@/assets/badge-cropped.png.asset.json";
 import logoAsset from "@/assets/logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -140,7 +141,7 @@ function Index() {
       <section className="bg-sage px-6 py-20 sm:px-8 sm:py-28 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 md:grid-cols-5 md:gap-16 lg:gap-20">
-            <div className="md:col-span-2">
+            <div className="md:col-span-2 space-y-6">
               <div className="relative overflow-hidden rounded-2xl bg-navy/10 shadow-sm">
                 <img
                   src={coachPortrait.url}
@@ -149,6 +150,16 @@ function Index() {
                   height={1024}
                   loading="lazy"
                   className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                <img
+                  src={badgeAsset.url}
+                  alt="Microdosing Institute Certified Facilitator badge"
+                  width={499}
+                  height={134}
+                  loading="lazy"
+                  className="w-full"
                 />
               </div>
             </div>
