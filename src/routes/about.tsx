@@ -165,10 +165,7 @@ function AboutPage() {
               </p>
               <div className="mt-8">
                 <Link to="/apply">
-                  <Button
-                    variant="outline"
-                    className="h-14 w-full border-navy/30 font-body text-base font-semibold text-navy hover:bg-navy/5"
-                  >
+                  <Button className="h-14 w-full bg-navy px-8 font-body text-sm font-semibold text-cream shadow-none hover:bg-navy/90 sm:text-base">
                     Apply Now
                   </Button>
                 </Link>
