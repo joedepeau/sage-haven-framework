@@ -77,6 +77,7 @@ const initialData: FormData = {
   medicalDisclosure: "",
   medications: "",
   nonPrescribedMedications: "",
+  healthWellbeingPractices: "",
   timeCommitment: "",
   startTiming: "",
   hearAbout: "",
