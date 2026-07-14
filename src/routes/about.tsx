@@ -75,7 +75,7 @@ function AboutPage() {
                 </ul>
               </div>
               <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
-                My coaching style is calm, steady, supportive, and considered - with a touch of humour and lightness when appropriate.&nbsp; I like to mix modalities like breathing, visualisation, and movement practices into coaching sessions to create opportunities for holistic transformation and integration.
+                My coaching style is calm, steady, supportive, and considered - with a touch of humour and lightness when appropriate.&nbsp; I like to mix modalities like breathwork, visualisation, and movement practices into coaching sessions to create opportunities for holistic transformation and integration.
               </p>
               <p className="mt-6 font-body text-base leading-relaxed text-slate italic sm:text-lg">
                 I would love to learn more about you and how we might develop a steady, supportive partnership designed to help you anchor your mind, navigate your choices, and live with total intent.
