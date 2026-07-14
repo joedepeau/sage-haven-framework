@@ -96,8 +96,10 @@ const initialData: FormData = {
   additionalNotes: "",
   agreeTruthCompleteness: false,
   agreeSchedulingPayment: false,
+  agreeRefundPolicy: false,
   agreeContraindications: false,
   agreeLegalDisclaimer: false,
+
   agreeHarmReduction: false,
   agreePrivacy: false,
 
