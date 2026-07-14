@@ -874,20 +874,6 @@ function Step3({
         {errors.conditions && <p className={errorTextCls}>{errors.conditions}</p>}
       </fieldset>
 
-      {/* Additional Conditions */}
-      <div>
-        <label className={labelCls} htmlFor="additionalConditions">
-          Additional Details&nbsp;<span className="font-normal text-slate">(optional)</span>
-        </label>
-        <textarea
-          id="additionalConditions"
-          rows={3}
-          value={data.additionalConditions}
-          onChange={(e) => update("additionalConditions", e.target.value)}
-          className={fieldCls(false)}
-          placeholder="Anything else about your health or context we should be aware of? If you are interested in sliding-scale or pro-bono options, please provide details here."
-        />
-      </div>
     </div>
   );
 }
