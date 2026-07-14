@@ -661,6 +661,9 @@ function Step3({
     "Chronic stress or burnout",
     "Hormonal Imbalance",
     "Chronic physical illness",
+    "Disordered eating",
+    "Disordered substance use",
+    "Other",
     "Prefer not to say",
   ];
 
