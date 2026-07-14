@@ -465,7 +465,7 @@ function Step1({ data, update, errors }: StepProps) {
       {/* Pronouns */}
       <div>
         <label className={labelCls} htmlFor="pronouns">
-          Pronouns
+          Pronouns <span className="font-normal text-slate">(optional)</span>
         </label>
         <input
           id="pronouns"
