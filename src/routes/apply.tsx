@@ -731,26 +731,6 @@ function Step3({
         )}
       </div>
 
-      {/* Prescribed Medications */}
-      <div>
-        <label className={labelCls} htmlFor="medications">
-          Prescribed Medications <span className="text-red-600">*</span>
-        </label>
-        <p className="mt-1 font-body text-xs text-slate">
-          List any prescribed medications you currently take, along with the condition they are used to treat
-        </p>
-        <textarea
-          id="medications"
-          rows={4}
-          value={data.medications}
-          onChange={(e) => update("medications", e.target.value)}
-          className={fieldCls(!!errors.medications)}
-          placeholder="e.g. Sertraline 50mg for anxiety"
-          aria-invalid={!!errors.medications}
-        />
-        {errors.medications && <p className={errorTextCls}>{errors.medications}</p>}
-      </div>
-
       {/* Profiles / Conditions — checkboxes */}
       <fieldset>
         <legend className={labelCls}>
