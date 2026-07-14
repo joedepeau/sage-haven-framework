@@ -172,7 +172,7 @@ function Index() {
               </h2>
               <div className="mt-6 space-y-5 font-body text-base leading-relaxed text-slate sm:text-lg">
                 <p>
-                  I&apos;m a certified microdosing coach with training in trauma-informed care, harm reduction, and integration. My work sits at the intersection of professional rigour and deep human presence.
+                  I&apos;m an accredited microdosing coach with training in trauma-informed care, cultural and neurodiversity awareness, harm reduction, and integration. My work sits at the intersection of professional rigour and deep human presence.
                 </p>
                 <p>
                   Client safety is the foundation of everything I do. Before any exploration, we build clear agreements and a shared map of the journey ahead, so you always know where you are and what comes next.
