@@ -155,7 +155,7 @@ function AboutPage() {
                 A safe, relaxed space for us to share a brief introduction, explore your current intentions, and determine if our coaching partnership is the right fit for your journey.
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
-                <li>1 x 45-minute baseline assessment and alignment session</li>
+                <li>One 45-minute baseline assessment and alignment session</li>
                 <li>Get to know your coach</li>
                 <li>Your questions answered and any concerns addressed</li>
                 <li>Direct email support follow-up</li>
