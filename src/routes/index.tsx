@@ -175,7 +175,7 @@ function Index() {
                   I&apos;m an accredited microdosing coach with training in trauma-informed care, cultural and neurodiversity awareness, harm reduction, and integration. My work sits at the intersection of professional rigour and deep human presence.
                 </p>
                 <p>
-                  Client safety is the foundation of everything I do. Before any exploration, we build a clear set of agreements and a shared map of the journey ahead, so you always know where you are and what comes next.
+                  Client safety and agency is the foundation of everything I do. Before any exploration, we build a clear set of agreements and a shared map of the journey ahead, so you always know where you are and what comes next.
                 </p>
                 <p>
                   Sessions draw on established microdosing frameworks including preparation and intention setting, embodied reflection, curious exploration, meaning-making dialogue, and habit design - so profound moments can become durable change in your daily life.
