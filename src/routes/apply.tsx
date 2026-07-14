@@ -674,7 +674,7 @@ function Step3({
       {/* Motivations — checkboxes */}
       <fieldset>
         <legend className={labelCls}>
-          Motivations <span className="text-red-600">*</span>
+          Motivations for Microdosing <span className="text-red-600">*</span>
         </legend>
         <p className="mt-1 font-body text-xs text-slate">Select all that apply.</p>
         <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
