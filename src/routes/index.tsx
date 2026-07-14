@@ -301,7 +301,7 @@ function Index() {
                 info: "She/Her - Portugal"
               },
               {
-                text: "I have worked with Joe for a few years and have always found him to be consistent, dependable, trustworthy, and knowledgeable. I have always appreciated how calm, composed, and level-headed he is. He is someone I would always turn to for help and support",
+                text: "I have worked with Joe for a few years and have always found him to be consistent, dependable, trustworthy, and knowledgeable. I have always appreciated how calm, composed, perceptive, and level-headed he is. He is someone I would always turn to for help and support.",
                 name: "Sandy A.",
                 info: "She/Her - France"
               }
