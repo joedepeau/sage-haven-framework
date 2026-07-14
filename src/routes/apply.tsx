@@ -1115,9 +1115,9 @@ function Step5({ data, update, errors }: StepProps) {
             aria-invalid={!!errors.agreeLegalDisclaimer}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
-            I understand that Still Harbour does not sell, assist with the purchase of, or encourage the use
-            of illegal substances. I take responsibility for following all applicable laws in my country of
-            residence.
+            I understand that Still Harbour does not provide, sell, assist with the purchase of, or
+            encourage the use of illegal substances. I take responsibility for following all applicable laws
+            in my country of residence.
           </span>
         </label>
         {errors.agreeLegalDisclaimer && (
