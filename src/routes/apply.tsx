@@ -1096,7 +1096,7 @@ function Step5({ data, update, errors }: StepProps) {
               <li>Currently taking Lithium or Tramadol</li>
               <li>Currently pregnant, trying to get pregnant, or breastfeeding</li>
               <li>Current or prior diagnosis of Psychosis, Schizophrenia, or Bipolar I Disorder</li>
-              <li>History of Psychosis, Schizophrenia, or Bipolar I Disorder in an immediate family member</li>
+              <li>History of Psychosis, Schizophrenia, or Bipolar I Disorder in my immediate family.</li>
             </ul>
           </span>
         </label>
@@ -1123,7 +1123,7 @@ function Step5({ data, update, errors }: StepProps) {
             aria-invalid={!!errors.agreeLegalDisclaimer}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
-            I understand that Still Harbour does not sell, aid in the purchase of, or encourage the use
+            I understand that Still Harbour does not sell, assist with the purchase of, or encourage the use
             of illegal substances. I take responsibility for following all applicable laws in my country of
             residence.
           </span>
