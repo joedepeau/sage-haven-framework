@@ -928,7 +928,7 @@ function Step5({ data, update, errors }: StepProps) {
           Truth & Completeness <span className="text-red-600">*</span>
         </legend>
         <label
-          className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+          className={`mt-3 flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
             data.agreeTruthCompleteness ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
           }`}
         >
