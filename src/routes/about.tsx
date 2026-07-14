@@ -62,7 +62,7 @@ function AboutPage() {
               </h1>
               <div className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg space-y-4">
                 <p>
-                  My name is Joe, and I'm passionate about microdosing.&nbsp; I've been microdosing since 2018, and came to microdose coaching after working with a coach myself.&nbsp; I found that my coach really helped me take my practice to the next level - as I deepened my relationship with my chosen sacrament, fine tuned my approach, and learned to apply the benefits in more areas of my life.&nbsp; I decided then that I wanted to support others in the same way along their own journeys.
+                  My name is Joe, and I'm passionate about microdosing.&nbsp; I've been microdosing since 2018, and decided to become a microdose coach after working with a coach myself.&nbsp; I found that my coach really helped me take my practice to the next level - as I deepened my relationship with my chosen sacrament, fine tuned my approach, and learned to apply the benefits in more areas of my life.&nbsp; I knew then that I wanted to support others in the same way along their own journeys.
                 </p>
                 <p>
                   I have worked with people from around the world, from all walks of life and with many different individual intentions.&nbsp; While I'm a generalist, I have a particular affinity for working with:
