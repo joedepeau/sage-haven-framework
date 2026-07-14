@@ -54,6 +54,9 @@ function AboutPage() {
 
             {/* Right — Text */}
             <div className="flex flex-col justify-center md:col-span-3">
+              <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
+                About Your Coach
+              </p>
               <h1 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
                 Steady Guidance for Intentional Journeys.
               </h1>
