@@ -155,30 +155,6 @@ function AboutPage() {
               </div>
             </div>
 
-            {/* Integration Container Card */}
-            <div className="flex flex-col rounded-xl border-2 border-navy bg-white p-8 shadow-lg sm:p-10">
-              <h3 className="font-display text-xl font-medium text-navy">
-                The Integration Container
-              </h3>
-              <p className="mt-3 font-body text-base text-slate">
-                Bespoke 1-on-1 container for journey integration, with or without microdosing as part of our toolkit.
-              </p>
-              <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
-                <li>Flexible 1-on-1 coaching sessions built around your needs</li>
-                <li>Support for both microdosing and non-microdosing paths</li>
-                <li>Secure text support between sessions</li>
-              </ul>
-              <p className="mt-8 font-display text-2xl font-medium text-navy">
-                Investment: £180
-              </p>
-              <div className="mt-8">
-                <Link to="/apply">
-                  <Button className="h-14 w-full bg-ochre font-body text-base font-semibold text-navy shadow-none hover:bg-ochre/90">
-                    Apply for the Container
-                  </Button>
-                </Link>
-              </div>
-            </div>
 
             {/* Signature Container Card */}
             <div className="flex flex-col rounded-xl border-2 border-navy bg-white p-8 shadow-lg sm:p-10">
