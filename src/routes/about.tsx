@@ -165,7 +165,7 @@ function AboutPage() {
                 <li>Get to know your coach</li>
                 <li>Your questions answered and any concerns addressed</li>
                 <li>Direct email support follow-up</li>
-                <li>Cost deducted from your first Microdosing Journey Container booking</li>
+                <li>Cost deducted from your first Coaching Container booking</li>
               </ul>
               <div className="mt-auto pt-8">
                 <p className="font-display text-2xl font-medium text-navy">
