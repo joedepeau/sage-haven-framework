@@ -46,6 +46,7 @@ type FormData = {
   medicalDisclosure: string;
   medications: string;
   nonPrescribedMedications: string;
+  healthWellbeingPractices: string;
   timeCommitment: string;
   startTiming: string;
   hearAbout: string;
