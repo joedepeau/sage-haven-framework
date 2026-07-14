@@ -66,7 +66,7 @@ function AboutPage() {
                 </p>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>Members of the LGBTQ2SIA+ community</li>
-                  <li>Men looking for supportive masculine energy in a coach</li>
+                  <li>Men looking for supportive, positive masculine energy in a coaching relationship</li>
                   <li>People who have been diagnosed or identify as neurodivergent</li>
                   <li>Tech workers and corporate warriors dealing with burnout or facing career challenges in today's evolving workplace environments.</li>
                 </ul>
