@@ -171,6 +171,10 @@ function ApplyPage() {
   const [data, setData] = useState<FormData>(initialData);
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  const [website, setWebsite] = useState(""); // honeypot
+  const callSubmit = useServerFn(submitApplication);
 
   // Load persisted draft
   useEffect(() => {
