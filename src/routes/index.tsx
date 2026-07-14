@@ -273,7 +273,7 @@ function Index() {
                 <h3 className="mb-2 font-display text-lg font-medium text-cream">
                   {principle.title}
                 </h3>
-                <p className="font-body text-sm leading-relaxed text-slate">
+                <p className="font-body text-sm leading-relaxed text-cream/80">
                   {principle.desc}
                 </p>
               </div>
