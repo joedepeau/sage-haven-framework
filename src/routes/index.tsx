@@ -263,7 +263,7 @@ function Index() {
             {[
               { title: "This is your process", desc: "You are, and will always be, our North Star" },
               { title: "You have full agency", desc: "We go at your pace and respect your boundaries" },
-              { title: "Science + Wisdom", desc: "We are informed by both modern research and age-old knowledge" },
+              { title: "Science + Tradition", desc: "We are informed by both research and time-honoured wisdom" },
               { title: "Complete confidentiality", desc: "We create a safe and private container together, just for you" }
             ].map((principle, i) => (
               <div key={i} className="text-center">
