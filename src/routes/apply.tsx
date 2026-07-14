@@ -1,7 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
+import { submitApplication } from "@/lib/submit-application.functions";
 
 export const Route = createFileRoute("/apply")({
   component: ApplyPage,
