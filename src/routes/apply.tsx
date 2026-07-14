@@ -114,8 +114,10 @@ function validateStep(step: number, data: FormData): Errors {
     if (data.motivations.length === 0) e.motivations = "Please select at least one option.";
     if (!data.goals.trim()) e.goals = "Please share your goals in your own words.";
     if (!data.mentalHealthDescription.trim()) e.mentalHealthDescription = "Please describe your mental health.";
-    if (!data.medications.trim()) e.medications = "Please list any prescribed medications.";
     if (data.conditions.length === 0) e.conditions = "Please select at least one option.";
+  }
+  if (step === 4) {
+    if (!data.medications.trim()) e.medications = "Please list any prescribed medications.";
   }
   return e;
 }
@@ -312,9 +314,7 @@ function ApplyPage() {
                   toggleCondition={(v) => toggleArray("conditions", v)}
                 />
               )}
-              {step === 4 && (
-                <StepPlaceholder title="Wellbeing" note="Coming next." />
-              )}
+              {step === 4 && <Step4 data={data} update={update} errors={errors} />}
               {step === 5 && (
                 <StepPlaceholder title="Agreements" note="Coming next." />
               )}
@@ -732,26 +732,6 @@ function Step3({
         )}
       </div>
 
-      {/* Prescribed Medications */}
-      <div>
-        <label className={labelCls} htmlFor="medications">
-          Prescribed Medications <span className="text-red-600">*</span>
-        </label>
-        <p className="mt-1 font-body text-xs text-slate">
-          List any prescribed medications you currently take, along with the condition they are used to treat
-        </p>
-        <textarea
-          id="medications"
-          rows={4}
-          value={data.medications}
-          onChange={(e) => update("medications", e.target.value)}
-          className={fieldCls(!!errors.medications)}
-          placeholder="e.g. Sertraline 50mg for anxiety"
-          aria-invalid={!!errors.medications}
-        />
-        {errors.medications && <p className={errorTextCls}>{errors.medications}</p>}
-      </div>
-
       {/* Profiles / Conditions — checkboxes */}
       <fieldset>
         <legend className={labelCls}>
@@ -800,6 +780,36 @@ function Step3({
   );
 }
 
+function Step4({ data, update, errors }: StepProps) {
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Wellbeing</h2>
+        <p className="mt-1 font-body text-sm text-slate">A few questions about your current health and support.</p>
+      </div>
+
+      {/* Prescribed Medications */}
+      <div>
+        <label className={labelCls} htmlFor="medications">
+          Prescribed Medications <span className="text-red-600">*</span>
+        </label>
+        <p className="mt-1 font-body text-xs text-slate">
+          List any prescribed medications you currently take, along with the condition they are used to treat
+        </p>
+        <textarea
+          id="medications"
+          rows={4}
+          value={data.medications}
+          onChange={(e) => update("medications", e.target.value)}
+          className={fieldCls(!!errors.medications)}
+          placeholder="e.g. Sertraline 50mg for anxiety"
+          aria-invalid={!!errors.medications}
+        />
+        {errors.medications && <p className={errorTextCls}>{errors.medications}</p>}
+      </div>
+    </div>
+  );
+}
 
 function StepPlaceholder({ title, note }: { title: string; note: string }) {
   return (
