@@ -81,9 +81,14 @@ function Index() {
                   Looking to bring more presence, space, clarity, joy, or creativity into your life - but don't feel like you have the right tools?
                 </p>
               </div>
-              <div className="border-t border-b border-navy/10 py-6">
+              <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
                   Lacking a clear, structured framework to integrate insights from meaningful experiences?
+                </p>
+              </div>
+              <div className="border-t border-b border-navy/10 py-6">
+                <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
+                  Worked with microdosing before, and want to turn it into a deeper practice?
                 </p>
               </div>
             </div>
