@@ -1095,7 +1095,7 @@ function Step5({ data, update, errors }: StepProps) {
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Currently taking Lithium or Tramadol</li>
               <li>Currently pregnant, trying to get pregnant, or breastfeeding</li>
-              <li>Current or prior personal diagnosis of Psychosis, Schizophrenia, or Bipolar I Disorder</li>
+              <li>Current or prior diagnosis of Psychosis, Schizophrenia, or Bipolar I Disorder</li>
               <li>History of Psychosis, Schizophrenia, or Bipolar I Disorder in an immediate family member</li>
             </ul>
           </span>
