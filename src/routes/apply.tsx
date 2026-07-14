@@ -161,7 +161,9 @@ function validateStep(step: number, data: FormData): Errors {
   if (step === 5) {
     if (!data.agreeTruthCompleteness) e.agreeTruthCompleteness = "Please acknowledge to continue.";
     if (!data.agreeSchedulingPayment) e.agreeSchedulingPayment = "Please acknowledge to continue.";
+    if (!data.agreeRefundPolicy) e.agreeRefundPolicy = "Please acknowledge to continue.";
     if (!data.agreeContraindications) e.agreeContraindications = "Please acknowledge to continue.";
+
     if (!data.agreeLegalDisclaimer) e.agreeLegalDisclaimer = "Please acknowledge to continue.";
     if (!data.agreeHarmReduction) e.agreeHarmReduction = "Please acknowledge to continue.";
     if (!data.agreePrivacy) e.agreePrivacy = "Please acknowledge to continue.";
