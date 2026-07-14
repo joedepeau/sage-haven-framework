@@ -211,7 +211,7 @@ function AboutPage() {
             <div className="flex items-center gap-2">
               <img src={logoAsset.url} alt="Still Harbour logo" className="h-9 w-9 object-contain" />
               <span className="font-display text-base font-medium text-navy">
-                Still Harbour
+                Still Harbour Coaching
               </span>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
@@ -228,7 +228,7 @@ function AboutPage() {
           </div>
           <div className="mt-8 border-t border-navy/10 pt-6">
             <p className="font-body text-xs leading-relaxed text-slate/80">
-              <span className="font-semibold text-slate">Disclaimer:</span> Still Harbour provides educational and peer-support coaching services only. The information on this website is for educational and harm-reduction purposes and is not a substitute for professional medical advice, diagnosis, or treatment. I do not provide, sell, or encourage the use of illegal substances.
+              <span className="font-semibold text-slate">Disclaimer:</span> Still Harbour Coaching provides educational and peer-support coaching services only. The information on this website is for educational and harm-reduction purposes and is not a substitute for professional medical advice, diagnosis, or treatment. We do not provide, sell, or encourage the use of illegal substances.
             </p>
           </div>
         </div>
