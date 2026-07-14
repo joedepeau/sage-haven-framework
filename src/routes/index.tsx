@@ -235,7 +235,7 @@ function Index() {
                 </span>
               </h3>
               <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
-                A personalised container of four 50-minute sessions, between-session practices, and text or voice-note support throughout. We move through preparation, exploration and deepening, embodied integration, and habit design, so insights become the way you actually live, work, and relate.
+                A personalised container of four 50-minute sessions, between-session practices, and text or voice-note support throughout. We move through preparation, exploration and deepening, embodied integration, and habit design - so insights become the way you actually live, work, and relate.
               </p>
               <Link to="/apply">
                 <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
