@@ -299,6 +299,11 @@ function Index() {
                 text: "“With his caring and attentive presence, Joe offered space for me to express emotions without needing to fix them. He helped me to remain curious about my experience and reconnect to my resilience and creativity, even in the face of unexpected challenges. His support made a huge difference in the way I was able to integrate lessons and changes into my life.”",
                 name: "Jyoti G.",
                 info: "She/Her - Portugal"
+              },
+              {
+                text: "I have worked with Joe for a few years and have always found him to be consistent, dependable, trustworthy, and knowledgeable. I have always appreciated how calm, composed, and level-headed he is. He is someone I would always turn to for help and support",
+                name: "Sandy A.",
+                info: "She/Her - France"
               }
             ].map((testimonial, i) => (
               <div
