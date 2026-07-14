@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import coachPortrait from "@/assets/coach-portrait.jpg.asset.json";
 import logoAsset from "@/assets/logo.png.asset.json";
+import badgeAsset from "@/assets/badge-cropped.png.asset.json";
 
 export const Route = createFileRoute("/about")({
   component: AboutPage,
@@ -28,7 +29,7 @@ function AboutPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 md:grid-cols-5 md:gap-16 lg:gap-20">
             {/* Left — Headshot Placeholder */}
-            <div className="md:col-span-2">
+            <div className="md:col-span-2 space-y-6">
               <div className="relative overflow-hidden rounded-2xl bg-navy/10 shadow-sm">
                 <img
                   src={coachPortrait.url}
@@ -37,6 +38,16 @@ function AboutPage() {
                   height={1024}
                   loading="eager"
                   className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="relative overflow-hidden rounded-2xl bg-white shadow-sm">
+                <img
+                  src={badgeAsset.url}
+                  alt="Microdosing Institute Certified Facilitator badge"
+                  width={499}
+                  height={134}
+                  loading="lazy"
+                  className="w-full"
                 />
               </div>
             </div>
