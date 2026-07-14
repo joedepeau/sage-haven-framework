@@ -137,7 +137,7 @@ function AboutPage() {
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
                 <li>1 x 45-minute deep-dive session</li>
-                <li>Custom microdosing roadmap</li>
+                <li>Your questions answered and any concerns addressed</li>
                 <li>Direct email support follow-up</li>
               </ul>
               <p className="mt-8 font-display text-2xl font-medium text-navy">
