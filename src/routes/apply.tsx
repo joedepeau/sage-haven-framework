@@ -46,6 +46,7 @@ type FormData = {
   medicalDisclosure: string;
   medications: string;
   nonPrescribedMedications: string;
+  healthWellbeingPractices: string;
   timeCommitment: string;
   startTiming: string;
   hearAbout: string;
@@ -76,6 +77,7 @@ const initialData: FormData = {
   medicalDisclosure: "",
   medications: "",
   nonPrescribedMedications: "",
+  healthWellbeingPractices: "",
   timeCommitment: "",
   startTiming: "",
   hearAbout: "",
@@ -829,6 +831,25 @@ function Step4({ data, update, errors }: StepProps) {
           aria-invalid={!!errors.nonPrescribedMedications}
         />
         {errors.nonPrescribedMedications && <p className={errorTextCls}>{errors.nonPrescribedMedications}</p>}
+      </div>
+
+      {/* Health, Wellbeing, and Spiritual Practices */}
+      <div>
+        <label className={labelCls} htmlFor="healthWellbeingPractices">
+          Health, Wellbeing, and Spiritual Practices{" "}
+          <span className="font-normal text-slate">(optional)</span>
+        </label>
+        <p className="mt-1 font-body text-xs text-slate">
+          Do you have any regular exercise, nutrition, movement, or spiritual practices?
+        </p>
+        <textarea
+          id="healthWellbeingPractices"
+          rows={4}
+          value={data.healthWellbeingPractices}
+          onChange={(e) => update("healthWellbeingPractices", e.target.value)}
+          className={fieldCls(false)}
+          placeholder="e.g. yoga twice a week, daily meditation, morning walks"
+        />
       </div>
     </div>
   );
