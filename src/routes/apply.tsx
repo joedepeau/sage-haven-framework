@@ -324,9 +324,7 @@ function ApplyPage() {
                 />
               )}
               {step === 4 && <Step4 data={data} update={update} errors={errors} />}
-              {step === 5 && (
-                <StepPlaceholder title="Agreements" note="Coming next." />
-              )}
+              {step === 5 && <Step5 data={data} update={update} errors={errors} />}
 
               {/* Navigation */}
               <div className="flex flex-col-reverse gap-3 pt-4 sm:flex-row sm:justify-between">
