@@ -139,6 +139,7 @@ function AboutPage() {
                 <li>1 x 45-minute deep-dive session</li>
                 <li>Your questions answered and any concerns addressed</li>
                 <li>Direct email support follow-up</li>
+                <li>Price deducted from your first Microdosing Journey Container booking</li>
               </ul>
               <p className="mt-8 font-display text-2xl font-medium text-navy">
                 Investment: £30
