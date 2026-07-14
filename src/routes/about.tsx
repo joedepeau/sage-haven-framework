@@ -95,7 +95,7 @@ function AboutPage() {
               <li>Journey Preparation and Integration</li>
             </ul>
             <ul className="list-disc space-y-3 pl-5 font-body text-base leading-relaxed text-slate sm:text-lg">
-              <li>Unlocking Creative Flow</li>
+              <li>Unlocking Your Creative Flow</li>
               <li>Sustaining Deep Focus</li>
               <li>Anchoring in the Present</li>
               <li>Reconnecting With Meaning</li>
