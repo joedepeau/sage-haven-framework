@@ -57,16 +57,27 @@ function AboutPage() {
               <h1 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
                 Steady Guidance for Intentional Journeys.
               </h1>
-              <p className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg">
-                Meet [Your Name], your partner in psychological grounding, mindset alignment, and integration coaching.
-              </p>
+              <div className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg space-y-4">
+                <p>
+                  My name is Joe, and I'm passionate about microdosing.&nbsp; i've been microdosing since 2018, and came to microdose coaching after working with a coach myself.&nbsp; I found that microdose coaching really helped me take my practice to the next level - deepening my relationship with my chosen sacrament, helping me fine tune my approach, and learning to apply the benefits in more areas of my life.&nbsp; I decided then and there I wanted to help others in the same way along their own microdosing journeys.
+                </p>
+                <p>
+                  I have worked with people from around the world, from all walks of life and with many different individual intentions.&nbsp; While I'm a generalist, I have a particular affinity for working with:
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Members of the LGBTQ2SIA+ community</li>
+                  <li>Men looking for supportive masculine energy in a coach</li>
+                  <li>People who have been diagnosed or identify as neurodivergent</li>
+                  <li>Tech workers and corporate warriors dealing with burnout or facing career challenges in today's challenging workplace environments.</li>
+                </ul>
+              </div>
               <p className="mt-6 font-body text-base leading-relaxed text-slate italic sm:text-lg">
-                A steady, attentive partnership designed to help you anchor your mind, navigate your choices, and live with total intent.
+                I would love to learn more about you and how we might develop a steady, supportive partnership designed to help you anchor your mind, navigate your choices, and live with total intent.
               </p>
               <div className="mt-10">
-                <Link to="/">
+                <Link to="/apply">
                   <Button className="h-12 bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
-                    Back to Home
+                    Book a Call
                   </Button>
                 </Link>
               </div>
