@@ -79,7 +79,7 @@ function Index() {
               </div>
               <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Looking to bring more presence, space, clarity, joy, or creativity into your life - but don't feel you have the right tools?
+                  Looking to bring more presence, clarity, joy, or creativity into your life - but don't feel you have the right tools?
                 </p>
               </div>
               <div className="border-t border-navy/10 py-6">
