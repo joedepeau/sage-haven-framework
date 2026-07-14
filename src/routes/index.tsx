@@ -285,12 +285,9 @@ function Index() {
                 <p className="mb-6 font-body text-base leading-relaxed text-cream/90 italic">
                   {testimonial.text}
                 </p>
-                <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-full bg-cream/20" />
-                  <div>
-                    <p className="font-body text-sm font-semibold text-cream">{testimonial.name}</p>
-                    <p className="font-body text-xs text-cream/60">{testimonial.info}</p>
-                  </div>
+                <div>
+                  <p className="font-body text-sm font-semibold text-cream">{testimonial.name}</p>
+                  <p className="font-body text-xs text-cream/60">{testimonial.info}</p>
                 </div>
               </div>
             ))}
