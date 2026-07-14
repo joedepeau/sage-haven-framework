@@ -810,6 +810,26 @@ function Step4({ data, update, errors }: StepProps) {
         />
         {errors.medications && <p className={errorTextCls}>{errors.medications}</p>}
       </div>
+
+      {/* Non-Prescribed Medications and Supplements */}
+      <div>
+        <label className={labelCls} htmlFor="nonPrescribedMedications">
+          Non-Prescribed Medications and Supplements <span className="text-red-600">*</span>
+        </label>
+        <p className="mt-1 font-body text-xs text-slate">
+          List any non-prescribed medications or supplements you currently take
+        </p>
+        <textarea
+          id="nonPrescribedMedications"
+          rows={4}
+          value={data.nonPrescribedMedications}
+          onChange={(e) => update("nonPrescribedMedications", e.target.value)}
+          className={fieldCls(!!errors.nonPrescribedMedications)}
+          placeholder="e.g. magnesium, vitamin D, St John&apos;s Wort"
+          aria-invalid={!!errors.nonPrescribedMedications}
+        />
+        {errors.nonPrescribedMedications && <p className={errorTextCls}>{errors.nonPrescribedMedications}</p>}
+      </div>
     </div>
   );
 }
