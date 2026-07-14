@@ -74,7 +74,7 @@ function Index() {
             <div className="flex flex-col justify-center">
               <div className="border-t border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Feeling overwhelmed by raw emotion, shifting priorities, or complex changes and need a safe, non-judgemental professional to talk to?
+                  Feeling overwhelmed by raw emotions, shifting priorities, or complex changes and need a safe, non-judgemental professional to talk to?
                 </p>
               </div>
               <div className="border-t border-navy/10 py-6">
