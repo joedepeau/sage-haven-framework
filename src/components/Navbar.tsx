@@ -10,7 +10,7 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2">
           <img src={logoAsset.url} alt="Still Harbour logo" className="h-10 w-10 object-contain" />
           <span className="hidden font-display text-lg font-medium text-navy sm:inline">
-            Microdose Coaching
+            Still Harbour Microdose Coaching
           </span>
         </Link>
 
