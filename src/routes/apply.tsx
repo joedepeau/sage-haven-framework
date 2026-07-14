@@ -102,7 +102,6 @@ function validateStep(step: number, data: FormData): Errors {
       e.email = "Please enter a valid email address.";
     }
     if (!data.gender) e.gender = "Please select an option.";
-    if (!data.pronouns.trim()) e.pronouns = "Pronouns are required.";
     if (!data.dob) e.dob = "Date of birth is required.";
     if (!data.generalHealth.trim()) e.generalHealth = "Please share a brief note on your general health.";
     if (!data.supportNetwork.trim()) e.supportNetwork = "Please describe your support network.";
@@ -466,17 +465,16 @@ function Step1({ data, update, errors }: StepProps) {
       {/* Pronouns */}
       <div>
         <label className={labelCls} htmlFor="pronouns">
-          Pronouns <span className="text-red-600">*</span>
+          Pronouns
         </label>
         <input
           id="pronouns"
           value={data.pronouns}
           onChange={(e) => update("pronouns", e.target.value)}
-          className={fieldCls(!!errors.pronouns)}
+          className={fieldCls(false)}
           placeholder="e.g. she/her, they/them"
-          aria-invalid={!!errors.pronouns}
+          aria-invalid={false}
         />
-        {errors.pronouns && <p className={errorTextCls}>{errors.pronouns}</p>}
       </div>
 
       {/* DOB */}
