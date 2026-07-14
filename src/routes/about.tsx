@@ -167,15 +167,17 @@ function AboutPage() {
                 <li>Direct email support follow-up</li>
                 <li>Cost deducted from your first Microdosing Journey Container booking</li>
               </ul>
-              <p className="mt-8 font-display text-2xl font-medium text-navy">
-                Investment: £30
-              </p>
-              <div className="mt-8">
-                <Link to="/apply">
-                  <Button className="h-14 w-full bg-navy px-8 font-body text-sm font-semibold text-cream shadow-none hover:bg-navy/90 sm:text-base">
-                    Apply Now
-                  </Button>
-                </Link>
+              <div className="mt-auto pt-8">
+                <p className="font-display text-2xl font-medium text-navy">
+                  Investment: £30
+                </p>
+                <div className="mt-8">
+                  <Link to="/apply">
+                    <Button className="h-14 w-full bg-navy px-8 font-body text-sm font-semibold text-cream shadow-none hover:bg-navy/90 sm:text-base">
+                      Apply Now
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
 
