@@ -948,7 +948,7 @@ function Step4({ data, update, errors }: StepProps) {
       {/* Additional Notes */}
       <div>
         <label className={labelCls} htmlFor="additionalNotes">
-          Anything else you&apos;d like us to know?{" "}
+          Anything else you&apos;d like me to know?{" "}
           <span className="font-normal text-slate">(optional)</span>
         </label>
         <textarea
