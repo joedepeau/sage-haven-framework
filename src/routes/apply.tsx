@@ -82,7 +82,7 @@ const initialData: FormData = {
   goals: "",
   mentalHealthDescription: "",
   conditions: [],
-  additionalConditions: "",
+  
   container: "",
   intention: "",
   practices: [],
