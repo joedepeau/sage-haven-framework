@@ -1042,7 +1042,38 @@ function Step5({ data, update, errors }: StepProps) {
         )}
       </fieldset>
 
+      {/* Refund Policy Agreement */}
+      <fieldset>
+        <legend className={labelCls}>
+          Refund Policy <span className="text-red-600">*</span>
+        </legend>
+        <label
+          className={`mt-3 flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+            data.agreeRefundPolicy ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={data.agreeRefundPolicy}
+            onChange={(e) => update("agreeRefundPolicy", e.target.checked)}
+            className="mt-1 h-5 w-5 shrink-0 accent-navy"
+            aria-invalid={!!errors.agreeRefundPolicy}
+          />
+          <span className="font-body text-sm leading-relaxed text-navy">
+            I understand that I need to provide at least 48 hours notice when requesting a change to the
+            date or time of a scheduled appointment, and that refunds will not be issued for missed
+            appointments. On the rare occasion my coach needs to reschedule an appointment without at
+            least 48 hours notice I will have the choice of priority replacement booking for a new date
+            and time, or £100 towards my next Coaching Container purchase.
+          </span>
+        </label>
+        {errors.agreeRefundPolicy && (
+          <p className={errorTextCls}>{errors.agreeRefundPolicy}</p>
+        )}
+      </fieldset>
+
       {/* Contraindications Agreement */}
+
       <fieldset>
         <legend className={labelCls}>
           Contraindications <span className="text-red-600">*</span>
