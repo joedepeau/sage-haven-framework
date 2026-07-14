@@ -101,8 +101,8 @@ function AboutPage() {
               <li>Anchoring in the Present</li>
               <li>Reconnecting With Meaning</li>
               <li>Reclaiming Personal Momentum</li>
-              <li>Embracing All Parts of Yourself</li>
               <li>Deepening Connection with Others</li>
+              <li>Embracing All Parts of Yourself</li>
             </ul>
           </div>
         </div>
