@@ -296,7 +296,7 @@ function Index() {
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                text: "“With his caring and attentive presence, Joe offered space for me to express emotions without needing to fix them. He reminded me to be curious about my experience and reconnect to my resilience and creativity, even in the face of unexpected challenges. His support made a huge difference in the way I was able to integrate lessons and changes into my life.”",
+                text: "“With his caring and attentive presence, Joe offered space for me to express emotions without needing to fix them. He helped me to remain curious about my experience and reconnect to my resilience and creativity, even in the face of unexpected challenges. His support made a huge difference in the way I was able to integrate lessons and changes into my life.”",
                 name: "Jyoti G.",
                 info: "She/Her / Portugal"
               }
