@@ -298,7 +298,7 @@ function Index() {
               {
                 text: "“With his caring and attentive presence, Joe offered space for me to express emotions without needing to fix them. He helped me to remain curious about my experience and reconnect to my resilience and creativity, even in the face of unexpected challenges. His support made a huge difference in the way I was able to integrate lessons and changes into my life.”",
                 name: "Jyoti G.",
-                info: "She/Her / Portugal"
+                info: "She/Her - Portugal"
               }
             ].map((testimonial, i) => (
               <div
