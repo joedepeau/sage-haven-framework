@@ -56,8 +56,10 @@ type FormData = {
   additionalNotes: string;
   agreeTruthCompleteness: boolean;
   agreeSchedulingPayment: boolean;
+  agreeRefundPolicy: boolean;
   agreeContraindications: boolean;
   agreeLegalDisclaimer: boolean;
+
   agreeHarmReduction: boolean;
   agreePrivacy: boolean;
 
