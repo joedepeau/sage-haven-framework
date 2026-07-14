@@ -8,10 +8,10 @@ export function Navbar() {
         {/* Logo Placeholder */}
         <Link to="/" className="flex items-center gap-2">
           <div className="grid h-9 w-9 place-items-center rounded-full bg-navy">
-            <span className="font-display text-sm font-semibold text-cream">IC</span>
+            <span className="font-display text-sm font-semibold text-cream">MC</span>
           </div>
           <span className="hidden font-display text-lg font-medium text-navy sm:inline">
-            Integration Coaching
+            Microdose Coaching
           </span>
         </Link>
 
