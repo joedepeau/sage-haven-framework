@@ -149,10 +149,10 @@ function AboutPage() {
                 The Discovery & Alignment Session
               </h3>
               <p className="mt-3 font-body text-base text-slate">
-                Baseline assessment, grounding framework creation, and initial course setting.
+                A safe, relaxed space for us to share a brief introduction, explore your current intentions, and determine if our coaching partnership is the right for for your journey.
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
-                <li>1 x 45-minute deep-dive session</li>
+                <li>1 x 45-minute alignment session</li>
                 <li>Your questions answered and any concerns addressed</li>
                 <li>Direct email support follow-up</li>
                 <li>Cost deducted from your first Microdosing Journey Container booking</li>
