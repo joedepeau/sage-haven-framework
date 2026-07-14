@@ -180,7 +180,7 @@ function Index() {
               Coaching Services
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+          <div className="grid gap-6 md:grid-cols-2 md:gap-8">
             <div className="flex flex-col rounded-2xl border border-navy/10 bg-white p-8 shadow-sm sm:p-10">
               <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
                 Start Here
@@ -212,28 +212,6 @@ function Index() {
               </h3>
               <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
                 A held container of four 50-minute sessions, between-session practices, and text or voice-note support throughout. We move through preparation, exploration and deepening, embodied integration, and habit design, so insights become the way you actually live, work, and relate.
-              </p>
-              <Link to="/apply">
-                <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
-                  Apply Now
-                </Button>
-              </Link>
-            </div>
-            <div className="relative flex flex-col rounded-2xl border-2 border-ochre bg-white p-8 shadow-md sm:p-10">
-              <span className="absolute -top-3 left-8 rounded-full bg-ochre px-4 py-1 font-body text-xs font-semibold uppercase tracking-widest text-navy">
-                Integration Container
-              </span>
-              <p className="mb-3 font-body text-xs font-semibold uppercase tracking-widest text-slate">
-                Deep Work
-              </p>
-              <h3 className="mb-4 font-display text-2xl font-medium text-navy sm:text-3xl">
-                1-on-1 Integration Container
-                <span className="mt-1 block font-body text-base font-normal text-slate">
-                  Bespoke
-                </span>
-              </h3>
-              <p className="mb-8 flex-1 font-body text-base leading-relaxed text-slate">
-                A customised integration container designed to match your goals and needs. We will explore the insights from your experience, work together to deepen and embody them, and design an action plan to turn them into lasting transformation in your life and relationships.
               </p>
               <Link to="/apply">
                 <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
