@@ -106,7 +106,9 @@ function buildDocumentText(data: ApplicationPayload, receivedAt: string): string
     `— Step 5: Agreements —\n\n` +
     fmtBool("Truth & Completeness", data.agreeTruthCompleteness) +
     fmtBool("Scheduling and Payment", data.agreeSchedulingPayment) +
+    fmtBool("Refund Policy", data.agreeRefundPolicy) +
     fmtBool("Contraindications", data.agreeContraindications) +
+
     fmtBool("Legal Disclaimer", data.agreeLegalDisclaimer) +
     fmtBool("Harm Reduction", data.agreeHarmReduction) +
     fmtBool("Privacy", data.agreePrivacy)
