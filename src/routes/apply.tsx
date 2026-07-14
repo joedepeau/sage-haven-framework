@@ -240,18 +240,31 @@ function ApplyPage() {
     if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     const stepErrors = validateStep(step, data);
     if (Object.keys(stepErrors).length > 0) {
       setErrors(stepErrors);
       return;
     }
-    setSubmitted(true);
+    setSubmitError(null);
+    setSubmitting(true);
     try {
-      window.localStorage.removeItem(STORAGE_KEY);
-    } catch {
-      /* ignore */
+      await callSubmit({ data: { ...data, website } });
+      setSubmitted(true);
+      try {
+        window.localStorage.removeItem(STORAGE_KEY);
+      } catch {
+        /* ignore */
+      }
+    } catch (err) {
+      const message =
+        err instanceof Error && err.message
+          ? err.message
+          : "Something went wrong submitting your application. Please try again.";
+      setSubmitError(message);
+    } finally {
+      setSubmitting(false);
     }
   };
 
