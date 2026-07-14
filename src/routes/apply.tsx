@@ -51,8 +51,10 @@ type FormData = {
   startTiming: string;
   hearAbout: string;
   additionalNotes: string;
+  agreeTruthCompleteness: boolean;
   agreeHarmReduction: boolean;
   agreePrivacy: boolean;
+
 };
 
 const initialData: FormData = {
@@ -82,8 +84,10 @@ const initialData: FormData = {
   startTiming: "",
   hearAbout: "",
   additionalNotes: "",
+  agreeTruthCompleteness: false,
   agreeHarmReduction: false,
   agreePrivacy: false,
+
 };
 
 const STEP_LABELS = [
@@ -138,9 +142,11 @@ function validateStep(step: number, data: FormData): Errors {
     if (!data.nonPrescribedMedications.trim()) e.nonPrescribedMedications = "Please list any non-prescribed medications or supplements.";
   }
   if (step === 5) {
+    if (!data.agreeTruthCompleteness) e.agreeTruthCompleteness = "Please acknowledge to continue.";
     if (!data.agreeHarmReduction) e.agreeHarmReduction = "Please acknowledge to continue.";
     if (!data.agreePrivacy) e.agreePrivacy = "Please acknowledge to continue.";
   }
+
   return e;
 }
 
