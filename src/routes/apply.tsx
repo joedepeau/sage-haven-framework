@@ -1006,6 +1006,36 @@ function Step5({ data, update, errors }: StepProps) {
         )}
       </fieldset>
 
+      {/* Scheduling and Payment Agreement */}
+      <fieldset>
+        <legend className={labelCls}>
+          Scheduling and Payment <span className="text-red-600">*</span>
+        </legend>
+        <label
+          className={`mt-3 flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+            data.agreeSchedulingPayment ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={data.agreeSchedulingPayment}
+            onChange={(e) => update("agreeSchedulingPayment", e.target.checked)}
+            className="mt-1 h-5 w-5 shrink-0 accent-navy"
+            aria-invalid={!!errors.agreeSchedulingPayment}
+          />
+          <span className="font-body text-sm leading-relaxed text-navy">
+            I understand that a Discovery Session is required before entering into a Coaching Container.
+            The price of a Discovery Session is £30 and will be paid in advance of the date of the call.
+            The price of my Discovery Session will be deducted from the cost of my first scheduled Coaching
+            Container. I understand that all calls will be conducted online via Google Meet, in English, and
+            that I will be emailed payment details and available call times upon submission of this form.
+          </span>
+        </label>
+        {errors.agreeSchedulingPayment && (
+          <p className={errorTextCls}>{errors.agreeSchedulingPayment}</p>
+        )}
+      </fieldset>
+
       {/* Contraindications Agreement */}
       <fieldset>
         <legend className={labelCls}>
