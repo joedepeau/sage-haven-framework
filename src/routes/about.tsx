@@ -80,7 +80,7 @@ function AboutPage() {
       </section>
 
       {/* Where Coaching Can Help Section */}
-      <section className="bg-sage/20 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
+      <section className="bg-sage/20 px-6 pb-20 pt-8 sm:px-8 sm:pb-28 sm:pt-12 lg:px-12 lg:pb-36 lg:pt-16">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
             Where Microdose Coaching Can Help
