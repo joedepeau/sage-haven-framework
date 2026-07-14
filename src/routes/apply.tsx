@@ -314,9 +314,7 @@ function ApplyPage() {
                   toggleCondition={(v) => toggleArray("conditions", v)}
                 />
               )}
-              {step === 4 && (
-                <StepPlaceholder title="Wellbeing" note="Coming next." />
-              )}
+              {step === 4 && <Step4 data={data} update={update} errors={errors} />}
               {step === 5 && (
                 <StepPlaceholder title="Agreements" note="Coming next." />
               )}
