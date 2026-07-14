@@ -88,7 +88,7 @@ function Index() {
               </div>
               <div className="border-t border-b border-navy/10 py-6">
                 <p className="font-body text-base leading-relaxed text-slate sm:text-lg">
-                  Worked with microdosing before, and want to turn it into a deeper practice?
+                  Worked with microdosing before, and want to turn it into a deeper and more impactful practice in your daily life?
                 </p>
               </div>
             </div>
