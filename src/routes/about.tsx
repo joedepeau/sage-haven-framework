@@ -93,9 +93,9 @@ function AboutPage() {
               </ul>
             </div>
             <div>
-              <h3 className="font-display text-xl font-medium text-navy">Mindfulness &amp; Grounding</h3>
+              <h3 className="font-display text-xl font-medium text-navy">Where we can work together</h3>
               <ul className="mt-6 list-disc space-y-3 pl-5 font-body text-base text-slate">
-                <li>Mindfulness-Based Stress Reduction (MBSR)</li>
+                <li></li>
                 <li>Vipassana &amp; Somatic Meditation Training</li>
                 <li>Breathwork &amp; Nervous System Regulation</li>
                 <li>Embodied Presence Facilitation</li>
