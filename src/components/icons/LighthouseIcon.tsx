@@ -13,13 +13,23 @@ export const LighthouseIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) =
     strokeLinejoin="round"
     {...props}
   >
-    <path d="M9 3h6l1 3H8z" />
-    <path d="M8 6h8l-2 14H10z" />
-    <path d="M10 10h4" />
-    <path d="M9.5 14h5" />
-    <path d="M5 8l-3 2" />
-    <path d="M19 8l3 2" />
-    <path d="M6 11.5L3 13" />
-    <path d="M18 11.5l3 1.5" />
+    {/* Finial */}
+    <path d="M12 3V1.5" />
+    {/* Lantern room */}
+    <path d="M10 3h4v4h-4z" />
+    {/* Triangular light rays */}
+    <path d="M10 5 L4 3 L4 7 Z" />
+    <path d="M14 5 L20 3 L20 7 Z" />
+    {/* Balcony */}
+    <path d="M9.25 7h5.5" />
+    {/* Tower — widens toward the base */}
+    <path d="M10.5 7 L8.5 19" />
+    <path d="M13.5 7 L15.5 19" />
+    {/* Mid-tower band */}
+    <path d="M9.5 13h5" />
+    {/* Base */}
+    <path d="M7.5 19h9v2h-9z" />
+    {/* Ground */}
+    <path d="M4 22h16" />
   </svg>
 );
