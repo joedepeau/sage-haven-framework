@@ -990,7 +990,36 @@ function Step5({ data, update, errors }: StepProps) {
         )}
       </fieldset>
 
+      {/* Legal Disclaimer Agreement */}
+      <fieldset>
+        <legend className={labelCls}>
+          Legal Disclaimer <span className="text-red-600">*</span>
+        </legend>
+        <label
+          className={`mt-3 flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+            data.agreeLegalDisclaimer ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={data.agreeLegalDisclaimer}
+            onChange={(e) => update("agreeLegalDisclaimer", e.target.checked)}
+            className="mt-1 h-5 w-5 accent-navy"
+            aria-invalid={!!errors.agreeLegalDisclaimer}
+          />
+          <span className="font-body text-sm leading-relaxed text-navy">
+            I understand that Still Harbour does not sell, aid in the purchase of, or encourage the use
+            of illegal substances. I take responsibility for following the laws of my country of
+            residence.
+          </span>
+        </label>
+        {errors.agreeLegalDisclaimer && (
+          <p className={errorTextCls}>{errors.agreeLegalDisclaimer}</p>
+        )}
+      </fieldset>
+
       {/* Harm Reduction Agreement */}
+
 
       <fieldset>
 
