@@ -544,7 +544,7 @@ function Step2({
 }: StepProps & { toggleMicrodosing: (v: string) => void }) {
   const priorOpts = [
     { value: "none", label: "None", desc: "I have no prior experience." },
-    { value: "some", label: "Some", desc: "A handful of pervious experiences." },
+    { value: "some", label: "Some", desc: "A handful of previous experiences." },
     { value: "moderate", label: "Moderate", desc: "Regular, considered use over time." },
     { value: "extensive", label: "Extensive", desc: "Long-standing, deep familiarity." },
   ];
