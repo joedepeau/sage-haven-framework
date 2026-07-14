@@ -96,7 +96,7 @@ function AboutPage() {
       <section className="bg-sage/20 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
-            The Importance of a Steady Helm.
+            The importance of a steady helm.
           </h2>
           <p className="mt-8 font-body text-base leading-relaxed text-slate sm:text-lg">
             True transformation rarely arrives in a single, blinding insight. More often, it begins with a quiet decision to show up for yourself - again and again. The real work happens not in the peak moment, but in the patient, structured habits that follow: the regular movement or meditation practice, the honest conversation, the kind act, the gentle return to centre when life pulls you off course.
