@@ -933,7 +933,7 @@ function Step4({ data, update, errors }: StepProps) {
           <span className="font-normal text-slate">(optional)</span>
         </label>
         <p className="mt-1 font-body text-xs text-slate">
-          Do you have any regular exercise, nutrition, movement, or spiritual practices?
+          Do you have any regular exercise, nutrition, self-care, or spiritual practices?
         </p>
         <textarea
           id="healthWellbeingPractices"
