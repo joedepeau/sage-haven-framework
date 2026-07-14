@@ -885,7 +885,7 @@ function Step3({
           value={data.additionalConditions}
           onChange={(e) => update("additionalConditions", e.target.value)}
           className={fieldCls(false)}
-          placeholder="Anything else about your health or context we should be aware of?"
+          placeholder="Anything else about your health or context we should be aware of? If you are interested in sliding-scale or pro-bono options, please provide details here."
         />
       </div>
     </div>
