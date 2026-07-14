@@ -8,7 +8,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-12">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <img src={logoAsset.url} alt="Still Harbour logo" className="h-10 w-10 object-contain" />
+          <img src={logoAsset.url} alt="Still Harbour logo" className="h-12 w-12 object-contain" />
           <span className="hidden font-display text-lg font-medium text-navy sm:inline">
             Still Harbour Coaching
           </span>
