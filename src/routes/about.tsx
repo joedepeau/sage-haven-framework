@@ -58,7 +58,7 @@ function AboutPage() {
                 About Your Coach
               </p>
               <h1 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
-                Steady Guidance for Intentional Journeys.
+                Steady guidance for intentional journeys.
               </h1>
               <div className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg space-y-4">
                 <p>
