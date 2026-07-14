@@ -256,7 +256,7 @@ function Index() {
               The Approach
             </p>
             <h2 className="font-display text-3xl font-medium text-cream sm:text-4xl">
-              Guided by core principles
+              Guided by four core principles
             </h2>
           </div>
           <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
