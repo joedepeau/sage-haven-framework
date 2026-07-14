@@ -819,7 +819,7 @@ function Step4({ data, update, errors }: StepProps) {
           Prescribed Medications <span className="text-red-600">*</span>
         </label>
         <p className="mt-1 font-body text-xs text-slate">
-          Please list all prescribed medications you currently take, along with the condition they are used to treat
+          Please list all prescribed medications you currently take, along with the condition they are used to treat.
         </p>
         <textarea
           id="medications"
@@ -839,7 +839,7 @@ function Step4({ data, update, errors }: StepProps) {
           Non-Prescribed Medications and Supplements <span className="text-red-600">*</span>
         </label>
         <p className="mt-1 font-body text-xs text-slate">
-          Please list all non-prescribed medications or supplements you currently take
+          Please list all non-prescribed medications or supplements you currently take.
         </p>
         <textarea
           id="nonPrescribedMedications"
