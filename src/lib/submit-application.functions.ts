@@ -29,6 +29,7 @@ const payloadSchema = z.object({
   hearAbout: z.string().max(500).default(""),
   additionalNotes: z.string().max(5000).default(""),
   agreeTruthCompleteness: z.boolean(),
+  agreeSchedulingPayment: z.boolean(),
   agreeContraindications: z.boolean(),
   agreeLegalDisclaimer: z.boolean(),
   agreeHarmReduction: z.boolean(),
@@ -47,6 +48,7 @@ export const submitApplication = createServerFn({ method: "POST" })
 
     if (
       !data.agreeTruthCompleteness ||
+      !data.agreeSchedulingPayment ||
       !data.agreeContraindications ||
       !data.agreeLegalDisclaimer ||
       !data.agreeHarmReduction ||
