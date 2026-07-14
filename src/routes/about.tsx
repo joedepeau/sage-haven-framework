@@ -167,7 +167,7 @@ function AboutPage() {
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
                 <li>Four 1-on-1 coaching sessions (4-8 week container, or one microdosing cycle)</li>
-                <li>Secure text support between sessions</li>
+                <li>Text and voice note support between sessions</li>
                 <li>Sliding-scale and pro-bono options available for qualifying individuals</li>
               </ul>
               <p className="mt-8 font-display text-2xl font-medium text-navy">
