@@ -892,7 +892,7 @@ function Step4({ data, update, errors }: StepProps) {
           Prescribed Medications <span className="text-red-600">*</span>
         </label>
         <p className="mt-1 font-body text-xs text-slate">
-          Please list all prescribed medications you currently take, along with the condition they are used to treat.
+          Please list all prescribed medications you currently take, along with the condition or symptoms they are used to treat.
         </p>
         <textarea
           id="medications"
