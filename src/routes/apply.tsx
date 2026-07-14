@@ -885,36 +885,6 @@ function Step5({ data, update, errors }: StepProps) {
         </p>
       </div>
 
-      {/* How did you hear about us */}
-      <div>
-        <label className={labelCls} htmlFor="hearAbout">
-          How did you hear about us? <span className="font-normal text-slate">(optional)</span>
-        </label>
-        <input
-          id="hearAbout"
-          type="text"
-          value={data.hearAbout}
-          onChange={(e) => update("hearAbout", e.target.value)}
-          className={fieldCls(false)}
-          placeholder="e.g. a friend, podcast, referral"
-        />
-      </div>
-
-      {/* Additional Notes */}
-      <div>
-        <label className={labelCls} htmlFor="additionalNotes">
-          Anything else you&apos;d like us to know?{" "}
-          <span className="font-normal text-slate">(optional)</span>
-        </label>
-        <textarea
-          id="additionalNotes"
-          rows={4}
-          value={data.additionalNotes}
-          onChange={(e) => update("additionalNotes", e.target.value)}
-          className={fieldCls(false)}
-          placeholder="Anything else that feels important to share before we speak."
-        />
-      </div>
 
       {/* Harm Reduction Agreement */}
       <fieldset>
