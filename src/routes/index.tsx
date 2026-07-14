@@ -308,12 +308,12 @@ function Index() {
             ].map((testimonial, i) => (
               <div
                 key={i}
-                className="rounded-xl bg-cream/10 p-8 backdrop-blur-sm"
+                className="flex h-full flex-col rounded-xl bg-cream/10 p-8 backdrop-blur-sm"
               >
-                <p className="mb-6 font-body text-base leading-relaxed text-cream/90 italic">
+                <p className="mb-6 flex-1 font-body text-base leading-relaxed text-cream/90 italic">
                   {testimonial.text}
                 </p>
-                <div>
+                <div className="mt-auto">
                   <p className="font-body text-sm font-semibold text-cream">{testimonial.name}</p>
                   <p className="font-body text-xs text-cream/60">{testimonial.info}</p>
                 </div>
