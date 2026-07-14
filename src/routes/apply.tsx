@@ -102,7 +102,6 @@ function validateStep(step: number, data: FormData): Errors {
       e.email = "Please enter a valid email address.";
     }
     if (!data.gender) e.gender = "Please select an option.";
-    if (!data.pronouns.trim()) e.pronouns = "Pronouns are required.";
     if (!data.dob) e.dob = "Date of birth is required.";
     if (!data.generalHealth.trim()) e.generalHealth = "Please share a brief note on your general health.";
     if (!data.supportNetwork.trim()) e.supportNetwork = "Please describe your support network.";
