@@ -979,7 +979,7 @@ function Step5({ data, update, errors }: StepProps) {
             aria-invalid={!!errors.agreeContraindications}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
-            I confirm that <em>none</em> of the following profiles or conditions apply to me:
+            I confirm that <strong><em>none</em></strong> of the following profiles or conditions apply to me:
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Currently taking Lithium or Tramadol</li>
               <li>Currently pregnant, trying to get pregnant, or breastfeeding</li>
