@@ -547,6 +547,21 @@ function Step1({ data, update, errors }: StepProps) {
         />
         {errors.supportNetwork && <p className={errorTextCls}>{errors.supportNetwork}</p>}
       </div>
+
+      {/* How did you hear about us */}
+      <div>
+        <label className={labelCls} htmlFor="hearAbout">
+          How did you hear about us? <span className="font-normal text-slate">(optional)</span>
+        </label>
+        <input
+          id="hearAbout"
+          type="text"
+          value={data.hearAbout}
+          onChange={(e) => update("hearAbout", e.target.value)}
+          className={fieldCls(false)}
+          placeholder="e.g. a friend, podcast, referral"
+        />
+      </div>
     </div>
   );
 }
@@ -871,34 +886,6 @@ function Step4({ data, update, errors }: StepProps) {
           placeholder="e.g. yoga twice a week, daily meditation, morning walks"
         />
       </div>
-    </div>
-  );
-}
-
-function Step5({ data, update, errors }: StepProps) {
-  return (
-    <div className="space-y-6">
-      <div>
-        <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Agreements</h2>
-        <p className="mt-1 font-body text-sm text-slate">
-          A few final acknowledgements before you submit.
-        </p>
-      </div>
-
-      {/* How did you hear about us */}
-      <div>
-        <label className={labelCls} htmlFor="hearAbout">
-          How did you hear about us? <span className="font-normal text-slate">(optional)</span>
-        </label>
-        <input
-          id="hearAbout"
-          type="text"
-          value={data.hearAbout}
-          onChange={(e) => update("hearAbout", e.target.value)}
-          className={fieldCls(false)}
-          placeholder="e.g. a friend, podcast, referral"
-        />
-      </div>
 
       {/* Additional Notes */}
       <div>
@@ -914,6 +901,19 @@ function Step5({ data, update, errors }: StepProps) {
           className={fieldCls(false)}
           placeholder="Anything else that feels important to share before we speak."
         />
+      </div>
+    </div>
+  );
+}
+
+function Step5({ data, update, errors }: StepProps) {
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="font-display text-2xl font-medium text-navy sm:text-3xl">Agreements</h2>
+        <p className="mt-1 font-body text-sm text-slate">
+          A few final acknowledgements before you submit.
+        </p>
       </div>
 
       {/* Harm Reduction Agreement */}
