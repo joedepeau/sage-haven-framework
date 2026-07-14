@@ -339,7 +339,7 @@ function Index() {
             <div className="flex items-center gap-2">
               <img src={logoAsset.url} alt="Still Harbour logo" className="h-9 w-9 object-contain" />
               <span className="font-display text-base font-medium text-navy">
-                Still Harbour
+                Still Harbour Microdose Coaching
               </span>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
