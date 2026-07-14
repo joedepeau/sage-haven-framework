@@ -58,7 +58,7 @@ function AboutPage() {
                 About Your Coach
               </p>
               <h1 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
-                Steady guidance for intentional journeys.
+                Steady guidance for intentional journeys
               </h1>
               <div className="mt-6 font-body text-base leading-relaxed text-slate sm:text-lg space-y-4">
                 <p>
@@ -83,7 +83,7 @@ function AboutPage() {
               <div className="mt-10">
                 <Link to="/apply">
                   <Button className="h-12 bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:text-base">
-                    Book a Call
+                    Schedule a Discovery Session
                   </Button>
                 </Link>
               </div>
@@ -96,7 +96,7 @@ function AboutPage() {
       <section className="bg-sage/20 px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
-            The importance of a steady helm.
+            The importance of a steady helm
           </h2>
           <p className="mt-8 font-body text-base leading-relaxed text-slate sm:text-lg">
             True transformation rarely arrives in a single, blinding insight. More often, it begins with a quiet decision to show up for yourself - again and again. The real work happens not in the peak moment, but in the patient, structured habits that follow: the regular movement or meditation practice, the honest conversation, the kind act, the gentle return to centre when life pulls you off course.
@@ -111,7 +111,7 @@ function AboutPage() {
       <section className="bg-sage/20 px-6 pb-20 pt-8 sm:px-8 sm:pb-28 sm:pt-12 lg:px-12 lg:pb-36 lg:pt-16">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
-            Where Microdose Coaching Can Help
+            Where microdose coaching can help
           </h2>
           <div className="mx-auto mt-8 grid max-w-2xl gap-x-12 gap-y-3 text-left sm:grid-cols-2">
             <ul className="list-disc space-y-3 pl-5 font-body text-base leading-relaxed text-slate sm:text-lg">
@@ -141,7 +141,7 @@ function AboutPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
-              Investing in your personal journey.
+              Investing in your personal journey
             </h2>
             <p className="mx-auto mt-6 max-w-3xl font-body text-base leading-relaxed text-slate sm:text-lg">
               Clear, structured containers designed to provide measurable progress, stability, and presence.
@@ -223,7 +223,7 @@ function AboutPage() {
       <section className="px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
-            What to Expect in Our Container
+            What to expect in our container
           </h2>
           <p className="mt-8 font-body text-base leading-relaxed text-slate sm:text-lg">
             Our work together is built on a single principle: You Are Our North Star. This means you will be met with active, attuned listening - not problem-solving from a distance, but a genuine, co-created space where your experience is heard and honoured.
