@@ -952,7 +952,40 @@ function Step5({ data, update, errors }: StepProps) {
         )}
       </fieldset>
 
+      {/* Contraindications Agreement */}
+      <fieldset>
+        <legend className={labelCls}>
+          Contraindications <span className="text-red-600">*</span>
+        </legend>
+        <label
+          className={`mt-3 flex cursor-pointer items-start gap-3 rounded-lg border px-4 py-3 font-body text-base text-navy hover:bg-cream/70 ${
+            data.agreeContraindications ? "border-navy bg-cream/70" : "border-navy/15 bg-cream/40"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={data.agreeContraindications}
+            onChange={(e) => update("agreeContraindications", e.target.checked)}
+            className="mt-1 h-5 w-5 accent-navy"
+            aria-invalid={!!errors.agreeContraindications}
+          />
+          <span className="font-body text-sm leading-relaxed text-navy">
+            I confirm that <em>none</em> of the following profiles or conditions apply to me:
+            <ul className="mt-2 list-disc space-y-1 pl-5">
+              <li>Currently taking Lithium or Tramadol</li>
+              <li>Currently pregnant, trying to get pregnant, or breastfeeding</li>
+              <li>Current or prior personal diagnosis of Psychosis, Schizophrenia, or Bipolar I Disorder</li>
+              <li>History of Psychosis, Schizophrenia, or Bipolar I Disorder in an immediate family member</li>
+            </ul>
+          </span>
+        </label>
+        {errors.agreeContraindications && (
+          <p className={errorTextCls}>{errors.agreeContraindications}</p>
+        )}
+      </fieldset>
+
       {/* Harm Reduction Agreement */}
+
       <fieldset>
 
         <legend className={labelCls}>
