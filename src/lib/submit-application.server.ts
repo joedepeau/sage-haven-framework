@@ -29,6 +29,7 @@ export type ApplicationPayload = {
   hearAbout: string;
   additionalNotes: string;
   agreeTruthCompleteness: boolean;
+  agreeSchedulingPayment: boolean;
   agreeContraindications: boolean;
   agreeLegalDisclaimer: boolean;
   agreeHarmReduction: boolean;
@@ -102,6 +103,7 @@ function buildDocumentText(data: ApplicationPayload, receivedAt: string): string
     fmt("Additional Notes", data.additionalNotes) +
     `— Step 5: Agreements —\n\n` +
     fmtBool("Truth & Completeness", data.agreeTruthCompleteness) +
+    fmtBool("Scheduling and Payment", data.agreeSchedulingPayment) +
     fmtBool("Contraindications", data.agreeContraindications) +
     fmtBool("Legal Disclaimer", data.agreeLegalDisclaimer) +
     fmtBool("Harm Reduction", data.agreeHarmReduction) +
