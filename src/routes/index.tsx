@@ -46,7 +46,7 @@ function Index() {
             <div className="mx-auto mt-10 flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center md:mt-12">
               <Link to="/apply" className="w-full sm:w-auto">
                 <Button className="h-14 w-full bg-ochre px-8 font-body text-sm font-semibold text-navy shadow-none hover:bg-ochre/90 sm:w-auto sm:text-base">
-                  Book a Discovery Session
+                  Schedule a Discovery Session
                 </Button>
               </Link>
               <Link to="/about">
