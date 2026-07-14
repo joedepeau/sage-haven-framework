@@ -11,6 +11,7 @@ export const Route = createFileRoute("/apply")({
     meta: [
       { title: "Apply | Still Harbour Coaching" },
       { name: "description", content: "Apply for a coaching container with Still Harbour — a considered, multi-step intake to help us understand your intentions and design the right container together." },
+      { name: "robots", content: "noindex, nofollow" },
       { property: "og:title", content: "Apply | Still Harbour Coaching" },
       { property: "og:description", content: "A thoughtful application process for those ready to begin integration coaching." },
       { property: "og:type", content: "website" },
