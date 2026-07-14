@@ -93,6 +93,7 @@ function AboutPage() {
               <li>Rewriting Habitual Loops</li>
               <li>Sharpening Mental Clarity</li>
               <li>Journey Preparation and Integration</li>
+              <li>Exploring New Perspectives</li>
             </ul>
             <ul className="list-disc space-y-3 pl-5 font-body text-base leading-relaxed text-slate sm:text-lg">
               <li>Unlocking Your Creative Flow</li>
