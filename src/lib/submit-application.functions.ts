@@ -51,7 +51,9 @@ export const submitApplication = createServerFn({ method: "POST" })
     if (
       !data.agreeTruthCompleteness ||
       !data.agreeSchedulingPayment ||
+      !data.agreeRefundPolicy ||
       !data.agreeContraindications ||
+
       !data.agreeLegalDisclaimer ||
       !data.agreeHarmReduction ||
       !data.agreePrivacy
