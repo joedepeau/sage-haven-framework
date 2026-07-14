@@ -540,8 +540,8 @@ function Step2({
 }: StepProps & { toggleMicrodosing: (v: string) => void }) {
   const priorOpts = [
     { value: "none", label: "None", desc: "I have no prior experience." },
-    { value: "some", label: "Some", desc: "A handful of intentional experiences." },
-    { value: "moderate", label: "Moderate", desc: "A regular, considered practice over time." },
+    { value: "some", label: "Some", desc: "A handful of pervious experiences." },
+    { value: "moderate", label: "Moderate", desc: "Regular, considered use over time." },
     { value: "extensive", label: "Extensive", desc: "Long-standing, deep familiarity." },
   ];
   const microOpts = [
@@ -563,7 +563,7 @@ function Step2({
       {/* Prior experience — radio */}
       <fieldset>
         <legend className={labelCls}>
-          Prior Experience <span className="text-red-600">*</span>
+          Prior Psychedelic Experience (Microdose or High Dose)&nbsp;<span className="text-red-600">*</span>
         </legend>
         <div className="mt-3 space-y-3">
           {priorOpts.map((opt) => (
@@ -594,7 +594,7 @@ function Step2({
       {/* Current microdosing — checkboxes */}
       <fieldset>
         <legend className={labelCls}>
-          Current Microdosing <span className="text-red-600">*</span>
+          Currently Microdosing <span className="text-red-600">*</span>
         </legend>
         <p className="mt-1 font-body text-xs text-slate">Select all that apply.</p>
         <div className="mt-3 space-y-2">
