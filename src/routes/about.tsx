@@ -188,7 +188,7 @@ function AboutPage() {
                 Comprehensive 1-on-1 partnership for deep mindset shifts and sustained transformation, working with microdosing as part of our toolkit.
               </p>
               <ul className="mt-6 list-disc space-y-2 pl-5 font-body text-base text-slate">
-                <li>Four 1-on-1 coaching sessions (4-8 week container, or one microdosing cycle)</li>
+                <li>Four 50-minute 1-on-1 coaching sessions (4-8 week container, or one microdosing cycle)</li>
                 <li>Text and voice note support between sessions</li>
                 <li>Sliding-scale and pro-bono options available for qualifying individuals</li>
               </ul>
