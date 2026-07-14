@@ -1022,10 +1022,7 @@ function Step5({ data, update, errors }: StepProps) {
       </fieldset>
 
       {/* Harm Reduction Agreement */}
-
-
       <fieldset>
-
         <legend className={labelCls}>
           Harm Reduction <span className="text-red-600">*</span>
         </legend>
@@ -1038,7 +1035,7 @@ function Step5({ data, update, errors }: StepProps) {
             type="checkbox"
             checked={data.agreeHarmReduction}
             onChange={(e) => update("agreeHarmReduction", e.target.checked)}
-            className="mt-1 h-5 w-5 accent-navy"
+            className="mt-1 h-5 w-5 shrink-0 accent-navy"
             aria-invalid={!!errors.agreeHarmReduction}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
@@ -1066,7 +1063,7 @@ function Step5({ data, update, errors }: StepProps) {
             type="checkbox"
             checked={data.agreePrivacy}
             onChange={(e) => update("agreePrivacy", e.target.checked)}
-            className="mt-1 h-5 w-5 accent-navy"
+            className="mt-1 h-5 w-5 shrink-0 accent-navy"
             aria-invalid={!!errors.agreePrivacy}
           />
           <span className="font-body text-sm leading-relaxed text-navy">
