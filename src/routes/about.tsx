@@ -180,7 +180,7 @@ function AboutPage() {
 
       {/* Approach Section */}
       <section className="px-6 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-36">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-4xl text-center">
           <h2 className="font-display text-3xl font-medium text-navy sm:text-4xl">
             What to Expect in Our Container
           </h2>
