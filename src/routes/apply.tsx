@@ -120,6 +120,7 @@ function validateStep(step: number, data: FormData): Errors {
   }
   if (step === 4) {
     if (!data.medications.trim()) e.medications = "Please list any prescribed medications.";
+    if (!data.nonPrescribedMedications.trim()) e.nonPrescribedMedications = "Please list any non-prescribed medications or supplements.";
   }
   return e;
 }
