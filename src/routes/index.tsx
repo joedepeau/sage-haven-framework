@@ -68,7 +68,7 @@ function Index() {
           <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 md:gap-16 lg:gap-24">
             <div className="flex flex-col justify-center">
               <h2 className="font-display text-3xl font-medium leading-snug text-navy sm:text-4xl lg:text-5xl">
-                Exploring New Horizons Shouldn&apos;t Mean Feeling Adrift.
+                Exploring new horizons shouldn&apos;t mean feeling adrift.
               </h2>
             </div>
             <div className="flex flex-col justify-center">
