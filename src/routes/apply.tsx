@@ -647,6 +647,8 @@ function Step3({
     "Grief or life transition",
     "Habit change",
     "Curiosity",
+    "Mindfulness",
+    "Other",
     "Journey preparation",
     "Journey integration",
   ];
