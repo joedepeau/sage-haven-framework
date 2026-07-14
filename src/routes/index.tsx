@@ -5,6 +5,7 @@ import { Anchor, Compass, Lamp } from "lucide-react";
 import { LighthouseIcon } from "@/components/icons/LighthouseIcon";
 import heroBg from "@/assets/hero-bg.jpg";
 import coachPortrait from "@/assets/coach-portrait.jpg.asset.json";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
