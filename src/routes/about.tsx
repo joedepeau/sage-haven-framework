@@ -32,7 +32,7 @@ function AboutPage() {
             <div className="md:col-span-2 space-y-6">
               <div className="relative overflow-hidden rounded-2xl bg-navy/10 shadow-sm">
                 <img
-                  src={coachPortrait.url}
+                  src={coachPortrait}
                   alt="Portrait of the coach"
                   width={768}
                   height={1024}
@@ -42,7 +42,7 @@ function AboutPage() {
               </div>
               <div className="relative overflow-hidden rounded-2xl bg-white shadow-sm">
                 <img
-                  src={badgeAsset.url}
+                  src={badgeAsset}
                   alt="Microdosing Institute Certified Facilitator badge"
                   width={499}
                   height={134}
