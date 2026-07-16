@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Anchor, Compass, Lamp } from "lucide-react";
 import { LighthouseIcon } from "@/components/icons/LighthouseIcon";
 import heroBg from "@/assets/hero-bg.jpg";
-import coachPortrait from "@/assets/coach-portrait.jpg.asset.json";
-import badgeAsset from "@/assets/badge-cropped.png.asset.json";
+import coachPortrait from "@/assets/coach-portrait.jpg";
+import badgeAsset from "@/assets/badge-cropped.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
