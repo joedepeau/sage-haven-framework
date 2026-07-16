@@ -1,6 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
-import logoAsset from "@/assets/logo.png.asset.json";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/privacy")({
   component: PrivacyPage,
