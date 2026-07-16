@@ -359,7 +359,7 @@ function Index() {
               This work is coaching and personal development. It is not psychotherapy, medical care, or clinical treatment, and it does not diagnose, prescribe, or replace advice from a licensed physician or mental health professional.
             </p>
             <p>
-              We hold your experience with confidentiality, without judgment, and through a harm-reduction lens, focused on your safety, agency, and long-term wellbeing. If clinical support is what you need, we will say so, honestly, and help you find appropriate care.
+              We hold your experience with confidentiality, without judgment, and through a harm-reduction lens, focused on your safety, agency, and long-term wellbeing. If clinical support is what you need, I will say so, honestly, and help you find appropriate care.
             </p>
           </div>
         </div>
