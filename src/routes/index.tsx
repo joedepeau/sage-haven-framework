@@ -12,10 +12,10 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Integration Coaching | Find Clarity & Purpose" },
-      { name: "description", content: "Professional integration coaching to help you align your life, work, and values with clarity and confidence." },
-      { property: "og:title", content: "Integration Coaching | Find Clarity & Purpose" },
-      { property: "og:description", content: "Professional integration coaching to help you align your life, work, and values with clarity and confidence." },
+      { title: "Microdose Coaching | Find Clarity & Purpose" },
+      { name: "description", content: "Professional microdose coaching to help you align your life, work, and values with clarity and confidence." },
+      { property: "og:title", content: "Microdose Coaching | Find Clarity & Purpose" },
+      { property: "og:description", content: "Professional microdose coaching to help you align your life, work, and values with clarity and confidence." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
